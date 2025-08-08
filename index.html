@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método RESET Neural - Acabe com a Ansiedade em 15 Minutos</title>
+    <meta name="description" content="Descubra o Método RESET Neural que está transformando a vida de milhares de mulheres. 5 áudios de hipnoterapia para eliminar ansiedade e estresse em apenas 15 minutos por dia.">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '706101819074980');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=706101819074980&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #FF6B35;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            position: relative;
+        }
+
+        .cta-button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-button::after {
+            content: " →";
+            font-size: 1.3rem;
+            margin-left: 10px;
+        }
+
+        .section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2E86AB;
+        }
+
+        .section h3 {
+            font-size: 1.5rem;
+            color: #2E86AB;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #2E86AB, #A23B72);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .audio-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #FF6B35;
+        }
+
+        .audio-card h4 {
+            color: #2E86AB;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .audio-card .benefit {
+            font-weight: 600;
+            color: #FF6B35;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #2E86AB;
+        }
+
+        .testimonial .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .testimonial .author {
+            font-weight: 600;
+            color: #2E86AB;
+        }
+
+        .price-section {
+            background: linear-gradient(135deg, #FF6B35, #FF8E53);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .price-old {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .price-new {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .savings {
+            font-size: 1.3rem;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .guarantee {
+            background: #28a745;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .guarantee h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .faq {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            background: #2E86AB;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .urgency {
+            background: #dc3545;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .audio-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .floating-cta {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="urgency">
+        ⏰ OFERTA ESPECIAL: Apenas esta semana por R$ 47,90 (valor normal R$ 135,00)
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Pare de Sofrer com Ansiedade: Descubra o Método RESET Neural</h1>
+            <p class="subtitle">A primeira técnica que reprograma sua mente em apenas 15 minutos por dia, sem terapia cara, sem medicamentos, sem anos de tratamento</p>
+            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">QUERO TRANSFORMAR MINHA VIDA AGORA</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Você Está Cansada de Sofrer com Ansiedade?</h2>
+            <p>Se você é como milhares de mulheres que já passaram por aqui, provavelmente já tentou de tudo: terapia que demora anos para fazer efeito, medicamentos com efeitos colaterais terríveis, técnicas de respiração que não funcionam na hora do desespero...</p>
+            
+            <p><strong>E se eu te dissesse que existe uma forma completamente diferente?</strong></p>
+            
+            <div class="highlight-box">
+                <h3>Apresento o Método RESET Neural</h3>
+                <p>A primeira técnica que vai direto ao "centro de controle" da sua mente e reprograma os padrões automáticos de ansiedade em tempo real. Não é meditação, não é terapia tradicional - é reprogramação neural direta através de frequências específicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>O Que É Hipnoterapia? (Explicação Simples)</h2>
+            <p>A hipnoterapia é uma técnica científica comprovada que acessa diretamente seu subconsciente - a parte da mente onde estão armazenados todos os seus padrões automáticos de pensamento e reação.</p>
+            
+            <p>Imagine que sua mente consciente é como a tela do seu celular, e o subconsciente é todo o sistema operacional rodando por trás. A hipnoterapia "atualiza" esse sistema operacional, instalando novos programas de calma e tranquilidade.</p>
+            
+            <p><strong>O melhor de tudo:</strong> você não precisa "fazer" nada. Apenas relaxe e deixe os áudios trabalharem por você. Funciona mesmo se você adormecer!</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Conheça os 5 Áudios da Trilha RESET Neural</h2>
+            <div class="audio-grid">
+                <div class="audio-card">
+                    <h4>🌙 Desligando a Mente para Dormir</h4>
+                    <div class="benefit">Adormeça em minutos, sem pensamentos acelerados</div>
+                    <p><strong>Duração:</strong> 20 minutos</p>
+                    <p><strong>Quando usar:</strong> Antes de dormir</p>
+                    <p>Acabe com a insônia e os pensamentos que não param. Este áudio desliga completamente sua mente consciente e induz um sono profundo e reparador.</p>
+                </div>
+
+                <div class="audio-card">
+                    <h4>⚡ Redução Rápida de Ansiedade no Corpo</h4>
+                    <div class="benefit">Elimine sintomas físicos da ansiedade em 10 minutos</div>
+                    <p><strong>Duração:</strong> 15 minutos</p>
+                    <p><strong>Quando usar:</strong> Durante crises de ansiedade</p>
+                    <p>Para aqueles momentos de coração acelerado, falta de ar e tremores. Este áudio acalma instantaneamente seu sistema nervoso.</p>
+                </div>
+
+                <div class="audio-card">
+                    <h4>🧠 Controle de Pensamento Acelerado</h4>
+                    <div class="benefit">Pare o "filme mental" e recupere o foco</div>
+                    <p><strong>Duração:</strong> 12 minutos</p>
+                    <p><strong>Quando usar:</strong> Quando a mente não para</p>
+                    <p>Quando sua mente está como um rádio fora de sintonia, este áudio sintoniza você na frequência da calma e clareza mental.</p>
+                </div>
+
+                <div class="audio-card">
+                    <h4>🛡️ Paz Interior em Situações Desafiadoras</h4>
+                    <div class="benefit">Mantenha a calma em momentos de pressão</div>
+                    <p><strong>Duração:</strong> 18 minutos</p>
+                    <p><strong>Quando usar:</strong> Antes de situações estressantes</p>
+                    <p>Reunião importante, conversa difícil, apresentação? Este áudio cria um "escudo" de tranquilidade ao seu redor.</p>
+                </div>
+
+                <div class="audio-card">
+                    <h4>🌟 Alívio Imediato da Ansiedade e Estresse</h4>
+                    <div class="benefit">Reset completo do sistema nervoso</div>
+                    <p><strong>Duração:</strong> 25 minutos</p>
+                    <p><strong>Quando usar:</strong> Para manutenção diária</p>
+                    <p>O áudio mais poderoso da trilha. Faz uma "limpeza geral" em toda ansiedade acumulada e restaura seu estado natural de paz.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">QUERO ACESSO COMPLETO AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>O Que Nossas Clientes Estão Dizendo</h2>
+            
+            <div class="testimonial">
+                <div class="quote">"Sofria com insônia há 3 anos. Tomava remédio, fazia terapia, nada funcionava. No primeiro dia usando o áudio 'Desligando a Mente', dormi como um bebê. Não acreditei! Hoje durmo tranquila todas as noites."</div>
+                <div class="author">- Maria Silva, 34 anos, São Paulo</div>
+            </div>
+
+            <div class="testimonial">
+                <div class="quote">"As crises de ansiedade me paralisavam no trabalho. Sentia que ia morrer, coração disparado, suor frio... Agora, em 10 minutos com o áudio de 'Redução Rápida', volto ao normal completamente. Mudou minha vida profissional!"</div>
+                <div class="author">- Ana Costa, 28 anos, Rio de Janeiro</div>
+            </div>
+
+            <div class="testimonial">
+                <div class="quote">"Tentei terapia por 2 anos, remédios que me deixavam um zumbi, meditação que nunca conseguia fazer direito... Nada funcionava. Esses áudios foram a única coisa que realmente me trouxe paz. Em 1 semana já sentia diferença."</div>
+                <div class="author">- Carla Mendes, 41 anos, Belo Horizonte</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-section">
+        <div class="container">
+            <h2 style="color: white;">Oferta Especial Esta Semana</h2>
+            <div class="price-old">De R$ 135,00</div>
+            <div class="price-new">Por apenas R$ 47,90</div>
+            <div class="savings">Você economiza R$ 87,10!</div>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Acesso imediato aos 5 áudios + Bônus exclusivos</p>
+            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="background: white; color: #FF6B35;">GARANTIR MINHA VAGA AGORA</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="guarantee">
+                <h3>🛡️ Garantia Incondicional de 7 Dias</h3>
+                <p style="font-size: 1.2rem;">Se você não sentir uma diferença real na sua ansiedade e qualidade do sono em 7 dias, devolvemos 100% do seu dinheiro, sem perguntas, sem burocracia.</p>
+                <p><strong>O risco é todo nosso. Você só tem a ganhar.</strong></p>
+            </div>
+
+            <h2>Suas Dúvidas Respondidas</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">E se não funcionar comigo?</div>
+                    <div class="faq-answer">
+                        <p>O Método RESET Neural foi testado com mais de 10.000 mulheres e tem taxa de sucesso de 94%. Além disso, você tem 7 dias de garantia total. Se não funcionar, devolvemos seu dinheiro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Preciso saber meditar ou ter experiência?</div>
+                    <div class="faq-answer">
+                        <p>Não! É só apertar play e relaxar. O áudio faz todo o trabalho por você. Funciona mesmo se você adormecer durante a sessão. Sem técnicas complicadas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Hipnose é seguro?</div>
+                    <div class="faq-answer">
+                        <p>Totalmente seguro e natural. Você mantém controle total o tempo todo. É como um relaxamento profundo. Aprovado por profissionais de saúde mental.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Não tenho tempo para isso...</div>
+                    <div class="faq-answer">
+                        <p>Apenas 15 minutos por dia! Você pode ouvir fazendo outras atividades relaxantes ou antes de dormir. Muitas clientes veem resultados desde a primeira sessão.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Como recebo os áudios?</div>
+                    <div class="faq-answer">
+                        <p>Imediatamente após a compra, você recebe um email com o link para download. Pode ouvir no celular, computador ou qualquer dispositivo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">Preciso de fones de ouvido?</div>
+                    <div class="faq-answer">
+                        <p>Recomendamos fones para melhor experiência, mas não é obrigatório. O importante é estar em um ambiente tranquilo onde você possa relaxar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 60px 0;">
+                <h2 style="color: #2E86AB; margin-bottom: 30px;">Não Deixe a Ansiedade Roubar Mais Um Dia da Sua Vida</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">Milhares de mulheres já transformaram suas vidas. Agora é a sua vez.</p>
+                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'Purchase');" style="font-size: 1.3rem; padding: 20px 50px;">COMEÇAR MINHA TRANSFORMAÇÃO AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-cta">
+        <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">COMPRAR AGORA - R$ 47,90</a>
+    </div>
+
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            
+            // Fechar todas as outras
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Abrir/fechar a atual
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        // Scroll tracking para mostrar CTA flutuante
+        window.addEventListener('scroll', function() {
+            const floatingCta = document.querySelector('.floating-cta');
+            const heroSection = document.querySelector('.hero');
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            
+            if (window.scrollY > heroBottom) {
+                floatingCta.style.display = 'block';
+            } else {
+                floatingCta.style.display = 'none';
+            }
+        });
+
+        // Track scroll depth
+        let maxScroll = 0;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScroll) {
+                maxScroll = scrollPercent;
+                if (maxScroll >= 25 && maxScroll < 50) {
+                    fbq('track', 'ViewContent', {content_name: '25% da página'});
+                } else if (maxScroll >= 50 && maxScroll < 75) {
+                    fbq('track', 'ViewContent', {content_name: '50% da página'});
+                } else if (maxScroll >= 75) {
+                    fbq('track', 'ViewContent', {content_name: '75% da página'});
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
