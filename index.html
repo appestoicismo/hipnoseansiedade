@@ -32,243 +32,344 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: #2d3748;
+            background-color: #faf9f5;
+            font-weight: 400;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
 
-        .hero {
-            background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
-            color: white;
-            padding: 60px 0;
+        /* Header com urgência suave */
+        .urgency {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            color: #ffffff;
+            padding: 12px 0;
             text-align: center;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            color: #2d3748;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             line-height: 1.2;
+            color: #1a202c;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            font-weight: 300;
+            font-size: 1.25rem;
+            margin-bottom: 48px;
+            color: #4a5568;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
         }
 
+        /* Botões principais com setas */
         .cta-button {
-            display: inline-block;
-            background: #FF6B35;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #10b981;
             color: white;
-            padding: 18px 40px;
-            font-size: 1.2rem;
+            padding: 20px 40px;
+            font-size: 1.1rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 12px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
             position: relative;
+            border: none;
+            cursor: pointer;
+            min-height: 60px;
         }
 
         .cta-button:hover {
-            background: #e55a2b;
+            background: #059669;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.35);
         }
 
         .cta-button::after {
-            content: " →";
-            font-size: 1.3rem;
-            margin-left: 10px;
+            content: "→";
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: transform 0.3s ease;
         }
 
+        .cta-button:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* Seções principais */
         .section {
-            padding: 60px 0;
-            background: white;
+            padding: 80px 0;
+            background: #ffffff;
         }
 
         .section:nth-child(even) {
-            background: #f8f9fa;
+            background: #faf9f5;
         }
 
         .section h2 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             text-align: center;
-            margin-bottom: 40px;
-            color: #2E86AB;
+            margin-bottom: 48px;
+            color: #1a202c;
+            font-weight: 700;
+            line-height: 1.3;
         }
 
         .section h3 {
-            font-size: 1.5rem;
-            color: #2E86AB;
-            margin-bottom: 15px;
+            font-size: 1.6rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .section p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            text-align: justify;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+            text-align: left;
+            color: #4a5568;
+            line-height: 1.7;
         }
 
+        /* Box de destaque minimalista */
         .highlight-box {
-            background: linear-gradient(135deg, #2E86AB, #A23B72);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 40px 0;
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-left: 6px solid #10b981;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 48px 0;
             text-align: center;
         }
 
         .highlight-box h3 {
-            color: white;
+            color: #1a202c;
             font-size: 1.8rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
+        .highlight-box p {
+            text-align: center;
+            font-size: 1.125rem;
+            color: #4a5568;
+        }
+
+        /* Grid dos áudios */
         .audio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
         }
 
         .audio-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            border-left: 5px solid #FF6B35;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .audio-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
         }
 
         .audio-card h4 {
-            color: #2E86AB;
+            color: #1a202c;
             font-size: 1.3rem;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
         .audio-card .benefit {
             font-weight: 600;
-            color: #FF6B35;
-            margin-bottom: 10px;
+            color: #10b981;
+            margin-bottom: 16px;
+            font-size: 1rem;
         }
 
+        .audio-card p {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+        }
+
+        /* Depoimentos limpos */
         .testimonial {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 20px 0;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-            border-left: 5px solid #2E86AB;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            margin: 24px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-left: 4px solid #10b981;
         }
 
         .testimonial .quote {
             font-style: italic;
             font-size: 1.1rem;
-            margin-bottom: 15px;
-            color: #555;
+            margin-bottom: 16px;
+            color: #4a5568;
+            line-height: 1.6;
         }
 
         .testimonial .author {
             font-weight: 600;
-            color: #2E86AB;
+            color: #2d3748;
+            font-size: 0.95rem;
         }
 
+        /* Seção de preço limpa */
         .price-section {
-            background: linear-gradient(135deg, #FF6B35, #FF8E53);
+            background: #1a202c;
             color: white;
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
+        }
+
+        .price-section h2 {
+            color: white;
+            margin-bottom: 32px;
         }
 
         .price-old {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-decoration: line-through;
             opacity: 0.7;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #a0aec0;
         }
 
         .price-new {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
+            color: #10b981;
         }
 
         .savings {
-            font-size: 1.3rem;
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 25px;
+            font-size: 1.2rem;
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            padding: 12px 24px;
+            border-radius: 8px;
             display: inline-block;
-            margin-bottom: 30px;
-        }
-
-        .guarantee {
-            background: #28a745;
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .guarantee h3 {
-            color: white;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-
-        .faq {
-            margin-top: 40px;
-        }
-
-        .faq-item {
-            background: white;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .faq-question {
-            background: #2E86AB;
-            color: white;
-            padding: 20px;
-            cursor: pointer;
+            margin-bottom: 40px;
             font-weight: 600;
         }
 
+        /* Garantia */
+        .guarantee {
+            background: #f0fff4;
+            border: 2px solid #10b981;
+            color: #1a202c;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .guarantee h3 {
+            color: #10b981;
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .guarantee p {
+            text-align: center;
+            color: #2d3748;
+        }
+
+        /* FAQ minimalista */
+        .faq {
+            margin-top: 48px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            background: #f7fafc;
+            color: #2d3748;
+            padding: 24px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .faq-question:hover {
+            background: #edf2f7;
+        }
+
         .faq-answer {
-            padding: 20px;
+            padding: 24px;
             display: none;
+            background: #ffffff;
         }
 
         .faq-answer.active {
             display: block;
         }
 
-        .urgency {
-            background: #dc3545;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
+        /* CTA flutuante */
+        .floating-cta {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 1000;
+            display: none;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
         }
 
+        /* Responsividade */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .hero .subtitle {
@@ -276,50 +377,69 @@
             }
             
             .container {
-                padding: 0 15px;
+                padding: 0 20px;
             }
             
             .section {
-                padding: 40px 0;
+                padding: 60px 0;
             }
             
             .audio-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 24px;
             }
             
             .cta-button {
-                padding: 15px 30px;
-                font-size: 1.1rem;
+                padding: 18px 32px;
+                font-size: 1rem;
+                width: 100%;
+                justify-content: center;
             }
-        }
 
-        .floating-cta {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            display: none;
-        }
-
-        @media (max-width: 768px) {
             .floating-cta {
                 display: block;
+                left: 20px;
+                right: 20px;
+                transform: none;
             }
+
+            .floating-cta .cta-button {
+                width: 100%;
+            }
+
+            .price-new {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* Espaçamento adicional */
+        .section-spacing {
+            margin: 48px 0;
+        }
+
+        /* Estilo para emojis nos cards */
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 8px;
+        }
+
+        /* Melhorias na tipografia */
+        strong {
+            font-weight: 600;
+            color: #2d3748;
         }
     </style>
 </head>
 <body>
     <div class="urgency">
-        ⏰ OFERTA ESPECIAL: Apenas esta semana por R$ 47,90 (valor normal R$ 135,00)
+        Oferta Especial: Apenas esta semana por R$ 47,90 (valor normal R$ 135,00)
     </div>
 
     <section class="hero">
         <div class="container">
             <h1>Pare de Sofrer com Ansiedade: Descubra o Método RESET Neural</h1>
             <p class="subtitle">A primeira técnica que reprograma sua mente em apenas 15 minutos por dia, sem terapia cara, sem medicamentos, sem anos de tratamento</p>
-            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">QUERO TRANSFORMAR MINHA VIDA AGORA</a>
+            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Quero Transformar Minha Vida</a>
         </div>
     </section>
 
@@ -339,7 +459,7 @@
 
     <section class="section">
         <div class="container">
-            <h2>O Que É Hipnoterapia? (Explicação Simples)</h2>
+            <h2>O Que É Hipnoterapia?</h2>
             <p>A hipnoterapia é uma técnica científica comprovada que acessa diretamente seu subconsciente - a parte da mente onde estão armazenados todos os seus padrões automáticos de pensamento e reação.</p>
             
             <p>Imagine que sua mente consciente é como a tela do seu celular, e o subconsciente é todo o sistema operacional rodando por trás. A hipnoterapia "atualiza" esse sistema operacional, instalando novos programas de calma e tranquilidade.</p>
@@ -353,7 +473,7 @@
             <h2>Conheça os 5 Áudios da Trilha RESET Neural</h2>
             <div class="audio-grid">
                 <div class="audio-card">
-                    <h4>🌙 Desligando a Mente para Dormir</h4>
+                    <h4><span class="emoji">🌙</span>Desligando a Mente para Dormir</h4>
                     <div class="benefit">Adormeça em minutos, sem pensamentos acelerados</div>
                     <p><strong>Duração:</strong> 20 minutos</p>
                     <p><strong>Quando usar:</strong> Antes de dormir</p>
@@ -361,7 +481,7 @@
                 </div>
 
                 <div class="audio-card">
-                    <h4>⚡ Redução Rápida de Ansiedade no Corpo</h4>
+                    <h4><span class="emoji">⚡</span>Redução Rápida de Ansiedade no Corpo</h4>
                     <div class="benefit">Elimine sintomas físicos da ansiedade em 10 minutos</div>
                     <p><strong>Duração:</strong> 15 minutos</p>
                     <p><strong>Quando usar:</strong> Durante crises de ansiedade</p>
@@ -369,7 +489,7 @@
                 </div>
 
                 <div class="audio-card">
-                    <h4>🧠 Controle de Pensamento Acelerado</h4>
+                    <h4><span class="emoji">🧠</span>Controle de Pensamento Acelerado</h4>
                     <div class="benefit">Pare o "filme mental" e recupere o foco</div>
                     <p><strong>Duração:</strong> 12 minutos</p>
                     <p><strong>Quando usar:</strong> Quando a mente não para</p>
@@ -377,7 +497,7 @@
                 </div>
 
                 <div class="audio-card">
-                    <h4>🛡️ Paz Interior em Situações Desafiadoras</h4>
+                    <h4><span class="emoji">🛡️</span>Paz Interior em Situações Desafiadoras</h4>
                     <div class="benefit">Mantenha a calma em momentos de pressão</div>
                     <p><strong>Duração:</strong> 18 minutos</p>
                     <p><strong>Quando usar:</strong> Antes de situações estressantes</p>
@@ -385,7 +505,7 @@
                 </div>
 
                 <div class="audio-card">
-                    <h4>🌟 Alívio Imediato da Ansiedade e Estresse</h4>
+                    <h4><span class="emoji">🌟</span>Alívio Imediato da Ansiedade e Estresse</h4>
                     <div class="benefit">Reset completo do sistema nervoso</div>
                     <p><strong>Duração:</strong> 25 minutos</p>
                     <p><strong>Quando usar:</strong> Para manutenção diária</p>
@@ -393,8 +513,8 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin: 40px 0;">
-                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">QUERO ACESSO COMPLETO AGORA</a>
+            <div style="text-align: center; margin: 48px 0;">
+                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Quero Acesso Completo</a>
             </div>
         </div>
     </section>
@@ -405,29 +525,29 @@
             
             <div class="testimonial">
                 <div class="quote">"Sofria com insônia há 3 anos. Tomava remédio, fazia terapia, nada funcionava. No primeiro dia usando o áudio 'Desligando a Mente', dormi como um bebê. Não acreditei! Hoje durmo tranquila todas as noites."</div>
-                <div class="author">- Maria Silva, 34 anos, São Paulo</div>
+                <div class="author">Maria Silva, 34 anos, São Paulo</div>
             </div>
 
             <div class="testimonial">
                 <div class="quote">"As crises de ansiedade me paralisavam no trabalho. Sentia que ia morrer, coração disparado, suor frio... Agora, em 10 minutos com o áudio de 'Redução Rápida', volto ao normal completamente. Mudou minha vida profissional!"</div>
-                <div class="author">- Ana Costa, 28 anos, Rio de Janeiro</div>
+                <div class="author">Ana Costa, 28 anos, Rio de Janeiro</div>
             </div>
 
             <div class="testimonial">
                 <div class="quote">"Tentei terapia por 2 anos, remédios que me deixavam um zumbi, meditação que nunca conseguia fazer direito... Nada funcionava. Esses áudios foram a única coisa que realmente me trouxe paz. Em 1 semana já sentia diferença."</div>
-                <div class="author">- Carla Mendes, 41 anos, Belo Horizonte</div>
+                <div class="author">Carla Mendes, 41 anos, Belo Horizonte</div>
             </div>
         </div>
     </section>
 
     <section class="price-section">
         <div class="container">
-            <h2 style="color: white;">Oferta Especial Esta Semana</h2>
+            <h2>Oferta Especial Esta Semana</h2>
             <div class="price-old">De R$ 135,00</div>
             <div class="price-new">Por apenas R$ 47,90</div>
             <div class="savings">Você economiza R$ 87,10!</div>
-            <p style="font-size: 1.2rem; margin-bottom: 30px;">Acesso imediato aos 5 áudios + Bônus exclusivos</p>
-            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="background: white; color: #FF6B35;">GARANTIR MINHA VAGA AGORA</a>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; color: #a0aec0;">Acesso imediato aos 5 áudios + Bônus exclusivos</p>
+            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="background: #10b981; color: white;">Garantir Minha Vaga</a>
         </div>
     </section>
 
@@ -485,16 +605,16 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin: 60px 0;">
-                <h2 style="color: #2E86AB; margin-bottom: 30px;">Não Deixe a Ansiedade Roubar Mais Um Dia da Sua Vida</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 30px;">Milhares de mulheres já transformaram suas vidas. Agora é a sua vez.</p>
-                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'Purchase');" style="font-size: 1.3rem; padding: 20px 50px;">COMEÇAR MINHA TRANSFORMAÇÃO AGORA</a>
+            <div style="text-align: center; margin: 80px 0;">
+                <h2 style="color: #2d3748; margin-bottom: 32px;">Não Deixe a Ansiedade Roubar Mais Um Dia da Sua Vida</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 40px; color: #4a5568;">Milhares de mulheres já transformaram suas vidas. Agora é a sua vez.</p>
+                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'Purchase');" style="font-size: 1.2rem; padding: 24px 48px;">Começar Minha Transformação</a>
             </div>
         </div>
     </section>
 
     <div class="floating-cta">
-        <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">COMPRAR AGORA - R$ 47,90</a>
+        <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Comprar Agora - R$ 47,90</a>
     </div>
 
     <script>
@@ -544,4 +664,3 @@
     </script>
 </body>
 </html>
-
