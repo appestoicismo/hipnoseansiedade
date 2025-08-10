@@ -1,666 +1,977 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-capo="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Método RESET Neural - Acabe com a Ansiedade em 15 Minutos</title>
-    <meta name="description" content="Descubra o Método RESET Neural que está transformando a vida de milhares de mulheres. 5 áudios de hipnoterapia para eliminar ansiedade e estresse em apenas 15 minutos por dia.">
-    
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '706101819074980');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=706101819074980&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Interruptor de Ansiedade | Protocolo Científico Exclusivo</title>
+   
+   <!-- Meta Tags SEO -->
+   <meta name="description" content="Ouça o áudio completo e descubra como desligar os sintomas da ansiedade em 5 segundos usando ciência comprovada.">
+   <meta name="keywords" content="ansiedade, nervo vago, protocolo científico, alívio instantâneo">
+   <meta name="author" content="Aplicativo Autoconhecimento">
+   
+   <!-- Open Graph -->
+   <meta property="og:title" content="Interruptor de Ansiedade | Protocolo Científico Exclusivo">
+   <meta property="og:description" content="Áudio exclusivo revela método científico para controlar ansiedade em segundos.">
+   <meta property="og:type" content="website">
+   
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+   <!-- FontAwesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+   <style>
+       :root {
+           --primary: #2563eb;
+           --secondary: #0f172a;
+           --accent: #f59e0b;
+           --success: #10b981;
+           --white: #ffffff;
+           --gray-50: #f9fafb;
+           --gray-100: #f3f4f6;
+           --gray-200: #e5e7eb;
+           --gray-300: #d1d5db;
+           --gray-600: #4b5563;
+           --gray-800: #1f2937;
+           --gray-900: #111827;
+           --red: #ef4444;
+           --orange: #f97316;
+           --yellow: #eab308;
+           --green: #22c55e;
+           --headlinefont: 'Montserrat', sans-serif;
+           --contentfont: 'Lato', sans-serif;
+       }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background-color: #faf9f5;
-            font-weight: 400;
-        }
+       body {
+           font-family: var(--contentfont);
+           line-height: 1.6;
+           color: var(--gray-800);
+           background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+           min-height: 100vh;
+       }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+       .main-container {
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 20px;
+       }
 
-        /* Header com urgência suave */
-        .urgency {
-            background: linear-gradient(135deg, #4a5568, #2d3748);
-            color: #ffffff;
-            padding: 12px 0;
-            text-align: center;
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-        }
+       .content-wrapper {
+           background: var(--white);
+           border-radius: 20px;
+           box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+           max-width: 900px;
+           width: 100%;
+           overflow: hidden;
+       }
 
-        /* Hero Section */
-        .hero {
-            background: #ffffff;
-            color: #2d3748;
-            padding: 80px 0;
-            text-align: center;
-            border-bottom: 1px solid #e2e8f0;
-        }
+       .header-section {
+           background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+           color: var(--white);
+           text-align: center;
+           padding: 50px 30px;
+       }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-            line-height: 1.2;
-            color: #1a202c;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+       .intro-text {
+           font-size: 1.1rem;
+           opacity: 0.9;
+           margin-bottom: 15px;
+           font-weight: 300;
+       }
 
-        .hero .subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 48px;
-            color: #4a5568;
-            font-weight: 400;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
-        }
+       .main-title {
+           font-family: var(--headlinefont);
+           font-size: 3.2rem;
+           font-weight: 800;
+           margin-bottom: 10px;
+           line-height: 1.1;
+       }
 
-        /* Botões principais com setas */
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: #10b981;
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
-            position: relative;
-            border: none;
-            cursor: pointer;
-            min-height: 60px;
-        }
+       .title-highlight {
+           background: var(--accent);
+           color: var(--secondary);
+           padding: 5px 15px;
+           border-radius: 10px;
+           display: inline-block;
+       }
 
-        .cta-button:hover {
-            background: #059669;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.35);
-        }
+       .subtitle {
+           font-size: 1.3rem;
+           margin-top: 20px;
+           opacity: 0.95;
+           font-weight: 400;
+       }
 
-        .cta-button::after {
-            content: "→";
-            font-size: 1.4rem;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-        }
+       .audio-section {
+           padding: 50px 40px;
+           text-align: center;
+           background: var(--gray-50);
+       }
 
-        .cta-button:hover::after {
-            transform: translateX(4px);
-        }
+       .audio-instruction {
+           font-size: 1.4rem;
+           font-weight: 600;
+           color: var(--secondary);
+           margin-bottom: 15px;
+           line-height: 1.4;
+       }
 
-        /* Seções principais */
-        .section {
-            padding: 80px 0;
-            background: #ffffff;
-        }
+       .audio-subtext {
+           font-size: 1.1rem;
+           color: var(--gray-600);
+           margin-bottom: 40px;
+           max-width: 600px;
+           margin-left: auto;
+           margin-right: auto;
+       }
 
-        .section:nth-child(even) {
-            background: #faf9f5;
-        }
+       .audio-player-container {
+           background: var(--white);
+           border-radius: 20px;
+           padding: 40px;
+           box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+           margin-bottom: 30px;
+           border: 3px solid var(--primary);
+       }
 
-        .section h2 {
-            font-size: 2.4rem;
-            text-align: center;
-            margin-bottom: 48px;
-            color: #1a202c;
-            font-weight: 700;
-            line-height: 1.3;
-        }
+       .custom-audio-player {
+           width: 100%;
+           max-width: 600px;
+           margin: 0 auto;
+       }
 
-        .section h3 {
-            font-size: 1.6rem;
-            color: #2d3748;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
+       .player-controls {
+           display: flex;
+           align-items: center;
+           gap: 20px;
+           margin-bottom: 20px;
+       }
 
-        .section p {
-            font-size: 1.125rem;
-            margin-bottom: 24px;
-            text-align: left;
-            color: #4a5568;
-            line-height: 1.7;
-        }
+       .play-pause-btn {
+           background: linear-gradient(45deg, var(--success), var(--green));
+           border: none;
+           border-radius: 50%;
+           width: 80px;
+           height: 80px;
+           color: var(--white);
+           font-size: 2rem;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+       }
 
-        /* Box de destaque minimalista */
-        .highlight-box {
-            background: #f7fafc;
-            border: 2px solid #e2e8f0;
-            border-left: 6px solid #10b981;
-            padding: 40px;
-            border-radius: 12px;
-            margin: 48px 0;
-            text-align: center;
-        }
+       .play-pause-btn:hover {
+           transform: scale(1.05);
+           box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+       }
 
-        .highlight-box h3 {
-            color: #1a202c;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
+       .time-info {
+           flex: 1;
+           text-align: center;
+       }
 
-        .highlight-box p {
-            text-align: center;
-            font-size: 1.125rem;
-            color: #4a5568;
-        }
+       .current-time {
+           font-size: 1.5rem;
+           font-weight: 700;
+           color: var(--primary);
+       }
 
-        /* Grid dos áudios */
-        .audio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-            margin: 48px 0;
-        }
+       .total-time {
+           font-size: 1rem;
+           color: var(--gray-600);
+       }
 
-        .audio-card {
-            background: #ffffff;
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
+       .speed-controls {
+           display: flex;
+           gap: 10px;
+       }
 
-        .audio-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
+       .speed-btn {
+           background: var(--gray-200);
+           border: none;
+           padding: 8px 12px;
+           border-radius: 6px;
+           cursor: pointer;
+           font-weight: 600;
+           transition: all 0.3s ease;
+       }
 
-        .audio-card h4 {
-            color: #1a202c;
-            font-size: 1.3rem;
-            margin-bottom: 16px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+       .speed-btn.active {
+           background: var(--primary);
+           color: var(--white);
+       }
 
-        .audio-card .benefit {
-            font-weight: 600;
-            color: #10b981;
-            margin-bottom: 16px;
-            font-size: 1rem;
-        }
+       .progress-container {
+           width: 100%;
+           height: 8px;
+           background: var(--gray-200);
+           border-radius: 4px;
+           overflow: hidden;
+           margin-bottom: 20px;
+           pointer-events: none; /* Bloqueia cliques mas mantém visual */
+           cursor: default;
+       }
 
-        .audio-card p {
-            font-size: 1rem;
-            color: #4a5568;
-            margin-bottom: 12px;
-        }
+       .progress-bar {
+           height: 100%;
+           background: linear-gradient(45deg, var(--primary), var(--success));
+           width: 0%;
+           transition: width 0.1s ease;
+       }
 
-        /* Depoimentos limpos */
-        .testimonial {
-            background: #ffffff;
-            padding: 32px;
-            border-radius: 12px;
-            margin: 24px 0;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            border-left: 4px solid #10b981;
-        }
+       .access-counter {
+           background: linear-gradient(45deg, var(--red), var(--orange));
+           color: var(--white);
+           padding: 20px;
+           border-radius: 15px;
+           margin-top: 30px;
+           animation: pulse 2s infinite;
+       }
 
-        .testimonial .quote {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 16px;
-            color: #4a5568;
-            line-height: 1.6;
-        }
+       .counter-text {
+           font-size: 1.2rem;
+           font-weight: 600;
+           margin-bottom: 10px;
+       }
 
-        .testimonial .author {
-            font-weight: 600;
-            color: #2d3748;
-            font-size: 0.95rem;
-        }
+       .counter-number {
+           font-size: 2.5rem;
+           font-weight: 800;
+           display: block;
+           transition: all 0.3s ease;
+       }
 
-        /* Seção de preço limpa */
-        .price-section {
-            background: #1a202c;
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
+       .counter-number.updating {
+           color: var(--yellow);
+           animation: counterPulse 0.5s ease;
+       }
 
-        .price-section h2 {
-            color: white;
-            margin-bottom: 32px;
-        }
+       @keyframes counterPulse {
+           0% { transform: scale(1); }
+           50% { transform: scale(1.05); }
+           100% { transform: scale(1); }
+       }
 
-        .price-old {
-            font-size: 1.3rem;
-            text-decoration: line-through;
-            opacity: 0.7;
-            margin-bottom: 12px;
-            color: #a0aec0;
-        }
+       .update-status {
+           font-size: 0.75rem;
+           color: rgba(255, 255, 255, 0.7);
+           opacity: 0.8;
+           margin-top: 8px;
+           transition: all 0.3s ease;
+       }
 
-        .price-new {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-            color: #10b981;
-        }
+       .update-status.syncing {
+           color: var(--yellow);
+           animation: blink 1s infinite;
+       }
 
-        .savings {
-            font-size: 1.2rem;
-            background: rgba(16, 185, 129, 0.15);
-            color: #10b981;
-            padding: 12px 24px;
-            border-radius: 8px;
-            display: inline-block;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
+       @keyframes blink {
+           0%, 50% { opacity: 1; }
+           51%, 100% { opacity: 0.5; }
+       }
 
-        /* Garantia */
-        .guarantee {
-            background: #f0fff4;
-            border: 2px solid #10b981;
-            color: #1a202c;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 48px 0;
-        }
+       .offer-section {
+           padding: 50px 40px;
+           background: var(--white);
+           display: none;
+           border-top: 3px solid var(--success);
+       }
 
-        .guarantee h3 {
-            color: #10b981;
-            font-size: 1.8rem;
-            margin-bottom: 16px;
-            font-weight: 700;
-        }
+       .offer-section.show {
+           display: block;
+           animation: slideIn 0.8s ease-out;
+       }
 
-        .guarantee p {
-            text-align: center;
-            color: #2d3748;
-        }
+       @keyframes slideIn {
+           from {
+               opacity: 0;
+               transform: translateY(30px);
+           }
+           to {
+               opacity: 1;
+               transform: translateY(0);
+           }
+       }
 
-        /* FAQ minimalista */
-        .faq {
-            margin-top: 48px;
-        }
+       .offer-title {
+           font-family: var(--headlinefont);
+           font-size: 2.2rem;
+           color: var(--primary);
+           text-align: center;
+           margin-bottom: 30px;
+           font-weight: 700;
+       }
 
-        .faq-item {
-            background: #ffffff;
-            margin-bottom: 16px;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
+       .offer-list {
+           max-width: 700px;
+           margin: 0 auto 40px;
+       }
 
-        .faq-item:hover {
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
+       .offer-item {
+           background: var(--gray-50);
+           padding: 20px;
+           margin: 15px 0;
+           border-radius: 10px;
+           border-left: 5px solid var(--success);
+           font-size: 1.1rem;
+           line-height: 1.6;
+       }
 
-        .faq-question {
-            background: #f7fafc;
-            color: #2d3748;
-            padding: 24px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border-bottom: 1px solid #e2e8f0;
-        }
+       .offer-item strong {
+           color: var(--primary);
+       }
 
-        .faq-question:hover {
-            background: #edf2f7;
-        }
+       .price-section {
+           text-align: center;
+           background: var(--primary);
+           color: var(--white);
+           padding: 40px;
+           border-radius: 15px;
+           margin: 30px 0;
+       }
 
-        .faq-answer {
-            padding: 24px;
-            display: none;
-            background: #ffffff;
-        }
+       .price-installments {
+           font-size: 2.5rem;
+           font-weight: 800;
+           margin-bottom: 10px;
+       }
 
-        .faq-answer.active {
-            display: block;
-        }
+       .price-cash {
+           font-size: 1.3rem;
+           opacity: 0.9;
+       }
 
-        /* CTA flutuante */
-        .floating-cta {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            display: none;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
+       .buy-btn {
+           background: linear-gradient(45deg, var(--success), var(--green));
+           color: var(--white);
+           padding: 25px 50px;
+           border: none;
+           border-radius: 15px;
+           font-size: 1.4rem;
+           font-weight: 700;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           text-decoration: none;
+           display: inline-block;
+           margin-top: 20px;
+           box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+           text-transform: uppercase;
+           letter-spacing: 1px;
+       }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .container {
-                padding: 0 20px;
-            }
-            
-            .section {
-                padding: 60px 0;
-            }
-            
-            .audio-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-            
-            .cta-button {
-                padding: 18px 32px;
-                font-size: 1rem;
-                width: 100%;
-                justify-content: center;
-            }
+       .buy-btn:hover {
+           transform: translateY(-3px);
+           box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
+       }
 
-            .floating-cta {
-                display: block;
-                left: 20px;
-                right: 20px;
-                transform: none;
-            }
+       .faq-section {
+           padding: 50px 40px;
+           background: var(--gray-50);
+           display: none;
+       }
 
-            .floating-cta .cta-button {
-                width: 100%;
-            }
+       .faq-section.show {
+           display: block;
+       }
 
-            .price-new {
-                font-size: 2.8rem;
-            }
-        }
+       .faq-title {
+           font-family: var(--headlinefont);
+           font-size: 2rem;
+           text-align: center;
+           margin-bottom: 40px;
+           color: var(--secondary);
+       }
 
-        /* Espaçamento adicional */
-        .section-spacing {
-            margin: 48px 0;
-        }
+       .faq-container {
+           max-width: 800px;
+           margin: 0 auto;
+       }
 
-        /* Estilo para emojis nos cards */
-        .emoji {
-            font-size: 1.5rem;
-            margin-right: 8px;
-        }
+       .faq-item {
+           background: var(--white);
+           margin: 15px 0;
+           border-radius: 10px;
+           box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+           overflow: hidden;
+       }
 
-        /* Melhorias na tipografia */
-        strong {
-            font-weight: 600;
-            color: #2d3748;
-        }
-    </style>
+       .faq-question {
+           background: var(--primary);
+           color: var(--white);
+           padding: 20px;
+           cursor: pointer;
+           font-weight: 600;
+           font-size: 1.1rem;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           transition: background 0.3s ease;
+       }
+
+       .faq-question:hover {
+           background: var(--secondary);
+       }
+
+       .faq-answer {
+           padding: 20px;
+           display: none;
+           line-height: 1.7;
+           font-size: 1.05rem;
+       }
+
+       .faq-item.active .faq-answer {
+           display: block;
+       }
+
+       .faq-icon {
+           transition: transform 0.3s ease;
+       }
+
+       .faq-item.active .faq-icon {
+           transform: rotate(180deg);
+       }
+
+       @keyframes pulse {
+           0% { opacity: 1; }
+           50% { opacity: 0.8; }
+           100% { opacity: 1; }
+       }
+
+       /* Responsive */
+       @media (max-width: 768px) {
+           .main-title {
+               font-size: 2.4rem;
+           }
+           
+           .subtitle {
+               font-size: 1.1rem;
+           }
+           
+           .audio-section,
+           .offer-section,
+           .faq-section {
+               padding: 30px 20px;
+           }
+           
+           .header-section {
+               padding: 40px 20px;
+           }
+           
+           .player-controls {
+               flex-direction: column;
+               gap: 15px;
+           }
+           
+           .play-pause-btn {
+               width: 70px;
+               height: 70px;
+               font-size: 1.8rem;
+           }
+           
+           .price-installments {
+               font-size: 2rem;
+           }
+           
+           .buy-btn {
+               padding: 20px 30px;
+               font-size: 1.2rem;
+           }
+       }
+
+       @media (max-width: 480px) {
+           .main-title {
+               font-size: 2rem;
+           }
+           
+           .content-wrapper {
+               margin: 10px;
+           }
+           
+           .counter-number {
+               font-size: 2rem;
+           }
+       }
+   </style>
 </head>
+
 <body>
-    <div class="urgency">
-        Oferta Especial: Apenas esta semana por R$ 47,90 (valor normal R$ 135,00)
-    </div>
+   <div class="main-container">
+       <div class="content-wrapper">
+           <!-- Header Section -->
+           <div class="header-section">
+               <div class="intro-text">Apresentando...</div>
+               <h1 class="main-title">
+                   O <span class="title-highlight">Interruptor</span> de<br>
+                   Ansiedade
+               </h1>
+               <p class="subtitle">
+                   Descubra como desligar os sintomas da ansiedade em 5 segundos<br>
+                   usando o poder científico do seu <strong>nervo vago</strong>
+               </p>
+           </div>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Pare de Sofrer com Ansiedade: Descubra o Método RESET Neural</h1>
-            <p class="subtitle">A primeira técnica que reprograma sua mente em apenas 15 minutos por dia, sem terapia cara, sem medicamentos, sem anos de tratamento</p>
-            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Quero Transformar Minha Vida</a>
-        </div>
-    </section>
+           <!-- Audio Section -->
+           <div class="audio-section">
+               <h2 class="audio-instruction">
+                   📢 Ouça o áudio até o final para entender o que é o Protocolo Interruptor da Ansiedade
+               </h2>
+               <p class="audio-subtext">
+                   Após isso você receberá uma proposta irrecusável, onde não terá nenhum risco de comprar algo que não resolve seu problema com a ansiedade.
+               </p>
 
-    <section class="section">
-        <div class="container">
-            <h2>Você Está Cansada de Sofrer com Ansiedade?</h2>
-            <p>Se você é como milhares de mulheres que já passaram por aqui, provavelmente já tentou de tudo: terapia que demora anos para fazer efeito, medicamentos com efeitos colaterais terríveis, técnicas de respiração que não funcionam na hora do desespero...</p>
-            
-            <p><strong>E se eu te dissesse que existe uma forma completamente diferente?</strong></p>
-            
-            <div class="highlight-box">
-                <h3>Apresento o Método RESET Neural</h3>
-                <p>A primeira técnica que vai direto ao "centro de controle" da sua mente e reprograma os padrões automáticos de ansiedade em tempo real. Não é meditação, não é terapia tradicional - é reprogramação neural direta através de frequências específicas.</p>
-            </div>
-        </div>
-    </section>
+               <div class="audio-player-container">
+                   <div class="custom-audio-player">
+                       <div class="player-controls">
+                           <button class="play-pause-btn" id="playPauseBtn">
+                               <i class="fas fa-play"></i>
+                           </button>
+                           
+                           <div class="time-info">
+                               <div class="current-time" id="currentTime">00:00</div>
+                               <div class="total-time" id="totalTime">--:--</div>
+                           </div>
+                           
+                           <div class="speed-controls">
+                               <button class="speed-btn active" data-speed="1">1x</button>
+                               <button class="speed-btn" data-speed="1.25">1.25x</button>
+                               <button class="speed-btn" data-speed="1.5">1.5x</button>
+                           </div>
+                       </div>
+                       
+                       <div class="progress-container" id="progressContainer">
+                           <div class="progress-bar" id="progressBar"></div>
+                       </div>
+                       
+                       <audio id="audioPlayer" preload="metadata" controlslist="nodownload nofullscreen noremoteplayback">
+                           <source src="https://appestoicismo.github.io/audios-appestoicismo/9t.mp3" type="audio/mpeg">
+                           Seu navegador não suporta o elemento de áudio.
+                       </audio>
+                   </div>
+               </div>
 
-    <section class="section">
-        <div class="container">
-            <h2>O Que É Hipnoterapia?</h2>
-            <p>A hipnoterapia é uma técnica científica comprovada que acessa diretamente seu subconsciente - a parte da mente onde estão armazenados todos os seus padrões automáticos de pensamento e reação.</p>
-            
-            <p>Imagine que sua mente consciente é como a tela do seu celular, e o subconsciente é todo o sistema operacional rodando por trás. A hipnoterapia "atualiza" esse sistema operacional, instalando novos programas de calma e tranquilidade.</p>
-            
-            <p><strong>O melhor de tudo:</strong> você não precisa "fazer" nada. Apenas relaxe e deixe os áudios trabalharem por você. Funciona mesmo se você adormecer!</p>
-        </div>
-    </section>
+               <div class="access-counter">
+                   <div class="counter-text">⚠️ Vagas Disponíveis no Aplicativo:</div>
+                   <span class="counter-number" id="accessCounter">387</span>
+                   <div style="font-size: 0.9rem; margin-top: 10px;">
+                       Após 400 acessos, o preço aumenta para R$ 97,00
+                   </div>
+                   <div class="update-status" id="updateStatus">
+                       Atualizado em: <span id="lastUpdate"></span>
+                   </div>
+               </div>
+           </div>
 
-    <section class="section">
-        <div class="container">
-            <h2>Conheça os 5 Áudios da Trilha RESET Neural</h2>
-            <div class="audio-grid">
-                <div class="audio-card">
-                    <h4><span class="emoji">🌙</span>Desligando a Mente para Dormir</h4>
-                    <div class="benefit">Adormeça em minutos, sem pensamentos acelerados</div>
-                    <p><strong>Duração:</strong> 20 minutos</p>
-                    <p><strong>Quando usar:</strong> Antes de dormir</p>
-                    <p>Acabe com a insônia e os pensamentos que não param. Este áudio desliga completamente sua mente consciente e induz um sono profundo e reparador.</p>
-                </div>
+           <!-- Offer Section (Hidden until audio ends) -->
+           <div class="offer-section" id="offerSection">
+               <h2 class="offer-title">
+                   🎯 Aqui está a proposta onde você não corre nenhum risco de perder seu dinheiro:
+               </h2>
+               
+               <div class="offer-list">
+                   <div class="offer-item">
+                       <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong>
+                   </div>
+                   
+                   <div class="offer-item">
+                       <strong>2.</strong> Terá acesso ao aplicativo com a trilha <strong>"Interruptor de Ansiedade"</strong> 100% desbloqueado para ter acesso ao protocolo inteiro
+                   </div>
+                   
+                   <div class="offer-item">
+                       <strong>3.</strong> Se em até <strong>7 dias</strong> você não conseguir ter resultados com o que vai aprender, basta acessar esse link: <a href="https://reembolso.kiwify.com.br/login" target="_blank" style="color: var(--primary); font-weight: 600;">reembolso.kiwify.com.br</a> e devolveremos <strong>100% do seu investimento</strong>
+                   </div>
+                   
+                   <div class="offer-item">
+                       <strong>4.</strong> <span style="color: var(--success); font-weight: 700;">Seu risco é ZERO!</span>
+                   </div>
+                   
+                   <div class="offer-item">
+                       <strong>5.</strong> Mas, preste atenção, só vou segurar essa proposta até completar os <strong>400 acessos</strong> que tenho disponível no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
+                   </div>
+               </div>
 
-                <div class="audio-card">
-                    <h4><span class="emoji">⚡</span>Redução Rápida de Ansiedade no Corpo</h4>
-                    <div class="benefit">Elimine sintomas físicos da ansiedade em 10 minutos</div>
-                    <p><strong>Duração:</strong> 15 minutos</p>
-                    <p><strong>Quando usar:</strong> Durante crises de ansiedade</p>
-                    <p>Para aqueles momentos de coração acelerado, falta de ar e tremores. Este áudio acalma instantaneamente seu sistema nervoso.</p>
-                </div>
+               <div class="price-section">
+                   <h3 style="margin-bottom: 20px; color: var(--white);">Para adquirir agora:</h3>
+                   <div class="price-installments">6x de R$ 4,95</div>
+                   <div class="price-cash">ou à vista por: R$ 27,90</div>
+                   
+                   <a href="#" class="buy-btn" id="buyBtn">
+                       🚀 GARANTIR ACESSO AGORA
+                   </a>
+               </div>
+           </div>
 
-                <div class="audio-card">
-                    <h4><span class="emoji">🧠</span>Controle de Pensamento Acelerado</h4>
-                    <div class="benefit">Pare o "filme mental" e recupere o foco</div>
-                    <p><strong>Duração:</strong> 12 minutos</p>
-                    <p><strong>Quando usar:</strong> Quando a mente não para</p>
-                    <p>Quando sua mente está como um rádio fora de sintonia, este áudio sintoniza você na frequência da calma e clareza mental.</p>
-                </div>
+           <!-- FAQ Section (Hidden until audio ends) -->
+           <div class="faq-section" id="faqSection">
+               <h2 class="faq-title">❓ Perguntas Frequentes</h2>
+               
+               <div class="faq-container">
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>Quanto tempo leva para aprender o método?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Os fundamentos você aprende em 1 dia, mas o segredo não é a velocidade do aprendizado - é o treinamento da sua mente. Quanto mais você praticar os exercícios e ouvir os áudios hipnóticos, mais rápido e eficiente sua mente acessará essas capacidades naturalmente.
+                       </div>
+                   </div>
 
-                <div class="audio-card">
-                    <h4><span class="emoji">🛡️</span>Paz Interior em Situações Desafiadoras</h4>
-                    <div class="benefit">Mantenha a calma em momentos de pressão</div>
-                    <p><strong>Duração:</strong> 18 minutos</p>
-                    <p><strong>Quando usar:</strong> Antes de situações estressantes</p>
-                    <p>Reunião importante, conversa difícil, apresentação? Este áudio cria um "escudo" de tranquilidade ao seu redor.</p>
-                </div>
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>Funciona para qualquer tipo de ansiedade?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
+                       </div>
+                   </div>
 
-                <div class="audio-card">
-                    <h4><span class="emoji">🌟</span>Alívio Imediato da Ansiedade e Estresse</h4>
-                    <div class="benefit">Reset completo do sistema nervoso</div>
-                    <p><strong>Duração:</strong> 25 minutos</p>
-                    <p><strong>Quando usar:</strong> Para manutenção diária</p>
-                    <p>O áudio mais poderoso da trilha. Faz uma "limpeza geral" em toda ansiedade acumulada e restaura seu estado natural de paz.</p>
-                </div>
-            </div>
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>Preciso de algum equipamento especial?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
+                       </div>
+                   </div>
 
-            <div style="text-align: center; margin: 48px 0;">
-                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Quero Acesso Completo</a>
-            </div>
-        </div>
-    </section>
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>É baseado em ciência real?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
+                       </div>
+                   </div>
 
-    <section class="section">
-        <div class="container">
-            <h2>O Que Nossas Clientes Estão Dizendo</h2>
-            
-            <div class="testimonial">
-                <div class="quote">"Sofria com insônia há 3 anos. Tomava remédio, fazia terapia, nada funcionava. No primeiro dia usando o áudio 'Desligando a Mente', dormi como um bebê. Não acreditei! Hoje durmo tranquila todas as noites."</div>
-                <div class="author">Maria Silva, 34 anos, São Paulo</div>
-            </div>
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>E se eu não conseguir fazer hipnose?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
+                       </div>
+                   </div>
 
-            <div class="testimonial">
-                <div class="quote">"As crises de ansiedade me paralisavam no trabalho. Sentia que ia morrer, coração disparado, suor frio... Agora, em 10 minutos com o áudio de 'Redução Rápida', volto ao normal completamente. Mudou minha vida profissional!"</div>
-                <div class="author">Ana Costa, 28 anos, Rio de Janeiro</div>
-            </div>
+                   <div class="faq-item">
+                       <div class="faq-question">
+                           <span>Como funciona a garantia de 7 dias?</span>
+                           <i class="fas fa-chevron-down faq-icon"></i>
+                       </div>
+                       <div class="faq-answer">
+                           Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
-            <div class="testimonial">
-                <div class="quote">"Tentei terapia por 2 anos, remédios que me deixavam um zumbi, meditação que nunca conseguia fazer direito... Nada funcionava. Esses áudios foram a única coisa que realmente me trouxe paz. Em 1 semana já sentia diferença."</div>
-                <div class="author">Carla Mendes, 41 anos, Belo Horizonte</div>
-            </div>
-        </div>
-    </section>
+   <script>
+       // Audio Player Functionality
+       const audioPlayer = document.getElementById('audioPlayer');
+       const playPauseBtn = document.getElementById('playPauseBtn');
+       const currentTimeDisplay = document.getElementById('currentTime');
+       const totalTimeDisplay = document.getElementById('totalTime');
+       const progressBar = document.getElementById('progressBar');
+       const progressContainer = document.getElementById('progressContainer');
+       const speedButtons = document.querySelectorAll('.speed-btn');
+       const offerSection = document.getElementById('offerSection');
+       const faqSection = document.getElementById('faqSection');
+       const accessCounter = document.getElementById('accessCounter');
+       const updateStatus = document.getElementById('updateStatus');
+       const lastUpdate = document.getElementById('lastUpdate');
 
-    <section class="price-section">
-        <div class="container">
-            <h2>Oferta Especial Esta Semana</h2>
-            <div class="price-old">De R$ 135,00</div>
-            <div class="price-new">Por apenas R$ 47,90</div>
-            <div class="savings">Você economiza R$ 87,10!</div>
-            <p style="font-size: 1.2rem; margin-bottom: 40px; color: #a0aec0;">Acesso imediato aos 5 áudios + Bônus exclusivos</p>
-            <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="background: #10b981; color: white;">Garantir Minha Vaga</a>
-        </div>
-    </section>
+       let isPlaying = false;
+       let currentCounter = 387;
+       let updateTriggered = {
+           first: false,
+           second: false,
+           third: false
+       };
+       let playedTime = 0; // Tempo efetivamente reproduzido (considerando velocidade)
+       let lastUpdateTime = 0;
 
-    <section class="section">
-        <div class="container">
-            <div class="guarantee">
-                <h3>🛡️ Garantia Incondicional de 7 Dias</h3>
-                <p style="font-size: 1.2rem;">Se você não sentir uma diferença real na sua ansiedade e qualidade do sono em 7 dias, devolvemos 100% do seu dinheiro, sem perguntas, sem burocracia.</p>
-                <p><strong>O risco é todo nosso. Você só tem a ganhar.</strong></p>
-            </div>
+       // Função para gerar horário inicial (1h atrás)
+       function getInitialTime() {
+           const now = new Date();
+           now.setHours(now.getHours() - 1);
+           return now.toLocaleTimeString('pt-BR', {
+               hour: '2-digit',
+               minute: '2-digit'
+           });
+       }
 
-            <h2>Suas Dúvidas Respondidas</h2>
-            
-            <div class="faq">
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">E se não funcionar comigo?</div>
-                    <div class="faq-answer">
-                        <p>O Método RESET Neural foi testado com mais de 10.000 mulheres e tem taxa de sucesso de 94%. Além disso, você tem 7 dias de garantia total. Se não funcionar, devolvemos seu dinheiro.</p>
-                    </div>
-                </div>
+       // Função para obter horário atual real
+       function getCurrentTime() {
+           const now = new Date();
+           return now.toLocaleTimeString('pt-BR', {
+               hour: '2-digit',
+               minute: '2-digit'
+           });
+       }
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Preciso saber meditar ou ter experiência?</div>
-                    <div class="faq-answer">
-                        <p>Não! É só apertar play e relaxar. O áudio faz todo o trabalho por você. Funciona mesmo se você adormecer durante a sessão. Sem técnicas complicadas.</p>
-                    </div>
-                </div>
+       // Função para atualizar contador com animação
+       function updateCounter(newCount) {
+           const counterElement = document.getElementById('accessCounter');
+           counterElement.classList.add('updating');
+           
+           setTimeout(() => {
+               counterElement.textContent = newCount;
+               currentCounter = newCount;
+               counterElement.classList.remove('updating');
+           }, 300);
+       }
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Hipnose é seguro?</div>
-                    <div class="faq-answer">
-                        <p>Totalmente seguro e natural. Você mantém controle total o tempo todo. É como um relaxamento profundo. Aprovado por profissionais de saúde mental.</p>
-                    </div>
-                </div>
+       // Função para simular sincronização
+       function simulateSync(newCount, callback) {
+           const statusElement = document.getElementById('updateStatus');
+           const messages = [
+               'Sincronizando com servidor...',
+               'Verificando vagas em tempo real...',
+               'Atualizando disponibilidade...'
+           ];
+           
+           const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+           
+           // Mostrar mensagem de sincronização
+           statusElement.classList.add('syncing');
+           lastUpdate.textContent = randomMessage;
+           
+           // Após 2 segundos, mostrar resultado
+           setTimeout(() => {
+               statusElement.classList.remove('syncing');
+               lastUpdate.textContent = getCurrentTime();
+               updateCounter(newCount);
+               if (callback) callback();
+           }, 2000);
+       }
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Não tenho tempo para isso...</div>
-                    <div class="faq-answer">
-                        <p>Apenas 15 minutos por dia! Você pode ouvir fazendo outras atividades relaxantes ou antes de dormir. Muitas clientes veem resultados desde a primeira sessão.</p>
-                    </div>
-                </div>
+       // Inicializar com horário antigo
+       lastUpdate.textContent = getInitialTime();
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Como recebo os áudios?</div>
-                    <div class="faq-answer">
-                        <p>Imediatamente após a compra, você recebe um email com o link para download. Pode ouvir no celular, computador ou qualquer dispositivo.</p>
-                    </div>
-                </div>
+       // Initialize when metadata is loaded
+       audioPlayer.addEventListener('loadedmetadata', () => {
+           totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
+       });
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Preciso de fones de ouvido?</div>
-                    <div class="faq-answer">
-                        <p>Recomendamos fones para melhor experiência, mas não é obrigatório. O importante é estar em um ambiente tranquilo onde você possa relaxar.</p>
-                    </div>
-                </div>
-            </div>
+       // Play/Pause functionality
+       playPauseBtn.addEventListener('click', () => {
+           if (isPlaying) {
+               audioPlayer.pause();
+               playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+           } else {
+               audioPlayer.play();
+               playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+           }
+           isPlaying = !isPlaying;
+       });
 
-            <div style="text-align: center; margin: 80px 0;">
-                <h2 style="color: #2d3748; margin-bottom: 32px;">Não Deixe a Ansiedade Roubar Mais Um Dia da Sua Vida</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 40px; color: #4a5568;">Milhares de mulheres já transformaram suas vidas. Agora é a sua vez.</p>
-                <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'Purchase');" style="font-size: 1.2rem; padding: 24px 48px;">Começar Minha Transformação</a>
-            </div>
-        </div>
-    </section>
+       // Update progress and time - MANTÉM FUNCIONALIDADE VISUAL
+       audioPlayer.addEventListener('timeupdate', () => {
+           const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+           progressBar.style.width = progress + '%';
+           currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
+           
+           // Calcular tempo efetivamente reproduzido considerando velocidade
+           const currentTime = audioPlayer.currentTime;
+           const deltaTime = currentTime - lastUpdateTime;
+           
+           if (deltaTime > 0 && !audioPlayer.paused) {
+               playedTime += deltaTime * audioPlayer.playbackRate;
+           }
+           lastUpdateTime = currentTime;
+           
+           // Triggers para as atualizações baseadas no tempo reproduzido
+           // Primeira atualização: 8-12 segundos reproduzidos
+           if (playedTime >= 8 && playedTime <= 12 && !updateTriggered.first) {
+               updateTriggered.first = true;
+               const reduction = Math.floor(Math.random() * 3) + 3; // 3-5 vagas
+               simulateSync(currentCounter - reduction);
+           }
+           
+           // Segunda atualização: 118-122 segundos reproduzidos (≈2min)
+           if (playedTime >= 118 && playedTime <= 122 && !updateTriggered.second) {
+               updateTriggered.second = true;
+               const reduction = Math.floor(Math.random() * 3) + 3; // 3-5 vagas
+               simulateSync(currentCounter - reduction);
+           }
+           
+           // Terceira atualização: 208-212 segundos reproduzidos (≈3min30s)
+           if (playedTime >= 208 && playedTime <= 212 && !updateTriggered.third) {
+               updateTriggered.third = true;
+               const reduction = Math.floor(Math.random() * 3) + 3; // 3-5 vagas
+               simulateSync(currentCounter - reduction);
+           }
+       });
 
-    <div class="floating-cta">
-        <a href="https://pay.kiwify.com.br/nAeTa0z?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">Comprar Agora - R$ 47,90</a>
-    </div>
+       // When audio ends
+       audioPlayer.addEventListener('ended', () => {
+           playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+           isPlaying = false;
+           
+           // Show offer and FAQ sections
+           offerSection.classList.add('show');
+           faqSection.classList.add('show');
+           
+           // Scroll to offer
+           offerSection.scrollIntoView({ behavior: 'smooth' });
+       });
 
-    <script>
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const isActive = answer.classList.contains('active');
-            
-            // Fechar todas as outras
-            document.querySelectorAll('.faq-answer').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Abrir/fechar a atual
-            if (!isActive) {
-                answer.classList.add('active');
-            }
-        }
+       // BLOQUEAR SEEK/PULO MANTENDO FUNCIONALIDADE VISUAL
+       
+       // Bloquear tentativas de seek
+       audioPlayer.addEventListener('seeking', (e) => {
+           // Só permite seek para trás ou nos últimos 5% do áudio
+           if (audioPlayer.currentTime > lastUpdateTime && audioPlayer.currentTime < audioPlayer.duration * 0.95) {
+               audioPlayer.currentTime = lastUpdateTime;
+               e.preventDefault();
+           }
+       });
 
-        // Scroll tracking para mostrar CTA flutuante
-        window.addEventListener('scroll', function() {
-            const floatingCta = document.querySelector('.floating-cta');
-            const heroSection = document.querySelector('.hero');
-            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-            
-            if (window.scrollY > heroBottom) {
-                floatingCta.style.display = 'block';
-            } else {
-                floatingCta.style.display = 'none';
-            }
-        });
+       // Bloquear teclas de navegação do áudio
+       document.addEventListener('keydown', (e) => {
+           if (e.target === audioPlayer || audioPlayer === document.activeElement) {
+               // Bloquear arrows, page up/down, home, end
+               if (['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) {
+                   e.preventDefault();
+                   return false;
+               }
+           }
+           
+           // Bloquear atalhos globais que podem afetar o áudio
+           if ((e.ctrlKey || e.metaKey) && ['ArrowRight', 'ArrowLeft'].includes(e.key)) {
+               e.preventDefault();
+               return false;
+           }
+       });
 
-        // Track scroll depth
-        let maxScroll = 0;
-        window.addEventListener('scroll', function() {
-            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-            if (scrollPercent > maxScroll) {
-                maxScroll = scrollPercent;
-                if (maxScroll >= 25 && maxScroll < 50) {
-                    fbq('track', 'ViewContent', {content_name: '25% da página'});
-                } else if (maxScroll >= 50 && maxScroll < 75) {
-                    fbq('track', 'ViewContent', {content_name: '50% da página'});
-                } else if (maxScroll >= 75) {
-                    fbq('track', 'ViewContent', {content_name: '75% da página'});
-                }
-            }
-        });
-    </script>
+       // Prevenir context menu no áudio
+       audioPlayer.addEventListener('contextmenu', (e) => {
+           e.preventDefault();
+           return false;
+       });
+
+       // Bloquear drag & drop no player
+       audioPlayer.addEventListener('dragstart', (e) => {
+           e.preventDefault();
+           return false;
+       });
+
+       // Speed control - limitado para evitar pulos muito rápidos
+       speedButtons.forEach(btn => {
+           btn.addEventListener('click', () => {
+               speedButtons.forEach(b => b.classList.remove('active'));
+               btn.classList.add('active');
+               audioPlayer.playbackRate = parseFloat(btn.dataset.speed);
+           });
+       });
+
+       // Reset estado quando áudio é pausado
+       audioPlayer.addEventListener('pause', () => {
+           lastUpdateTime = audioPlayer.currentTime;
+       });
+
+       // FAQ Accordion
+       document.querySelectorAll('.faq-question').forEach(question => {
+           question.addEventListener('click', () => {
+               const faqItem = question.parentElement;
+               const isActive = faqItem.classList.contains('active');
+               
+               // Close all other FAQ items
+               document.querySelectorAll('.faq-item').forEach(item => {
+                   item.classList.remove('active');
+               });
+               
+               // Toggle current item
+               if (!isActive) {
+                   faqItem.classList.add('active');
+               }
+           });
+       });
+
+       // Format time helper function
+       function formatTime(seconds) {
+           const mins = Math.floor(seconds / 60);
+           const secs = Math.floor(seconds % 60);
+           return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+       }
+
+       // Buy button click handler
+       document.getElementById('buyBtn').addEventListener('click', (e) => {
+           e.preventDefault();
+           // Add your checkout URL here
+           alert('Integrar com sistema de pagamento (Kiwify, Stripe, etc.)');
+       });
+
+       // Auto-decrease counter simulation (for demo purposes) - mais sutil
+       setInterval(() => {
+           if (currentCounter > 350 && Math.random() < 0.3) { // 30% chance a cada minuto
+               const reduction = Math.floor(Math.random() * 2) + 1; // 1-2 vagas
+               const newCount = Math.max(350, currentCounter - reduction);
+               if (newCount !== currentCounter) {
+                   simulateSync(newCount);
+               }
+           }
+       }, 60000); // Check every minute
+
+       // Detectar tentativas de manipulação do playedTime
+       setInterval(() => {
+           if (audioPlayer.currentTime < lastUpdateTime - 1) {
+               // Se o áudio voltou muito para trás, resetar triggers apropriados
+               if (audioPlayer.currentTime < 8) {
+                   updateTriggered.first = false;
+                   playedTime = Math.min(playedTime, 8);
+               }
+               if (audioPlayer.currentTime < 118) {
+                   updateTriggered.second = false;
+                   playedTime = Math.min(playedTime, 118);
+               }
+               if (audioPlayer.currentTime < 208) {
+                   updateTriggered.third = false;
+                   playedTime = Math.min(playedTime, 208);
+               }
+           }
+       }, 1000);
+
+       // Bloquear ferramentas de desenvolvedor (básico)
+       document.addEventListener('keydown', function(e) {
+           // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+           if (e.key === 'F12' || 
+               (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+               (e.ctrlKey && e.key === 'U')) {
+               e.preventDefault();
+               return false;
+           }
+       });
+
+       // Bloquear click direito em toda a página
+       document.addEventListener('contextmenu', (e) => {
+           e.preventDefault();
+           return false;
+       });
+
+       // Detectar se o usuário está tentando acelerar artificialmente
+       let suspiciousActivity = 0;
+       audioPlayer.addEventListener('ratechange', () => {
+           if (audioPlayer.playbackRate > 1.5) {
+               audioPlayer.playbackRate = 1.5;
+               suspiciousActivity++;
+           }
+       });
+   </script>
 </body>
 </html>
