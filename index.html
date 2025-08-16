@@ -605,7 +605,7 @@
                    <div class="price-installments">6x de R$ 8,99</div>
                    <div class="price-cash">ou à vista por: R$ 47,90</div>
                    
-                   <a href="#" class="buy-btn" id="buyBtn">
+                   <a href="https://pay.kiwify.com.br/R2nzjK7" class="buy-btn" id="buyBtn" target="_blank">
                        🚀 GARANTIR ACESSO AGORA
                    </a>
                </div>
@@ -911,11 +911,10 @@
        }
 
        // Buy button click handler
-       document.getElementById('buyBtn').addEventListener('click', (e) => {
-           e.preventDefault();
-           // Add your checkout URL here
-           alert('Integrar com sistema de pagamento (Kiwify, Stripe, etc.)');
-       });
+document.getElementById('buyBtn').addEventListener('click', (e) => {
+    // Deixa o link funcionar normalmente - abre a página da Kiwify
+    window.open('https://pay.kiwify.com.br/R2nzjK7', '_blank');
+});
 
        // Auto-decrease counter simulation (for demo purposes) - mais sutil
        setInterval(() => {
@@ -975,4 +974,5 @@
    </script>
 </body>
 </html>
+
 
