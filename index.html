@@ -33,11 +33,11 @@
    t.src=v;s=b.getElementsByTagName(e)[0];
    s.parentNode.insertBefore(t,s)}(window, document,'script',
    'https://connect.facebook.net/en_US/fbevents.js');
-   fbq('init', '666727852401320');
+   fbq('init', '706101819074980');
    fbq('track', 'PageView');
    </script>
    <noscript><img height="1" width="1" style="display:none"
-   src="https://www.facebook.com/tr?id=666727852401320&ev=PageView&noscript=1"
+   src="https://www.facebook.com/tr?id=706101819074980&ev=PageView&noscript=1"
    /></noscript>
    
    <!-- End Meta Pixel Code -->
@@ -828,7 +828,7 @@
                    <div class="price-installments">6x de R$ 8,99</div>
                    <div class="price-cash">ou à vista por: R$ 47,90</div>
                    
-                   <a href="https://pay.kiwify.com.br/R2nzjK7" class="buy-btn" id="buyBtn" target="_blank">
+                   <a href="https://pay.kiwify.com.br/R2nzjK7?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="buy-btn" id="buyBtn" target="_blank">
                        🚀 GARANTIR ACESSO AGORA
                    </a>
                </div>
@@ -850,393 +850,414 @@
                    </div>
 
                    <div class="faq-item">
-                       <div class="faq-question">
-                           <span>Funciona para qualquer tipo de ansiedade?</span>
-                           <i class="fas fa-chevron-down faq-icon"></i>
-                       </div>
-                       <div class="faq-answer">
-                           Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
-                      </div>
-                  </div>
-
-                  <div class="faq-item">
                       <div class="faq-question">
-                          <span>Preciso de algum equipamento especial?</span>
+                          <span>Funciona para qualquer tipo de ansiedade?</span>
                           <i class="fas fa-chevron-down faq-icon"></i>
                       </div>
                       <div class="faq-answer">
-                          Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
-                      </div>
-                  </div>
+                          Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
+                     </div>
+                 </div>
 
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>É baseado em ciência real?</span>
-                          <i class="fas fa-chevron-down faq-icon"></i>
-                      </div>
-                      <div class="faq-answer">
-                          Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
-                      </div>
-                  </div>
+                 <div class="faq-item">
+                     <div class="faq-question">
+                         <span>Preciso de algum equipamento especial?</span>
+                         <i class="fas fa-chevron-down faq-icon"></i>
+                     </div>
+                     <div class="faq-answer">
+                         Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
+                     </div>
+                 </div>
 
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>E se eu não conseguir fazer hipnose?</span>
-                          <i class="fas fa-chevron-down faq-icon"></i>
-                      </div>
-                      <div class="faq-answer">
-                          Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
-                      </div>
-                  </div>
+                 <div class="faq-item">
+                     <div class="faq-question">
+                         <span>É baseado em ciência real?</span>
+                         <i class="fas fa-chevron-down faq-icon"></i>
+                     </div>
+                     <div class="faq-answer">
+                         Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
+                     </div>
+                 </div>
 
-                  <div class="faq-item">
-                      <div class="faq-question">
-                          <span>Como funciona a garantia de 7 dias?</span>
-                          <i class="fas fa-chevron-down faq-icon"></i>
-                      </div>
-                      <div class="faq-answer">
-                          Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                 <div class="faq-item">
+                     <div class="faq-question">
+                         <span>E se eu não conseguir fazer hipnose?</span>
+                         <i class="fas fa-chevron-down faq-icon"></i>
+                     </div>
+                     <div class="faq-answer">
+                         Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
+                     </div>
+                 </div>
 
-  <script>
-      // Audio Player Functionality
-      const audioPlayer = document.getElementById('audioPlayer');
-      const playPauseBtn = document.getElementById('playPauseBtn');
-      const currentTimeDisplay = document.getElementById('currentTime');
-      const totalTimeDisplay = document.getElementById('totalTime');
-      const progressBar = document.getElementById('progressBar');
-      const progressContainer = document.getElementById('progressContainer');
-      const speedButtons = document.querySelectorAll('.speed-btn');
-      const offerSection = document.getElementById('offerSection');
-      const faqSection = document.getElementById('faqSection');
-      const accessCounter = document.getElementById('accessCounter');
-      const updateStatus = document.getElementById('updateStatus');
-      const lastUpdate = document.getElementById('lastUpdate');
-      const revealBoxes = document.getElementById('revealBoxes');
+                 <div class="faq-item">
+                     <div class="faq-question">
+                         <span>Como funciona a garantia de 7 dias?</span>
+                         <i class="fas fa-chevron-down faq-icon"></i>
+                     </div>
+                     <div class="faq-answer">
+                         Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 
-      let isPlaying = false;
-      let currentCounter = 387;
-      let updateTriggered = {
-          first: false,
-          second: false,
-          third: false
-      };
-      let playedTime = 0;
-      let lastUpdateTime = 0;
+ <script>
+     // Audio Player Functionality
+     const audioPlayer = document.getElementById('audioPlayer');
+     const playPauseBtn = document.getElementById('playPauseBtn');
+     const currentTimeDisplay = document.getElementById('currentTime');
+     const totalTimeDisplay = document.getElementById('totalTime');
+     const progressBar = document.getElementById('progressBar');
+     const progressContainer = document.getElementById('progressContainer');
+     const speedButtons = document.querySelectorAll('.speed-btn');
+     const offerSection = document.getElementById('offerSection');
+     const faqSection = document.getElementById('faqSection');
+     const accessCounter = document.getElementById('accessCounter');
+     const updateStatus = document.getElementById('updateStatus');
+     const lastUpdate = document.getElementById('lastUpdate');
+     const revealBoxes = document.getElementById('revealBoxes');
 
-      // Array de depoimentos para prova social
-      const testimonials = [
-          {name: "Ana", age: 42, time: "3 minutos", action: "conseguiu dormir pela primeira vez em meses"},
-          {name: "Carla", age: 28, time: "1 minuto", action: "parou um ataque de pânico no trabalho"},
-          {name: "Juliana", age: 35, time: "5 minutos", action: "se livrou da ansiedade social"},
-          {name: "Patricia", age: 39, time: "2 minutos", action: "voltou a dirigir depois de 2 anos"},
-          {name: "Fernanda", age: 31, time: "4 minutos", action: "conseguiu fazer apresentações sem tremer"},
-          {name: "Beatriz", age: 33, time: "6 minutos", action: "superou a ansiedade noturna"},
-          {name: "Mariana", age: 26, time: "1 minuto", action: "controlou a ansiedade antes da entrevista"},
-          {name: "Luciana", age: 44, time: "8 minutos", action: "voltou a sair de casa normalmente"}
-      ];
+     let isPlaying = false;
+     let currentCounter = 387;
+     let updateTriggered = {
+         first: false,
+         second: false,
+         third: false
+     };
+     let playedTime = 0;
+     let lastUpdateTime = 0;
 
-      // Função para gerar horário inicial (1h atrás)
-      function getInitialTime() {
-          const now = new Date();
-          now.setHours(now.getHours() - 1);
-          return now.toLocaleTimeString('pt-BR', {
-              hour: '2-digit',
-              minute: '2-digit'
-          });
-      }
+     // Array de depoimentos para prova social
+     const testimonials = [
+         {name: "Ana", age: 42, time: "3 minutos", action: "conseguiu dormir pela primeira vez em meses"},
+         {name: "Carla", age: 28, time: "1 minuto", action: "parou um ataque de pânico no trabalho"},
+         {name: "Juliana", age: 35, time: "5 minutos", action: "se livrou da ansiedade social"},
+         {name: "Patricia", age: 39, time: "2 minutos", action: "voltou a dirigir depois de 2 anos"},
+         {name: "Fernanda", age: 31, time: "4 minutos", action: "conseguiu fazer apresentações sem tremer"},
+         {name: "Beatriz", age: 33, time: "6 minutos", action: "superou a ansiedade noturna"},
+         {name: "Mariana", age: 26, time: "1 minuto", action: "controlou a ansiedade antes da entrevista"},
+         {name: "Luciana", age: 44, time: "8 minutos", action: "voltou a sair de casa normalmente"}
+     ];
 
-      // Função para obter horário atual real
-      function getCurrentTime() {
-          const now = new Date();
-          return now.toLocaleTimeString('pt-BR', {
-              hour: '2-digit',
-              minute: '2-digit'
-          });
-      }
+     // Função para gerar horário inicial (1h atrás)
+     function getInitialTime() {
+         const now = new Date();
+         now.setHours(now.getHours() - 1);
+         return now.toLocaleTimeString('pt-BR', {
+             hour: '2-digit',
+             minute: '2-digit'
+         });
+     }
 
-      // Função para atualizar contador com animação
-      function updateCounter(newCount) {
-          const counterElement = document.getElementById('accessCounter');
-          counterElement.classList.add('updating');
-          
-          setTimeout(() => {
-              counterElement.textContent = newCount;
-              currentCounter = newCount;
-              counterElement.classList.remove('updating');
-          }, 300);
-      }
+     // Função para obter horário atual real
+     function getCurrentTime() {
+         const now = new Date();
+         return now.toLocaleTimeString('pt-BR', {
+             hour: '2-digit',
+             minute: '2-digit'
+         });
+     }
 
-      // Função para simular sincronização
-      function simulateSync(newCount, callback) {
-          const statusElement = document.getElementById('updateStatus');
-          const messages = [
-              'Sincronizando com servidor...',
-              'Verificando vagas em tempo real...',
-              'Atualizando disponibilidade...'
-          ];
-          
-          const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-          
-          statusElement.classList.add('syncing');
-          lastUpdate.textContent = randomMessage;
-          
-          setTimeout(() => {
-              statusElement.classList.remove('syncing');
-              lastUpdate.textContent = getCurrentTime();
-              updateCounter(newCount);
-              if (callback) callback();
-          }, 2000);
-      }
+     // Função para atualizar contador com animação
+     function updateCounter(newCount) {
+         const counterElement = document.getElementById('accessCounter');
+         counterElement.classList.add('updating');
+         
+         setTimeout(() => {
+             counterElement.textContent = newCount;
+             currentCounter = newCount;
+             counterElement.classList.remove('updating');
+         }, 300);
+     }
 
-      // Função para mostrar prova social aleatória
-      function showRandomTestimonial() {
-          if (!audioPlayer.paused && audioPlayer.currentTime > 30) {
-              const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-              const socialProof = document.getElementById('socialProof');
-              
-              socialProof.innerHTML = `
-                  <div class="social-proof-content">
-                      <div class="social-proof-avatar">${testimonial.name[0]}</div>
-                      <div class="social-proof-text">
-                          <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
-                          <div class="social-proof-action">${testimonial.action}</div>
-                          <div class="social-proof-time">há ${testimonial.time}</div>
-                      </div>
-                  </div>
-              `;
-              
-              socialProof.style.display = 'block';
-              
-              setTimeout(() => {
-                  socialProof.style.display = 'none';
-              }, 8000);
-          }
-      }
+     // Função para simular sincronização
+     function simulateSync(newCount, callback) {
+         const statusElement = document.getElementById('updateStatus');
+         const messages = [
+             'Sincronizando com servidor...',
+             'Verificando vagas em tempo real...',
+             'Atualizando disponibilidade...'
+         ];
+         
+         const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+         
+         statusElement.classList.add('syncing');
+         lastUpdate.textContent = randomMessage;
+         
+         setTimeout(() => {
+             statusElement.classList.remove('syncing');
+             lastUpdate.textContent = getCurrentTime();
+             updateCounter(newCount);
+             if (callback) callback();
+         }, 2000);
+     }
 
-      // Executar prova social a cada 60-90 segundos
-      setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
+     // Função para mostrar prova social aleatória
+     function showRandomTestimonial() {
+         if (!audioPlayer.paused && audioPlayer.currentTime > 30) {
+             const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+             const socialProof = document.getElementById('socialProof');
+             
+             socialProof.innerHTML = `
+                 <div class="social-proof-content">
+                     <div class="social-proof-avatar">${testimonial.name[0]}</div>
+                     <div class="social-proof-text">
+                         <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
+                         <div class="social-proof-action">${testimonial.action}</div>
+                         <div class="social-proof-time">há ${testimonial.time}</div>
+                     </div>
+                 </div>
+             `;
+             
+             socialProof.style.display = 'block';
+             
+             setTimeout(() => {
+                 socialProof.style.display = 'none';
+             }, 8000);
+         }
+     }
 
-      // Inicializar com horário antigo
-      lastUpdate.textContent = getInitialTime();
+     // Executar prova social a cada 60-90 segundos
+     setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
 
-      // Mostrar reveal boxes quando começar a tocar
-      audioPlayer.addEventListener('play', () => {
-          revealBoxes.classList.add('show');
-      });
+     // Inicializar com horário antigo
+     lastUpdate.textContent = getInitialTime();
 
-      // Initialize when metadata is loaded
-      audioPlayer.addEventListener('loadedmetadata', () => {
-          totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
-      });
+     // Mostrar reveal boxes quando começar a tocar
+     audioPlayer.addEventListener('play', () => {
+         revealBoxes.classList.add('show');
+         
+         // Rastrear início do áudio
+         fbq('track', 'InitiateCheckout', {
+             content_name: 'Audio Started',
+             value: 47.90,
+             currency: 'BRL'
+         });
+     });
 
-      // Play/Pause functionality
-      playPauseBtn.addEventListener('click', () => {
-          if (isPlaying) {
-              audioPlayer.pause();
-              playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-          } else {
-              audioPlayer.play();
-              playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
-          }
-          isPlaying = !isPlaying;
-      });
+     // Initialize when metadata is loaded
+     audioPlayer.addEventListener('loadedmetadata', () => {
+         totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
+     });
 
-      // Update progress and time - MANTÉM FUNCIONALIDADE VISUAL
-      audioPlayer.addEventListener('timeupdate', () => {
-          const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-          progressBar.style.width = progress + '%';
-          currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
-          
-          // Calcular tempo efetivamente reproduzido considerando velocidade
-          const currentTime = audioPlayer.currentTime;
-          const deltaTime = currentTime - lastUpdateTime;
-          
-          if (deltaTime > 0 && !audioPlayer.paused) {
-              playedTime += deltaTime * audioPlayer.playbackRate;
-          }
-          lastUpdateTime = currentTime;
-          
-          // Ativar reveal boxes progressivamente
-          if (audioPlayer.currentTime > 30) {
-              document.getElementById('revealBox1').classList.add('active');
-          }
-          if (audioPlayer.currentTime > 90) {
-              document.getElementById('revealBox2').classList.add('active');
-          }
-          if (audioPlayer.currentTime > 150) {
-              document.getElementById('revealBox3').classList.add('active');
-          }
-          
-          // Triggers para as atualizações baseadas no tempo reproduzido
-          if (playedTime >= 8 && playedTime <= 12 && !updateTriggered.first) {
-              updateTriggered.first = true;
-              const reduction = Math.floor(Math.random() * 3) + 3;
-              simulateSync(currentCounter - reduction);
-          }
-          
-          if (playedTime >= 118 && playedTime <= 122 && !updateTriggered.second) {
-              updateTriggered.second = true;
-              const reduction = Math.floor(Math.random() * 3) + 3;
-              simulateSync(currentCounter - reduction);
-          }
-          
-          if (playedTime >= 208 && playedTime <= 212 && !updateTriggered.third) {
-              updateTriggered.third = true;
-              const reduction = Math.floor(Math.random() * 3) + 3;
-              simulateSync(currentCounter - reduction);
-          }
-      });
+     // Play/Pause functionality
+     playPauseBtn.addEventListener('click', () => {
+         if (isPlaying) {
+             audioPlayer.pause();
+             playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+         } else {
+             audioPlayer.play();
+             playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+         }
+         isPlaying = !isPlaying;
+     });
 
-      // When audio ends
-      audioPlayer.addEventListener('ended', () => {
-          playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-          isPlaying = false;
-          
-          // Show offer and FAQ sections
-          offerSection.classList.add('show');
-          faqSection.classList.add('show');
-          
-          // Scroll to offer
-          offerSection.scrollIntoView({ behavior: 'smooth' });
-      });
+     // Update progress and time - MANTÉM FUNCIONALIDADE VISUAL
+     audioPlayer.addEventListener('timeupdate', () => {
+         const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+         progressBar.style.width = progress + '%';
+         currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
+         
+         // Calcular tempo efetivamente reproduzido considerando velocidade
+         const currentTime = audioPlayer.currentTime;
+         const deltaTime = currentTime - lastUpdateTime;
+         
+         if (deltaTime > 0 && !audioPlayer.paused) {
+             playedTime += deltaTime * audioPlayer.playbackRate;
+         }
+         lastUpdateTime = currentTime;
+         
+         // Ativar reveal boxes progressivamente
+         if (audioPlayer.currentTime > 30) {
+             document.getElementById('revealBox1').classList.add('active');
+         }
+         if (audioPlayer.currentTime > 90) {
+             document.getElementById('revealBox2').classList.add('active');
+         }
+         if (audioPlayer.currentTime > 150) {
+             document.getElementById('revealBox3').classList.add('active');
+         }
+         
+         // Triggers para as atualizações baseadas no tempo reproduzido
+         if (playedTime >= 8 && playedTime <= 12 && !updateTriggered.first) {
+             updateTriggered.first = true;
+             const reduction = Math.floor(Math.random() * 3) + 3;
+             simulateSync(currentCounter - reduction);
+         }
+         
+         if (playedTime >= 118 && playedTime <= 122 && !updateTriggered.second) {
+             updateTriggered.second = true;
+             const reduction = Math.floor(Math.random() * 3) + 3;
+             simulateSync(currentCounter - reduction);
+         }
+         
+         if (playedTime >= 208 && playedTime <= 212 && !updateTriggered.third) {
+             updateTriggered.third = true;
+             const reduction = Math.floor(Math.random() * 3) + 3;
+             simulateSync(currentCounter - reduction);
+         }
+     });
 
-      // BLOQUEAR SEEK/PULO MANTENDO FUNCIONALIDADE VISUAL
-      audioPlayer.addEventListener('seeking', (e) => {
-          if (audioPlayer.currentTime > lastUpdateTime && audioPlayer.currentTime < audioPlayer.duration * 0.95) {
-              audioPlayer.currentTime = lastUpdateTime;
-              e.preventDefault();
-          }
-      });
+     // When audio ends
+     audioPlayer.addEventListener('ended', () => {
+         playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+         isPlaying = false;
+         
+         // Rastrear conclusão do áudio
+         fbq('track', 'ViewContent', {
+             content_name: 'Audio Completed - Offer Shown',
+             value: 47.90,
+             currency: 'BRL'
+         });
+         
+         // Show offer and FAQ sections
+         offerSection.classList.add('show');
+         faqSection.classList.add('show');
+         
+         // Scroll to offer
+         offerSection.scrollIntoView({ behavior: 'smooth' });
+     });
 
-      // Bloquear teclas de navegação do áudio
-      document.addEventListener('keydown', (e) => {
-          if (e.target === audioPlayer || audioPlayer === document.activeElement) {
-              if (['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) {
-                  e.preventDefault();
-                  return false;
-              }
-          }
-          
-          if ((e.ctrlKey || e.metaKey) && ['ArrowRight', 'ArrowLeft'].includes(e.key)) {
-              e.preventDefault();
-              return false;
-          }
-      });
+     // BLOQUEAR SEEK/PULO MANTENDO FUNCIONALIDADE VISUAL
+     audioPlayer.addEventListener('seeking', (e) => {
+         if (audioPlayer.currentTime > lastUpdateTime && audioPlayer.currentTime < audioPlayer.duration * 0.95) {
+             audioPlayer.currentTime = lastUpdateTime;
+             e.preventDefault();
+         }
+     });
 
-      // Prevenir context menu no áudio
-      audioPlayer.addEventListener('contextmenu', (e) => {
-          e.preventDefault();
-          return false;
-      });
+     // Bloquear teclas de navegação do áudio
+     document.addEventListener('keydown', (e) => {
+         if (e.target === audioPlayer || audioPlayer === document.activeElement) {
+             if (['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) {
+                 e.preventDefault();
+                 return false;
+             }
+         }
+         
+         if ((e.ctrlKey || e.metaKey) && ['ArrowRight', 'ArrowLeft'].includes(e.key)) {
+             e.preventDefault();
+             return false;
+         }
+     });
 
-      // Bloquear drag & drop no player
-      audioPlayer.addEventListener('dragstart', (e) => {
-          e.preventDefault();
-          return false;
-      });
+     // Prevenir context menu no áudio
+     audioPlayer.addEventListener('contextmenu', (e) => {
+         e.preventDefault();
+         return false;
+     });
 
-      // Speed control
-      speedButtons.forEach(btn => {
-          btn.addEventListener('click', () => {
-              speedButtons.forEach(b => b.classList.remove('active'));
-              btn.classList.add('active');
-              audioPlayer.playbackRate = parseFloat(btn.dataset.speed);
-          });
-      });
+     // Bloquear drag & drop no player
+     audioPlayer.addEventListener('dragstart', (e) => {
+         e.preventDefault();
+         return false;
+     });
 
-      // Reset estado quando áudio é pausado
-      audioPlayer.addEventListener('pause', () => {
-          lastUpdateTime = audioPlayer.currentTime;
-      });
+     // Speed control
+     speedButtons.forEach(btn => {
+         btn.addEventListener('click', () => {
+             speedButtons.forEach(b => b.classList.remove('active'));
+             btn.classList.add('active');
+             audioPlayer.playbackRate = parseFloat(btn.dataset.speed);
+         });
+     });
 
-      // FAQ Accordion
-      document.querySelectorAll('.faq-question').forEach(question => {
-          question.addEventListener('click', () => {
-              const faqItem = question.parentElement;
-              const isActive = faqItem.classList.contains('active');
-              
-              document.querySelectorAll('.faq-item').forEach(item => {
-                  item.classList.remove('active');
-              });
-              
-              if (!isActive) {
-                  faqItem.classList.add('active');
-              }
-          });
-      });
+     // Reset estado quando áudio é pausado
+     audioPlayer.addEventListener('pause', () => {
+         lastUpdateTime = audioPlayer.currentTime;
+     });
 
-      // Format time helper function
-      function formatTime(seconds) {
-          const mins = Math.floor(seconds / 60);
-          const secs = Math.floor(seconds % 60);
-          return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-      }
+     // FAQ Accordion
+     document.querySelectorAll('.faq-question').forEach(question => {
+         question.addEventListener('click', () => {
+             const faqItem = question.parentElement;
+             const isActive = faqItem.classList.contains('active');
+             
+             document.querySelectorAll('.faq-item').forEach(item => {
+                 item.classList.remove('active');
+             });
+             
+             if (!isActive) {
+                 faqItem.classList.add('active');
+             }
+         });
+     });
 
-      // Buy button click handler
-      document.getElementById('buyBtn').addEventListener('click', (e) => {
-          window.open('https://pay.kiwify.com.br/R2nzjK7', '_blank');
-      });
+     // Format time helper function
+     function formatTime(seconds) {
+         const mins = Math.floor(seconds / 60);
+         const secs = Math.floor(seconds % 60);
+         return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+     }
 
-      // Auto-decrease counter simulation
-      setInterval(() => {
-          if (currentCounter > 350 && Math.random() < 0.3) {
-              const reduction = Math.floor(Math.random() * 2) + 1;
-              const newCount = Math.max(350, currentCounter - reduction);
-              if (newCount !== currentCounter) {
-                  simulateSync(newCount);
-              }
-          }
-      }, 60000);
+     // Buy button click handler
+     document.getElementById('buyBtn').addEventListener('click', (e) => {
+         // Rastrear evento de compra no Meta Pixel
+         fbq('track', 'Purchase', {
+             value: 47.90,
+             currency: 'BRL',
+             content_name: 'Interruptor de Ansiedade',
+             content_type: 'product'
+         });
+         
+         window.open('https://pay.kiwify.com.br/R2nzjK7?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}', '_blank');
+     });
 
-      // Detectar tentativas de manipulação do playedTime
-      setInterval(() => {
-          if (audioPlayer.currentTime < lastUpdateTime - 1) {
-              if (audioPlayer.currentTime < 8) {
-                  updateTriggered.first = false;
-                  playedTime = Math.min(playedTime, 8);
-              }
-              if (audioPlayer.currentTime < 118) {
-                  updateTriggered.second = false;
-                  playedTime = Math.min(playedTime, 118);
-              }
-              if (audioPlayer.currentTime < 208) {
-                  updateTriggered.third = false;
-                  playedTime = Math.min(playedTime, 208);
-              }
-          }
-      }, 1000);
+     // Auto-decrease counter simulation
+     setInterval(() => {
+         if (currentCounter > 350 && Math.random() < 0.3) {
+             const reduction = Math.floor(Math.random() * 2) + 1;
+             const newCount = Math.max(350, currentCounter - reduction);
+             if (newCount !== currentCounter) {
+                 simulateSync(newCount);
+             }
+         }
+     }, 60000);
 
-      // Bloquear ferramentas de desenvolvedor
-      document.addEventListener('keydown', function(e) {
-          if (e.key === 'F12' || 
-              (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
-              (e.ctrlKey && e.key === 'U')) {
-              e.preventDefault();
-              return false;
-          }
-      });
+     // Detectar tentativas de manipulação do playedTime
+     setInterval(() => {
+         if (audioPlayer.currentTime < lastUpdateTime - 1) {
+             if (audioPlayer.currentTime < 8) {
+                 updateTriggered.first = false;
+                 playedTime = Math.min(playedTime, 8);
+             }
+             if (audioPlayer.currentTime < 118) {
+                 updateTriggered.second = false;
+                 playedTime = Math.min(playedTime, 118);
+             }
+             if (audioPlayer.currentTime < 208) {
+                 updateTriggered.third = false;
+                 playedTime = Math.min(playedTime, 208);
+             }
+         }
+     }, 1000);
 
-      // Bloquear click direito em toda a página
-      document.addEventListener('contextmenu', (e) => {
-          e.preventDefault();
-          return false;
-      });
+     // Bloquear ferramentas de desenvolvedor
+     document.addEventListener('keydown', function(e) {
+         if (e.key === 'F12' || 
+             (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+             (e.ctrlKey && e.key === 'U')) {
+             e.preventDefault();
+             return false;
+         }
+     });
 
-      // Detectar se o usuário está tentando acelerar artificialmente
-      let suspiciousActivity = 0;
-      audioPlayer.addEventListener('ratechange', () => {
-          if (audioPlayer.playbackRate > 1.5) {
-              audioPlayer.playbackRate = 1.5;
-              suspiciousActivity++;
-          }
-      });
-  </script>
+     // Bloquear click direito em toda a página
+     document.addEventListener('contextmenu', (e) => {
+         e.preventDefault();
+         return false;
+     });
+
+     // Detectar se o usuário está tentando acelerar artificialmente
+     let suspiciousActivity = 0;
+     audioPlayer.addEventListener('ratechange', () => {
+         if (audioPlayer.playbackRate > 1.5) {
+             audioPlayer.playbackRate = 1.5;
+             suspiciousActivity++;
+         }
+     });
+ </script>
 </body>
 </html>
-
