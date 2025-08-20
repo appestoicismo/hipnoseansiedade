@@ -42,22 +42,23 @@
   
   <style>
       :root {
-          --primary: #2563eb;
-          --secondary: #0f172a;
-          --accent: #f59e0b;
-          --success: #10b981;
+          /* Paleta de cores da página do Lucas Naves */
+          --primary: #1a202c;
+          --secondary: #2d3748;
+          --accent: #2b6cb0;
+          --success: #38a169;
           --white: #ffffff;
-          --gray-50: #f9fafb;
-          --gray-100: #f3f4f6;
-          --gray-200: #e5e7eb;
-          --gray-300: #d1d5db;
-          --gray-600: #4b5563;
-          --gray-800: #1f2937;
-          --gray-900: #111827;
-          --red: #ef4444;
-          --orange: #f97316;
-          --yellow: #eab308;
-          --green: #22c55e;
+          --gray-50: #f7fafc;
+          --gray-100: #edf2f7;
+          --gray-200: #e2e8f0;
+          --gray-300: #cbd5e0;
+          --gray-600: #718096;
+          --gray-800: #2d3748;
+          --gray-900: #1a202c;
+          --red: #e53e3e;
+          --orange: #dd6b20;
+          --yellow: #d69e2e;
+          --green: #38a169;
           --headlinefont: 'Montserrat', sans-serif;
           --contentfont: 'Lato', sans-serif;
       }
@@ -72,7 +73,7 @@
           font-family: var(--contentfont);
           line-height: 1.6;
           color: var(--gray-800);
-          background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+          background: var(--gray-900);
           min-height: 100vh;
       }
 
@@ -88,7 +89,7 @@
       }
 
       .header-section {
-          background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+          background: var(--primary);
           color: var(--white);
           text-align: center;
           padding: 40px 20px;
@@ -100,7 +101,7 @@
           opacity: 0.9;
           margin-bottom: 15px;
           font-weight: 300;
-          background: rgba(239, 68, 68, 0.9);
+          background: var(--red);
           padding: 8px 20px;
           border-radius: 25px;
           display: inline-block;
@@ -116,7 +117,7 @@
       }
 
       .title-highlight {
-          background: var(--accent);
+          background: var(--yellow);
           color: var(--secondary);
           padding: 5px 15px;
           border-radius: 10px;
@@ -125,8 +126,8 @@
       }
 
       @keyframes glow {
-          from { box-shadow: 0 0 5px #f59e0b; }
-          to { box-shadow: 0 0 20px #f59e0b, 0 0 30px #f59e0b; }
+          from { box-shadow: 0 0 5px #d69e2e; }
+          to { box-shadow: 0 0 20px #d69e2e, 0 0 30px #d69e2e; }
       }
 
       .subtitle {
@@ -137,7 +138,7 @@
       }
 
       .urgency-banner {
-          background: linear-gradient(45deg, var(--red), var(--orange));
+          background: var(--red);
           color: var(--white);
           padding: 20px 15px;
           margin: 20px 10px;
@@ -152,12 +153,12 @@
       }
 
       .simple-audio-player {
-          background: rgba(255, 255, 255, 0.95);
+          background: var(--gray-50);
           border-radius: 15px;
           padding: 20px;
           margin: 20px 10px;
           box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-          border: 2px solid #10b981;
+          border: 2px solid var(--success);
       }
 
       .player-content {
@@ -168,7 +169,7 @@
       }
 
       .simple-play-btn {
-          background: linear-gradient(45deg, #10b981, #22c55e);
+          background: var(--success);
           border: none;
           border-radius: 50%;
           width: 60px;
@@ -177,12 +178,12 @@
           font-size: 1.5rem;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+          box-shadow: 0 4px 15px rgba(56, 161, 105, 0.3);
       }
 
       .simple-play-btn:hover {
           transform: scale(1.05);
-          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+          box-shadow: 0 6px 20px rgba(56, 161, 105, 0.4);
       }
 
       .audio-info {
@@ -193,13 +194,13 @@
       .audio-title {
           font-size: 1.1rem;
           font-weight: 600;
-          color: #1f2937;
+          color: var(--gray-800);
           margin-bottom: 5px;
       }
 
       .audio-duration {
           font-size: 0.9rem;
-          color: #6b7280;
+          color: var(--gray-600);
       }
 
       .simple-speed-controls {
@@ -209,7 +210,7 @@
       }
 
       .simple-speed-btn {
-          background: #e5e7eb;
+          background: var(--gray-200);
           border: none;
           padding: 6px 10px;
           border-radius: 6px;
@@ -217,24 +218,24 @@
           font-weight: 600;
           font-size: 0.8rem;
           transition: all 0.3s ease;
-          color: #374151;
+          color: var(--gray-800);
       }
 
       .simple-speed-btn.active {
-          background: #2563eb;
+          background: var(--accent);
           color: white;
       }
 
       .simple-speed-btn:hover {
-          background: #d1d5db;
+          background: var(--gray-300);
       }
 
       .simple-speed-btn.active:hover {
-          background: #1d4ed8;
+          background: var(--primary);
       }
 
       .access-counter {
-          background: linear-gradient(45deg, var(--red), var(--orange));
+          background: var(--red);
           color: var(--white);
           padding: 20px 15px;
           border-radius: 15px;
@@ -286,7 +287,7 @@
       }
 
       .app-sessions-section {
-          background: var(--gray-50);
+          background: var(--gray-100);
           padding: 40px 20px;
           text-align: center;
       }
@@ -308,7 +309,7 @@
       }
 
       .session-button {
-          background: linear-gradient(135deg, #16a34a, #22c55e);
+          background: var(--success);
           color: white;
           padding: 18px 20px;
           border-radius: 25px;
@@ -317,12 +318,12 @@
           gap: 15px;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+          box-shadow: 0 4px 15px rgba(56, 161, 105, 0.3);
       }
 
       .session-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+          box-shadow: 0 6px 20px rgba(56, 161, 105, 0.4);
       }
 
       .audio-icon {
@@ -413,7 +414,7 @@
       }
 
       .buy-btn {
-          background: linear-gradient(45deg, var(--success), var(--green));
+          background: var(--success);
           color: var(--white);
           padding: 20px 30px;
           border: none;
@@ -425,7 +426,7 @@
           text-decoration: none;
           display: inline-block;
           margin-top: 20px;
-          box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+          box-shadow: 0 10px 25px rgba(56, 161, 105, 0.3);
           text-transform: uppercase;
           letter-spacing: 1px;
           width: auto;
@@ -434,12 +435,12 @@
 
       .buy-btn:hover {
           transform: translateY(-3px);
-          box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
+          box-shadow: 0 15px 35px rgba(56, 161, 105, 0.4);
       }
 
       .faq-section {
           padding: 40px 15px;
-          background: var(--gray-50);
+          background: var(--gray-100);
           width: 100%;
       }
 
@@ -862,442 +863,439 @@
                   <div class="price-cash">ou à vista por: R$ 47,90</div>
                   
                  <a href="#" class="buy-btn" id="buyBtn">
-                     🚀 GARANTIR ACESSO AGORA
-                 </a>
-             </div>
-         </div>
+                    🚀 GARANTIR ACESSO AGORA
+                </a>
+            </div>
+        </div>
 
-         <!-- FAQ Section -->
-         <div class="faq-section" id="faqSection">
-             <h2 class="faq-title">❓ Perguntas Frequentes</h2>
-             
-             <div class="faq-container">
-                 <div class="faq-item">
-                     <div class="faq-question">
-                         <span>Quanto tempo leva para aprender o método?</span>
-                         <i class="fas fa-chevron-down faq-icon"></i>
-                     </div>
-                     <div class="faq-answer">
-                         Os fundamentos você aprende em 1 dia, mas o segredo não é a velocidade do aprendizado - é o treinamento da sua mente. Quanto mais você praticar os exercícios e ouvir os áudios hipnóticos, mais rápido e eficiente sua mente acessará essas capacidades naturalmente.
-                     </div>
-                 </div>
-
-                 <div class="faq-item">
+        <!-- FAQ Section -->
+        <div class="faq-section" id="faqSection">
+            <h2 class="faq-title">❓ Perguntas Frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
                     <div class="faq-question">
-                        <span>Funciona para qualquer tipo de ansiedade?</span>
+                        <span>Quanto tempo leva para aprender o método?</span>
                         <i class="fas fa-chevron-down faq-icon"></i>
                     </div>
                     <div class="faq-answer">
-                        Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
-                   </div>
-               </div>
+                        Os fundamentos você aprende em 1 dia, mas o segredo não é a velocidade do aprendizado - é o treinamento da sua mente. Quanto mais você praticar os exercícios e ouvir os áudios hipnóticos, mais rápido e eficiente sua mente acessará essas capacidades naturalmente.
+                    </div>
+                </div>
 
-               <div class="faq-item">
+                <div class="faq-item">
                    <div class="faq-question">
-                       <span>Preciso de algum equipamento especial?</span>
+                       <span>Funciona para qualquer tipo de ansiedade?</span>
                        <i class="fas fa-chevron-down faq-icon"></i>
                    </div>
                    <div class="faq-answer">
-                       Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
-                   </div>
-               </div>
+                       Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
+                  </div>
+              </div>
 
-               <div class="faq-item">
-                   <div class="faq-question">
-                       <span>É baseado em ciência real?</span>
-                       <i class="fas fa-chevron-down faq-icon"></i>
-                   </div>
-                   <div class="faq-answer">
-                       Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
-                   </div>
-               </div>
+              <div class="faq-item">
+                  <div class="faq-question">
+                      <span>Preciso de algum equipamento especial?</span>
+                      <i class="fas fa-chevron-down faq-icon"></i>
+                  </div>
+                  <div class="faq-answer">
+                      Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
+                  </div>
+              </div>
 
-               <div class="faq-item">
-                   <div class="faq-question">
-                       <span>E se eu não conseguir fazer hipnose?</span>
-                       <i class="fas fa-chevron-down faq-icon"></i>
-                   </div>
-                   <div class="faq-answer">
-                       Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
-                   </div>
-               </div>
+              <div class="faq-item">
+                  <div class="faq-question">
+                      <span>É baseado em ciência real?</span>
+                      <i class="fas fa-chevron-down faq-icon"></i>
+                  </div>
+                  <div class="faq-answer">
+                      Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
+                  </div>
+              </div>
 
-               <div class="faq-item">
-                   <div class="faq-question">
-                       <span>Como funciona a garantia de 7 dias?</span>
-                       <i class="fas fa-chevron-down faq-icon"></i>
-                   </div>
-                   <div class="faq-answer">
-                       Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+              <div class="faq-item">
+                  <div class="faq-question">
+                      <span>E se eu não conseguir fazer hipnose?</span>
+                      <i class="fas fa-chevron-down faq-icon"></i>
+                  </div>
+                  <div class="faq-answer">
+                      Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <div class="faq-question">
+                      <span>Como funciona a garantia de 7 dias?</span>
+                      <i class="fas fa-chevron-down faq-icon"></i>
+                  </div>
+                  <div class="faq-answer">
+                      Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 
 <script>
-   // ✅ SISTEMA DE TRACKING E FUNCIONALIDADES
-   
-   // Capturar UTMs da URL
-   function getURLParams() {
-       const urlParams = new URLSearchParams(window.location.search);
-       return {
-           utm_source: urlParams.get('utm_source') || 'direct',
-           utm_medium: urlParams.get('utm_medium') || 'none',
-           utm_campaign: urlParams.get('utm_campaign') || 'none',
-           utm_content: urlParams.get('utm_content') || 'none',
-           utm_term: urlParams.get('utm_term') || 'none',
-           fbclid: urlParams.get('fbclid') || null,
-           gclid: urlParams.get('gclid') || null
-       };
-   }
-   
-   // Construir URL do checkout com UTMs
-   function buildCheckoutURL() {
-       const params = getURLParams();
-       const baseURL = 'https://pay.kiwify.com.br/R2nzjK7';
-       
-       const urlParams = new URLSearchParams();
-       Object.keys(params).forEach(key => {
-           if (params[key] && params[key] !== 'none' && params[key] !== 'direct') {
-               urlParams.append(key, params[key]);
-           }
-       });
-       
-       return baseURL + (urlParams.toString() ? '?' + urlParams.toString() : '');
-   }
+  // ✅ SISTEMA DE TRACKING E FUNCIONALIDADES
+  
+  // Capturar UTMs da URL
+  function getURLParams() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return {
+          utm_source: urlParams.get('utm_source') || 'direct',
+          utm_medium: urlParams.get('utm_medium') || 'none',
+          utm_campaign: urlParams.get('utm_campaign') || 'none',
+          utm_content: urlParams.get('utm_content') || 'none',
+          utm_term: urlParams.get('utm_term') || 'none',
+          fbclid: urlParams.get('fbclid') || null,
+          gclid: urlParams.get('gclid') || null
+      };
+  }
+  
+  // Construir URL do checkout com UTMs
+  function buildCheckoutURL() {
+      const params = getURLParams();
+      const baseURL = 'https://pay.kiwify.com.br/R2nzjK7';
+      
+      const urlParams = new URLSearchParams();
+      Object.keys(params).forEach(key => {
+          if (params[key] && params[key] !== 'none' && params[key] !== 'direct') {
+              urlParams.append(key, params[key]);
+          }
+      });
+      
+      return baseURL + (urlParams.toString() ? '?' + urlParams.toString() : '');
+  }
 
-   // ✅ PLAYER DE ÁUDIO SIMPLES
-   const simplePlayer = document.getElementById('simpleAudioPlayer');
-   const simplePlayBtn = document.getElementById('simplePlayBtn');
-   const simpleSpeedBtns = document.querySelectorAll('.simple-speed-btn');
-   let isSimplePlaying = false;
+  // ✅ PLAYER DE ÁUDIO SIMPLES
+  const simplePlayer = document.getElementById('simpleAudioPlayer');
+  const simplePlayBtn = document.getElementById('simplePlayBtn');
+  const simpleSpeedBtns = document.querySelectorAll('.simple-speed-btn');
+  let isSimplePlaying = false;
 
-   simplePlayBtn.addEventListener('click', () => {
-       if (isSimplePlaying) {
-           simplePlayer.pause();
-           simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
-           isSimplePlaying = false;
-       } else {
-           simplePlayer.play();
-           simplePlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
-           isSimplePlaying = true;
-       }
-   });
+  simplePlayBtn.addEventListener('click', () => {
+      if (isSimplePlaying) {
+          simplePlayer.pause();
+          simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+          isSimplePlaying = false;
+      } else {
+          simplePlayer.play();
+          simplePlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
+          isSimplePlaying = true;
+      }
+  });
 
-   // Controle de velocidade
-   simpleSpeedBtns.forEach(btn => {
-       btn.addEventListener('click', () => {
-           simpleSpeedBtns.forEach(b => b.classList.remove('active'));
-           btn.classList.add('active');
-           simplePlayer.playbackRate = parseFloat(btn.dataset.speed);
-       });
-   });
+  // Controle de velocidade
+  simpleSpeedBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+          simpleSpeedBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          simplePlayer.playbackRate = parseFloat(btn.dataset.speed);
+      });
+  });
 
-   simplePlayer.addEventListener('ended', () => {
-       simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
-       isSimplePlaying = false;
-   });
+  simplePlayer.addEventListener('ended', () => {
+      simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+      isSimplePlaying = false;
+  });
 
-   // ✅ ELEMENTOS DA PÁGINA
-   const offerSection = document.getElementById('offerSection');
-   const faqSection = document.getElementById('faqSection');
-   const accessCounter = document.getElementById('accessCounter');
-   const updateStatus = document.getElementById('updateStatus');
-   const lastUpdate = document.getElementById('lastUpdate');
+  // ✅ ELEMENTOS DA PÁGINA
+  const offerSection = document.getElementById('offerSection');
+  const faqSection = document.getElementById('faqSection');
+  const accessCounter = document.getElementById('accessCounter');
+  const updateStatus = document.getElementById('updateStatus');
+  const lastUpdate = document.getElementById('lastUpdate');
 
-   // ✅ VARIÁVEIS DE CONTROLE
-   let currentCounter = 387;
-   let pageLoadTime = Date.now();
-   let audioStarted = false;
-   let offerViewed = false;
-   let faqEngaged = false;
-   let buttonClickCount = 0;
+  // ✅ VARIÁVEIS DE CONTROLE
+  let currentCounter = 387;
+  let pageLoadTime = Date.now();
+  let audioStarted = false;
+  let offerViewed = false;
+  let faqEngaged = false;
+  let buttonClickCount = 0;
 
-   // Array de depoimentos para prova social
-   const testimonials = [
-       {name: "Ana", age: 42, time: "3 minutos", action: "conseguiu dormir pela primeira vez em meses"},
-       {name: "Carla", age: 28, time: "1 minuto", action: "parou um ataque de pânico no trabalho"},
-       {name: "Juliana", age: 35, time: "5 minutos", action: "se livrou da ansiedade social"},
-       {name: "Patricia", age: 39, time: "2 minutos", action: "voltou a dirigir depois de 2 anos"},
-       {name: "Fernanda", age: 31, time: "4 minutos", action: "conseguiu fazer apresentações sem tremer"},
-       {name: "Beatriz", age: 33, time: "6 minutos", action: "superou a ansiedade noturna"},
-       {name: "Mariana", age: 26, time: "1 minuto", action: "controlou a ansiedade antes da entrevista"},
-       {name: "Luciana", age: 44, time: "8 minutos", action: "voltou a sair de casa normalmente"}
-   ];
+  // Array de depoimentos para prova social
+  const testimonials = [
+      {name: "Ana", age: 42, time: "3 minutos", action: "conseguiu dormir pela primeira vez em meses"},
+      {name: "Carla", age: 28, time: "1 minuto", action: "parou um ataque de pânico no trabalho"},
+      {name: "Juliana", age: 35, time: "5 minutos", action: "se livrou da ansiedade social"},
+      {name: "Patricia", age: 39, time: "2 minutos", action: "voltou a dirigir depois de 2 anos"},
+      {name: "Fernanda", age: 31, time: "4 minutos", action: "conseguiu fazer apresentações sem tremer"},
+      {name: "Beatriz", age: 33, time: "6 minutos", action: "superou a ansiedade noturna"},
+      {name: "Mariana", age: 26, time: "1 minuto", action: "controlou a ansiedade antes da entrevista"},
+      {name: "Luciana", age: 44, time: "8 minutos", action: "voltou a sair de casa normalmente"}
+  ];
 
-   // Função para gerar horário inicial (1h atrás)
-   function getInitialTime() {
-       const now = new Date();
-       now.setHours(now.getHours() - 1);
-       return now.toLocaleTimeString('pt-BR', {
-           hour: '2-digit',
-           minute: '2-digit'
-       });
-   }
+  // Função para gerar horário inicial (1h atrás)
+  function getInitialTime() {
+      const now = new Date();
+      now.setHours(now.getHours() - 1);
+      return now.toLocaleTimeString('pt-BR', {
+          hour: '2-digit',
+          minute: '2-digit'
+      });
+  }
 
-   // Função para obter horário atual real
-   function getCurrentTime() {
-       const now = new Date();
-       return now.toLocaleTimeString('pt-BR', {
-           hour: '2-digit',
-           minute: '2-digit'
-       });
-   }
+  // Função para obter horário atual real
+  function getCurrentTime() {
+      const now = new Date();
+      return now.toLocaleTimeString('pt-BR', {
+          hour: '2-digit',
+          minute: '2-digit'
+      });
+  }
 
-   // Função para atualizar contador com animação
-   function updateCounter(newCount) {
-       const counterElement = document.getElementById('accessCounter');
-       counterElement.classList.add('updating');
-       
-       setTimeout(() => {
-           counterElement.textContent = newCount;
-           currentCounter = newCount;
-           counterElement.classList.remove('updating');
-       }, 300);
-   }
+  // Função para atualizar contador com animação
+  function updateCounter(newCount) {
+      const counterElement = document.getElementById('accessCounter');
+      counterElement.classList.add('updating');
+      
+      setTimeout(() => {
+          counterElement.textContent = newCount;
+          currentCounter = newCount;
+          counterElement.classList.remove('updating');
+      }, 300);
+  }
 
-   // Função para simular sincronização
-   function simulateSync(newCount, callback) {
-       const statusElement = document.getElementById('updateStatus');
-       const messages = [
-           'Sincronizando com servidor...',
-           'Verificando vagas em tempo real...',
-           'Atualizando disponibilidade...'
-       ];
-       
-       const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-       
-       statusElement.classList.add('syncing');
-       lastUpdate.textContent = randomMessage;
-       
-       setTimeout(() => {
-           statusElement.classList.remove('syncing');
-           lastUpdate.textContent = getCurrentTime();
-           updateCounter(newCount);
-           if (callback) callback();
-       }, 2000);
-   }
+  // Função para simular sincronização
+  function simulateSync(newCount, callback) {
+      const statusElement = document.getElementById('updateStatus');
+      const messages = [
+          'Sincronizando com servidor...',
+          'Verificando vagas em tempo real...',
+          'Atualizando disponibilidade...'
+      ];
+      
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      
+      statusElement.classList.add('syncing');
+      lastUpdate.textContent = randomMessage;
+      
+      setTimeout(() => {
+          statusElement.classList.remove('syncing');
+          lastUpdate.textContent = getCurrentTime();
+          updateCounter(newCount);
+          if (callback) callback();
+      }, 2000);
+  }
 
-   // Função para mostrar prova social aleatória
-   function showRandomTestimonial() {
-       if (Math.random() < 0.7) {
-           const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-           const socialProof = document.getElementById('socialProof');
-           
-           socialProof.innerHTML = `
-               <div class="social-proof-content">
-                   <div class="social-proof-avatar">${testimonial.name[0]}</div>
-                   <div class="social-proof-text">
-                       <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
-                       <div class="social-proof-action">${testimonial.action}</div>
-                       <div class="social-proof-time">há ${testimonial.time}</div>
-                   </div>
-               </div>
-           `;
-           
-           socialProof.style.display = 'block';
-           
-           setTimeout(() => {
-               socialProof.style.display = 'none';
-           }, 8000);
-       }
-   }
+  // Função para mostrar prova social aleatória
+  function showRandomTestimonial() {
+      if (Math.random() < 0.7) {
+          const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+          const socialProof = document.getElementById('socialProof');
+          
+          socialProof.innerHTML = `
+              <div class="social-proof-content">
+                  <div class="social-proof-avatar">${testimonial.name[0]}</div>
+                  <div class="social-proof-text">
+                      <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
+                      <div class="social-proof-action">${testimonial.action}</div>
+                      <div class="social-proof-time">há ${testimonial.time}</div>
+                  </div>
+              </div>
+          `;
+          
+          socialProof.style.display = 'block';
+          
+          setTimeout(() => {
+              socialProof.style.display = 'none';
+          }, 8000);
+      }
+  }
 
-   // Executar prova social a cada 60-90 segundos
-   setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
+  // Executar prova social a cada 60-90 segundos
+  setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
 
-   // Inicializar com horário antigo
-   lastUpdate.textContent = getInitialTime();
+  // Inicializar com horário antigo
+  lastUpdate.textContent = getInitialTime();
 
-   // ✅ META PIXEL TRACKING
-   
-   // Landing Page View
-   fbq('track', 'ViewContent', {
-       content_name: 'Landing Page - Interruptor Ansiedade',
-       content_category: 'Landing Page',
-       value: 47.90,
-       currency: 'BRL',
-       custom_data: {
-           page_type: 'landing',
-           utm_source: getURLParams().utm_source
-       }
-   });
+  // ✅ META PIXEL TRACKING
+  
+  // Landing Page View
+  fbq('track', 'ViewContent', {
+      content_name: 'Landing Page - Interruptor Ansiedade',
+      content_category: 'Landing Page',
+      value: 47.90,
+      currency: 'BRL',
+      custom_data: {
+          page_type: 'landing',
+          utm_source: getURLParams().utm_source
+      }
+  });
 
-   // Tracking de scroll para oferta
-   function trackOfferView() {
-       if (!offerViewed) {
-           offerViewed = true;
-           fbq('track', 'ViewContent', {
-               content_name: 'Offer Section Viewed',
-               content_category: 'Offer',
-               value: 47.90,
-               currency: 'BRL',
-               custom_data: {
-                   time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                   audio_played: audioStarted
-               }
-           });
-       }
-   }
+  // Tracking de scroll para oferta
+  function trackOfferView() {
+      if (!offerViewed) {
+          offerViewed = true;
+          fbq('track', 'ViewContent', {
+              content_name: 'Offer Section Viewed',
+              content_category: 'Offer',
+              value: 47.90,
+              currency: 'BRL',
+              custom_data: {
+                  time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                  audio_played: audioStarted
+              }
+          });
+      }
+  }
 
-   // Observer para detectar quando a oferta entra na tela
-   const offerObserver = new IntersectionObserver((entries) => {
-       entries.forEach(entry => {
-           if (entry.isIntersecting) {
-               trackOfferView();
-           }
-       });
-   }, { threshold: 0.3 });
+  // Observer para detectar quando a oferta entra na tela
+  const offerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              trackOfferView();
+          }
+      });
+  }, { threshold: 0.3 });
 
-   offerObserver.observe(offerSection);
+  offerObserver.observe(offerSection);
 
-   // Audio events
-   simplePlayer.addEventListener('play', () => {
-       if (!audioStarted) {
-           audioStarted = true;
-           
-           fbq('track', 'ViewContent', {
-               content_name: 'Audio Started',
-               content_category: 'Educational Content',
-               value: 47.90,
-               currency: 'BRL',
-               custom_data: {
-                   time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                   content_type: 'audio'
-               }
-           });
-       }
-   });
+  // Audio events
+  simplePlayer.addEventListener('play', () => {
+      if (!audioStarted) {
+          audioStarted = true;
+          
+          fbq('track', 'ViewContent', {
+              content_name: 'Audio Started',
+              content_category: 'Educational Content',
+              value: 47.90,
+              currency: 'BRL',
+              custom_data: {
+                  time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                  content_type: 'audio'
+              }
+          });
+      }
+  });
 
-   // FAQ engagement tracking
-   document.querySelectorAll('.faq-question').forEach(question => {
-       question.addEventListener('click', () => {
-           const faqItem = question.parentElement;
-           const isActive = faqItem.classList.contains('active');
-           
-           document.querySelectorAll('.faq-item').forEach(item => {
-               item.classList.remove('active');
-           });
-           
-           if (!isActive) {
-               faqItem.classList.add('active');
-               
-               if (!faqEngaged) {
-                   faqEngaged = true;
-                   fbq('track', 'Search', {
-                       content_category: 'FAQ',
-                       search_string: question.textContent.trim(),
-                       value: 47.90,
-                       currency: 'BRL'
-                   });
-               }
-           }
-       });
-   });
+  // FAQ engagement tracking
+  document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+          const faqItem = question.parentElement;
+          const isActive = faqItem.classList.contains('active');
+          
+          document.querySelectorAll('.faq-item').forEach(item => {
+              item.classList.remove('active');
+          });
+          
+          if (!isActive) {
+              faqItem.classList.add('active');
+              
+              if (!faqEngaged) {
+                  faqEngaged = true;
+                  fbq('track', 'Search', {
+                      content_category: 'FAQ',
+                      search_string: question.textContent.trim(),
+                      value: 47.90,
+                      currency: 'BRL'
+                  });
+              }
+          }
+      });
+  });
 
-   // Buy button tracking
-   document.getElementById('buyBtn').addEventListener('click', (e) => {
-       e.preventDefault();
-       buttonClickCount++;
-       
-       if (buttonClickCount === 1) {
-           fbq('track', 'InitiateCheckout', {
-               content_name: 'Purchase Intent - First Click',
-               content_category: 'Product',
-               value: 47.90,
-               currency: 'BRL',
-               custom_data: {
-                   time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                   audio_started: audioStarted,
-                   faq_engaged: faqEngaged,
-                   utm_source: getURLParams().utm_source
-               }
-           });
-       }
-       
-       fbq('track', 'Purchase', {
-           content_name: 'Interruptor de Ansiedade',
-           content_category: 'Digital Product',
-           content_ids: ['interruptor_ansiedade'],
-           value: 47.90,
-           currency: 'BRL',
-           custom_data: {
-               click_count: buttonClickCount,
-               utm_source: getURLParams().utm_source
-           }
-       });
-       
-       const checkoutURL = buildCheckoutURL();
-       window.open(checkoutURL, '_blank');
-   });
+  // Buy button tracking
+  document.getElementById('buyBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      buttonClickCount++;
+      
+      if (buttonClickCount === 1) {
+          fbq('track', 'InitiateCheckout', {
+              content_name: 'Purchase Intent - First Click',
+              content_category: 'Product',
+              value: 47.90,
+              currency: 'BRL',
+              custom_data: {
+                  time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                  audio_started: audioStarted,
+                  faq_engaged: faqEngaged,
+                  utm_source: getURLParams().utm_source
+              }
+          });
+      }
+      
+      fbq('track', 'Purchase', {
+          content_name: 'Interruptor de Ansiedade',
+          content_category: 'Digital Product',
+          content_ids: ['interruptor_ansiedade'],
+          value: 47.90,
+          currency: 'BRL',
+          custom_data: {
+              click_count: buttonClickCount,
+              utm_source: getURLParams().utm_source
+          }
+      });
+      
+      const checkoutURL = buildCheckoutURL();
+      window.open(checkoutURL, '_blank');
+  });
 
-   // Tracking de tempo na página
-   setInterval(() => {
-       const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
-       
-       if (timeOnPage === 60) {
-           fbq('track', 'CustomizeProduct', {
-               content_name: 'High Interest - 1 min on page',
-               value: 47.90,
-               currency: 'BRL'
-           });
-       }
-       
-       if (timeOnPage === 180) {
-           fbq('track', 'AddToWishlist', {
-               content_name: 'Very High Interest - 3 min on page',
-               value: 47.90,
-               currency: 'BRL'
-           });
-       }
-   }, 1000);
+  // Tracking de tempo na página
+  setInterval(() => {
+      const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
+      
+      if (timeOnPage === 60) {
+          fbq('track', 'CustomizeProduct', {
+              content_name: 'High Interest - 1 min on page',
+              value: 47.90,
+              currency: 'BRL'
+          });
+      }
+      
+      if (timeOnPage === 180) {
+          fbq('track', 'AddToWishlist', {
+              content_name: 'Very High Interest - 3 min on page',
+              value: 47.90,
+              currency: 'BRL'
+          });
+      }
+  }, 1000);
 
-   // Auto-decrease counter simulation
-   setInterval(() => {
-       if (currentCounter > 350 && Math.random() < 0.3) {
-           const reduction = Math.floor(Math.random() * 2) + 1;
-           const newCount = Math.max(350, currentCounter - reduction);
-           if (newCount !== currentCounter) {
-               simulateSync(newCount);
-           }
-       }
-   }, 60000);
+  // Auto-decrease counter simulation
+  setInterval(() => {
+      if (currentCounter > 350 && Math.random() < 0.3) {
+          const reduction = Math.floor(Math.random() * 2) + 1;
+          const newCount = Math.max(350, currentCounter - reduction);
+          if (newCount !== currentCounter) {
+              simulateSync(newCount);
+          }
+      }
+  }, 60000);
 
-   // Bloquear ferramentas de desenvolvedor
-   document.addEventListener('keydown', function(e) {
-       if (e.key === 'F12' || 
-           (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
-           (e.ctrlKey && e.key === 'U')) {
-           e.preventDefault();
-           return false;
-       }
-   });
+  // Bloquear ferramentas de desenvolvedor
+  document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || 
+          (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+          (e.ctrlKey && e.key === 'U')) {
+          e.preventDefault();
+          return false;
+      }
+  });
 
-   // Bloquear click direito
-   document.addEventListener('contextmenu', (e) => {
-       e.preventDefault();
-       return false;
-   });
+  // Bloquear click direito
+  document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      return false;
+  });
 
-   // Inicializar prova social após carregamento da página
-   setTimeout(showRandomTestimonial, 30000);
+  // Inicializar prova social após carregamento da página
+  setTimeout(showRandomTestimonial, 30000);
 
-   // Tracking de saída da página
-   window.addEventListener('beforeunload', () => {
-       fbq('track', 'CustomizeProduct', {
-           content_name: 'Page Exit',
-           custom_data: {
-               time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-               conversion_potential: buttonClickCount > 0 ? 'high' : 'medium'
-           }
-       });
-   });
+  // Tracking de saída da página
+  window.addEventListener('beforeunload', () => {
+      fbq('track', 'CustomizeProduct', {
+          content_name: 'Page Exit',
+          custom_data: {
+              time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+              conversion_potential: buttonClickCount > 0 ? 'high' : 'medium'
+          }
+      });
+  });
 
 </script>
 </body>
 </html>
-
-
-
