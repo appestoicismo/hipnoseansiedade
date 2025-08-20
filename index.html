@@ -76,7 +76,6 @@
           min-height: 100vh;
       }
 
-      /* ✅ LAYOUT PRINCIPAL CORRIGIDO */
       .main-container {
           min-height: 100vh;
           width: 100%;
@@ -88,7 +87,6 @@
           min-height: 100vh;
       }
 
-      /* ✅ SEÇÕES COM APROVEITAMENTO TOTAL DA TELA */
       .header-section {
           background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
           color: var(--white);
@@ -148,195 +146,91 @@
           animation: pulse 2s infinite;
       }
 
-      .urgency-banner h3 {
-          margin-bottom: 10px;
-          font-size: 1.3rem;
-          font-weight: 700;
-      }
-
       .urgency-banner p {
           margin-bottom: 10px;
           font-size: 1.1rem;
       }
 
-      .urgency-banner .small-text {
-          font-size: 1rem;
-          opacity: 0.9;
-      }
-
-      /* ✅ SEÇÃO DE ÁUDIO OTIMIZADA */
-      .audio-section {
-          padding: 40px 15px;
-          text-align: center;
-          background: var(--gray-50);
-          width: 100%;
-      }
-
-      .audio-instruction {
-          font-size: 1.3rem;
-          font-weight: 600;
-          color: var(--secondary);
-          margin-bottom: 15px;
-          line-height: 1.4;
-      }
-
-      .audio-subtext {
-          font-size: 1.05rem;
-          color: var(--gray-600);
-          margin-bottom: 30px;
-          background: var(--white);
-          padding: 20px 15px;
-          border-radius: 10px;
-          border-left: 5px solid var(--red);
-          margin-left: 10px;
-          margin-right: 10px;
-      }
-
-      .audio-subtext strong {
-          color: var(--red);
-          font-weight: 700;
-      }
-
-      .reveal-boxes {
-          margin: 25px 10px;
-          opacity: 1;
-          transform: translateY(0);
-          transition: all 0.5s ease;
-      }
-
-      .reveal-boxes h3 {
-          text-align: center;
-          margin-bottom: 20px;
-          color: var(--primary);
-          font-size: 1.2rem;
-      }
-
-      .reveal-grid {
-          display: grid;
-          gap: 15px;
-      }
-
-      .reveal-box {
-          padding: 15px;
-          border-radius: 8px;
-          font-weight: 600;
-          transition: all 0.3s ease;
-          opacity: 1;
-          transform: scale(1.02);
-          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      }
-
-      .reveal-box-1 {
-          background: #f0f9ff;
-          border-left: 4px solid var(--primary);
-      }
-
-      .reveal-box-2 {
-          background: #f0fdf4;
-          border-left: 4px solid var(--success);
-      }
-
-      .reveal-box-3 {
-          background: #fef3c7;
-          border-left: 4px solid var(--accent);
-      }
-
-      /* ✅ PLAYER DE ÁUDIO OTIMIZADO */
-      .audio-player-container {
-          background: var(--white);
+      .simple-audio-player {
+          background: rgba(255, 255, 255, 0.95);
           border-radius: 15px;
-          padding: 25px 15px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          padding: 20px;
           margin: 20px 10px;
-          border: 3px solid var(--primary);
+          box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+          border: 2px solid #10b981;
       }
 
-      .custom-audio-player {
-          width: 100%;
-      }
-
-      .player-controls {
+      .player-content {
           display: flex;
           align-items: center;
           gap: 15px;
-          margin-bottom: 20px;
           flex-wrap: wrap;
-          justify-content: center;
       }
 
-      .play-pause-btn {
-          background: linear-gradient(45deg, var(--success), var(--green));
+      .simple-play-btn {
+          background: linear-gradient(45deg, #10b981, #22c55e);
           border: none;
           border-radius: 50%;
-          width: 70px;
-          height: 70px;
-          color: var(--white);
-          font-size: 1.8rem;
+          width: 60px;
+          height: 60px;
+          color: white;
+          font-size: 1.5rem;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+          box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
       }
 
-      .play-pause-btn:hover {
+      .simple-play-btn:hover {
           transform: scale(1.05);
-          box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
       }
 
-      .time-info {
+      .audio-info {
           flex: 1;
-          text-align: center;
-          min-width: 120px;
+          min-width: 150px;
       }
 
-      .current-time {
-          font-size: 1.4rem;
-          font-weight: 700;
-          color: var(--primary);
+      .audio-title {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #1f2937;
+          margin-bottom: 5px;
       }
 
-      .total-time {
-          font-size: 1rem;
-          color: var(--gray-600);
+      .audio-duration {
+          font-size: 0.9rem;
+          color: #6b7280;
       }
 
-      .speed-controls {
+      .simple-speed-controls {
           display: flex;
-          gap: 8px;
+          gap: 5px;
           flex-wrap: wrap;
       }
 
-      .speed-btn {
-          background: var(--gray-200);
+      .simple-speed-btn {
+          background: #e5e7eb;
           border: none;
-          padding: 8px 12px;
+          padding: 6px 10px;
           border-radius: 6px;
           cursor: pointer;
           font-weight: 600;
+          font-size: 0.8rem;
           transition: all 0.3s ease;
-          font-size: 0.9rem;
+          color: #374151;
       }
 
-      .speed-btn.active {
-          background: var(--primary);
-          color: var(--white);
+      .simple-speed-btn.active {
+          background: #2563eb;
+          color: white;
       }
 
-      .progress-container {
-          width: 100%;
-          height: 8px;
-          background: var(--gray-200);
-          border-radius: 4px;
-          overflow: hidden;
-          margin-bottom: 20px;
-          pointer-events: none;
-          cursor: default;
+      .simple-speed-btn:hover {
+          background: #d1d5db;
       }
 
-      .progress-bar {
-          height: 100%;
-          background: linear-gradient(45deg, var(--primary), var(--success));
-          width: 0%;
-          transition: width 0.1s ease;
+      .simple-speed-btn.active:hover {
+          background: #1d4ed8;
       }
 
       .access-counter {
@@ -346,6 +240,7 @@
           border-radius: 15px;
           margin: 25px 10px;
           animation: pulse 2s infinite;
+          text-align: center;
       }
 
       .counter-text {
@@ -390,7 +285,66 @@
           51%, 100% { opacity: 0.5; }
       }
 
-      /* ✅ SEÇÃO DE OFERTA OTIMIZADA */
+      .app-sessions-section {
+          background: var(--gray-50);
+          padding: 40px 20px;
+          text-align: center;
+      }
+
+      .sessions-main-title {
+          font-family: var(--headlinefont);
+          font-size: 2rem;
+          color: var(--secondary);
+          margin-bottom: 30px;
+          font-weight: 700;
+      }
+
+      .sessions-list {
+          max-width: 500px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+      }
+
+      .session-button {
+          background: linear-gradient(135deg, #16a34a, #22c55e);
+          color: white;
+          padding: 18px 20px;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+      }
+
+      .session-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+      }
+
+      .audio-icon {
+          width: 40px;
+          height: 40px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          flex-shrink: 0;
+      }
+
+      .session-content {
+          text-align: left;
+          font-size: 1.1rem;
+          font-weight: 600;
+          line-height: 1.3;
+          flex: 1;
+      }
+
       .offer-section {
           padding: 40px 15px;
           background: var(--white);
@@ -406,54 +360,6 @@
           margin-bottom: 30px;
           font-weight: 700;
           line-height: 1.2;
-      }
-
-      .sessions-preview {
-          background: var(--gray-50);
-          padding: 25px 15px;
-          border-radius: 15px;
-          margin: 25px 0;
-          border-left: 5px solid var(--primary);
-      }
-
-      .sessions-title {
-          font-size: 1.3rem;
-          color: var(--secondary);
-          font-weight: 700;
-          margin-bottom: 20px;
-          text-align: center;
-          line-height: 1.3;
-      }
-
-      .sessions-grid {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 12px;
-      }
-
-      .session-item {
-          background: var(--white);
-          padding: 15px;
-          border-radius: 10px;
-          border-left: 4px solid var(--success);
-          font-size: 0.95rem;
-          line-height: 1.5;
-          transition: transform 0.3s ease;
-      }
-
-      .session-item:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      }
-
-      .session-number {
-          font-weight: 700;
-          color: var(--primary);
-      }
-
-      .session-title {
-          font-weight: 600;
-          color: var(--secondary);
       }
 
       .offer-list {
@@ -480,7 +386,6 @@
           text-decoration: none;
       }
 
-      /* ✅ SEÇÃO DE PREÇO OTIMIZADA */
       .price-section {
           text-align: center;
           background: var(--primary);
@@ -532,7 +437,6 @@
           box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
       }
 
-      /* ✅ FAQ OTIMIZADA */
       .faq-section {
           padding: 40px 15px;
           background: var(--gray-50);
@@ -598,7 +502,6 @@
           transform: rotate(180deg);
       }
 
-      /* ✅ PROVA SOCIAL OTIMIZADA */
       .social-proof {
           position: fixed;
           bottom: 15px;
@@ -668,7 +571,7 @@
           100% { opacity: 1; }
       }
 
-      /* ✅ RESPONSIVIDADE PARA TABLETS */
+      /* Responsividade */
       @media (min-width: 769px) and (max-width: 1024px) {
           .content-wrapper {
               border-radius: 20px;
@@ -682,14 +585,8 @@
               align-items: center;
               justify-content: center;
           }
-          
-          .sessions-grid {
-              grid-template-columns: repeat(2, 1fr);
-              gap: 15px;
-          }
       }
 
-      /* ✅ RESPONSIVIDADE PARA DESKTOP */
       @media (min-width: 1025px) {
           .main-container {
               display: flex;
@@ -709,7 +606,6 @@
               padding: 50px 40px;
           }
           
-          .audio-section,
           .offer-section,
           .faq-section {
               padding: 50px 40px;
@@ -717,38 +613,6 @@
           
           .urgency-banner {
               margin: 20px 30px;
-          }
-          
-          .audio-player-container {
-              padding: 40px;
-              margin-bottom: 30px;
-          }
-          
-          .player-controls {
-              flex-direction: row;
-              gap: 20px;
-              flex-wrap: nowrap;
-          }
-          
-          .play-pause-btn {
-              width: 80px;
-              height: 80px;
-              font-size: 2rem;
-          }
-          
-          .sessions-grid {
-              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-              gap: 15px;
-          }
-          
-          .offer-list {
-              max-width: 700px;
-              margin: 0 auto 40px;
-          }
-          
-          .faq-container {
-              max-width: 800px;
-              margin: 0 auto;
           }
           
           .main-title {
@@ -775,7 +639,6 @@
           }
       }
 
-      /* ✅ AJUSTES PARA TELAS MUITO PEQUENAS */
       @media (max-width: 480px) {
           .main-title {
               font-size: 2.2rem;
@@ -795,11 +658,6 @@
               padding: 15px 10px;
           }
           
-          .audio-player-container {
-              margin: 15px 5px;
-              padding: 20px 10px;
-          }
-          
           .access-counter {
               margin: 20px 5px;
           }
@@ -808,14 +666,38 @@
               font-size: 1.7rem;
           }
           
-          .sessions-preview {
-              padding: 20px 10px;
-          }
-          
           .social-proof {
               right: 5px;
               bottom: 5px;
               max-width: 250px;
+          }
+          
+          .player-content {
+              flex-direction: column;
+              gap: 10px;
+              align-items: stretch;
+          }
+          
+          .simple-speed-controls {
+              justify-content: center;
+          }
+          
+          .sessions-main-title {
+              font-size: 1.7rem;
+          }
+          
+          .session-button {
+              padding: 15px 18px;
+          }
+          
+          .session-content {
+              font-size: 1rem;
+          }
+          
+          .audio-icon {
+              width: 35px;
+              height: 35px;
+              font-size: 1rem;
           }
       }
   </style>
@@ -826,91 +708,114 @@
       <div class="content-wrapper">
           <!-- Header Section -->
           <div class="header-section">
-              <div class="intro-text">⚠️ ATENÇÃO: Descoberta Científica Revolucionária</div>
+              <div class="intro-text">⚠️ por apenas R$ 47,90<br> <strong>OFERTA RELÂMPAGO</strong></div>
               <h1 class="main-title">
-                  Como <span class="title-highlight">DESLIGAR</span> sua<br>
+                  Aprenda a <span class="title-highlight">DESLIGAR</span> sua<br>
                   Ansiedade em 5 Segundos
               </h1>
               <p class="subtitle">
-                  O método científico que transforma sua mente ansiosa<br>
-                  de <strong>INIMIGA em ALIADA</strong> usando apenas suas mãos + hipnose
+                  Você já contou <strong>quantas vezes</strong> a ANSIEDADE roubou sua <strong>paz e alegria de viver?</strong>
               </p>
               
               <div class="urgency-banner">
-                  <h3>🚨 ÚLTIMA CHANCE - APENAS HOJE</h3>
-                  <p>Este protocolo sairá do ar às 23:59h</p>
-                  <p class="small-text">Mais de 2.847 mulheres já transformaram suas vidas</p>
+                  <p>Você está diante de um protocolo de hipnoterapia, com várias sessões em áudios, que conduz você ao transe, ativa o nervo vago e instala uma âncora — um gesto capaz de interromper os sintomas da ansiedade. Ouça o áudio e entenda.</p>
               </div>
           </div>
 
-          <!-- Audio Section -->
-          <div class="audio-section">
-              <h2 class="audio-instruction">
-                  🎯 REVELAÇÃO EXCLUSIVA: Descubra o "ponto secreto" que desliga sua ansiedade
-              </h2>
-              <div class="audio-subtext">
-                  <strong>AVISO:</strong> Esta técnica é baseada em 15 anos de pesquisa neurocientífica e é usada por terapeutas que cobram R$ 300+ por sessão.<br><br>
-                  <strong style="color: #ef4444;">Ouça o áudio para entender melhor como funciona ou leia a oferta abaixo para acessar o protocolo completo</strong>
-              </div>
-
-              <div class="reveal-boxes" id="revealBoxes">
-                  <h3>O que você vai descobrir nos próximos 4 minutos:</h3>
-                  <div class="reveal-grid">
-                      <div class="reveal-box reveal-box-1" id="revealBox1">
-                          🧠 Por que sua mente ansiosa é na verdade um SUPERPODER
-                      </div>
-                      <div class="reveal-box reveal-box-2" id="revealBox2">
-                          ⚡ O "botão de reset" secreto do seu sistema nervoso
-                      </div>
-                      <div class="reveal-box reveal-box-3" id="revealBox3">
-                          🎯 O gesto de 5 segundos que monges usam há milênios
-                      </div>
+          <!-- Player de Áudio Simples -->
+          <div class="simple-audio-player">
+              <div class="player-content">
+                  <button class="simple-play-btn" id="simplePlayBtn">
+                      <i class="fas fa-play"></i>
+                  </button>
+                  <div class="audio-info">
+                      <div class="audio-title">🎧 Ouça a Explicação Completa</div>
+                      <div class="audio-duration">Duração: 4:12 minutos</div>
+                  </div>
+                  <div class="simple-speed-controls">
+                      <button class="simple-speed-btn active" data-speed="1">1x</button>
+                      <button class="simple-speed-btn" data-speed="1.25">1.25x</button>
+                      <button class="simple-speed-btn" data-speed="1.5">1.5x</button>
+                      <button class="simple-speed-btn" data-speed="2">2x</button>
                   </div>
               </div>
+              
+              <audio id="simpleAudioPlayer" preload="metadata">
+                  <source src="https://appestoicismo.github.io/audios-appestoicismo/9t.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o elemento de áudio.
+              </audio>
+          </div>
 
-              <div class="audio-player-container">
-                  <div class="custom-audio-player">
-                      <div class="player-controls">
-                          <button class="play-pause-btn" id="playPauseBtn">
-                              <i class="fas fa-play"></i>
-                          </button>
-                          
-                          <div class="time-info">
-                              <div class="current-time" id="currentTime">00:00</div>
-                              <div class="total-time" id="totalTime">--:--</div>
-                          </div>
-                          
-                          <div class="speed-controls">
-                              <button class="speed-btn active" data-speed="1">1x</button>
-                              <button class="speed-btn" data-speed="1.25">1.25x</button>
-                              <button class="speed-btn" data-speed="1.5">1.5x</button>
-                          </div>
-                      </div>
-                      
-                      <div class="progress-container" id="progressContainer">
-                          <div class="progress-bar" id="progressBar"></div>
-                      </div>
-                      
-                      <audio id="audioPlayer" preload="metadata" controlslist="nodownload nofullscreen noremoteplayback">
-                          <source src="https://appestoicismo.github.io/audios-appestoicismo/9t.mp3" type="audio/mpeg">
-                          Seu navegador não suporta o elemento de áudio.
-                      </audio>
-                  </div>
+          <!-- Contador de Vagas -->
+          <div class="access-counter">
+              <div class="counter-text">⚠️ Vagas Disponíveis no Aplicativo:</div>
+              <span class="counter-number" id="accessCounter">387</span>
+              <div style="font-size: 0.9rem; margin-top: 10px;">
+                  Após 400 acessos, o preço aumenta para R$ 97,00
               </div>
+              <div class="update-status" id="updateStatus">
+                  Atualizado em: <span id="lastUpdate"></span>
+              </div>
+          </div>
 
-              <div class="access-counter">
-                  <div class="counter-text">⚠️ Vagas Disponíveis no Aplicativo:</div>
-                  <span class="counter-number" id="accessCounter">387</span>
-                  <div style="font-size: 0.9rem; margin-top: 10px;">
-                      Após 400 acessos, o preço aumenta para R$ 97,00
+          <!-- Seção de Sessões do Aplicativo -->
+          <div class="app-sessions-section">
+              <h2 class="sessions-main-title">Sessões disponíveis na Trilha</h2>
+              
+              <div class="sessions-list">
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Comece por aqui</div>
                   </div>
-                  <div class="update-status" id="updateStatus">
-                      Atualizado em: <span id="lastUpdate"></span>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 1: O que é o Interruptor de Ansiedade</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 2: Integrando o Interruptor de Ansiedade</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 2.1: Instalando na prática o Interruptor de Ansiedade</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 3: Instalando seu Lugar Seguro</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 4: Dormir profundamente</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 5: Controle de pensamento acelerado</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 6: Mantendo a paz durante momentos desafiadores</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 7: Alívio imediato da ansiedade</div>
+                  </div>
+                  
+                  <div class="session-button">
+                      <div class="audio-icon">🎧</div>
+                      <div class="session-content">Sessão 8: O que a ansiedade está tentando te dizer (em breve)</div>
                   </div>
               </div>
           </div>
 
-         <!-- Social Proof Popup -->
+          <!-- Social Proof Popup -->
           <div class="social-proof" id="socialProof">
               <div class="social-proof-content">
                   <div class="social-proof-avatar">M</div>
@@ -927,85 +832,34 @@
               <h2 class="offer-title">
                   🎯 Aqui está a proposta onde você não corre nenhum risco de perder seu dinheiro:
               </h2>
-
-              <!-- Sessions Preview -->
-              <div class="sessions-preview">
-                  <h3 class="sessions-title">📱 O que você terá acesso no aplicativo "Interruptor de Ansiedade":</h3>
-                  <div class="sessions-grid">
-                      <div class="session-item">
-                          <div class="session-number">📍 Introdução:</div>
-                          <div class="session-title">Começe por aqui</div>
-                      </div>
-                      
-                      <div class="session-item">
-                          <div class="session-number">🎯 Sessão 1:</div>
-                          <div class="session-title">O que é o Interruptor De Ansiedade</div>
-                      </div>
-                      
-                      <div class="session-item">
-                          <div class="session-number">🧠 Sessão 2:</div>
-                          <div class="session-title">Integrando o Interruptor de Ansiedade</div>
-                      </div>
-                      
-                      <div class="session-item">
-                          <div class="session-number">⚡ Sessão 2.1:</div>
-                          <div class="session-title">Instalando na Prática Seu Interruptor</div>
-                      </div>
-                      
-                      <div class="session-item">
-                          <div class="session-number">🛡️ Sessão 3:</div>
-                          <div class="session-title">Lugar Seguro (Nível 03)</div>
-                      </div>
-                      
-                      <div class="session-item">
-                         <div class="session-number">😴 Sessão 4:</div>
-                         <div class="session-title">Dormir Profundamente</div>
-                     </div>
-                     
-                     <div class="session-item">
-                         <div class="session-number">🧘 Sessão 5:</div>
-                         <div class="session-title">Controle de Pensamento Acelerado</div>
-                     </div>
-                     
-                     <div class="session-item">
-                         <div class="session-number">☮️ Sessão 6:</div>
-                         <div class="session-title">Paz Interior em Situações Desafiadoras</div>
-                     </div>
-                     
-                     <div class="session-item">
-                         <div class="session-number">🚀 Sessão 7:</div>
-                         <div class="session-title">Alívio Imediato da Ansiedade</div>
-                     </div>
-                 </div>
-             </div>
              
-             <div class="offer-list">
-                 <div class="offer-item">
-                     <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as 9 sessões
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>2.</strong> Terá acesso ao aplicativo com a trilha <strong>"Interruptor de Ansiedade"</strong> 100% desbloqueado para ter acesso ao protocolo inteiro
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>3.</strong> Se em até <strong>7 dias</strong> você não conseguir ter resultados com o que vai aprender, basta acessar esse link: <a href="https://reembolso.kiwify.com.br/login" target="_blank">reembolso.kiwify.com.br</a> e devolveremos <strong>100% do seu investimento</strong>
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>4.</strong> <span style="color: var(--success); font-weight: 700;">Seu risco é ZERO!</span>
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>5.</strong> Mas, preste atenção, só vou segurar essa proposta até completar os <strong>400 acessos</strong> que tenho disponível no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
-                 </div>
-             </div>
+              <div class="offer-list">
+                  <div class="offer-item">
+                      <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as 9 sessões
+                  </div>
+                  
+                  <div class="offer-item">
+                      <strong>2.</strong> Terá acesso ao aplicativo com a trilha <strong>"Interruptor de Ansiedade"</strong> 100% desbloqueado para ter acesso ao protocolo inteiro
+                  </div>
+                  
+                  <div class="offer-item">
+                      <strong>3.</strong> Se em até <strong>7 dias</strong> você não conseguir ter resultados com o que vai aprender, basta acessar esse link: <a href="https://reembolso.kiwify.com.br/login" target="_blank">reembolso.kiwify.com.br</a> e devolveremos <strong>100% do seu investimento</strong>
+                  </div>
+                  
+                  <div class="offer-item">
+                      <strong>4.</strong> <span style="color: var(--success); font-weight: 700;">Seu risco é ZERO!</span>
+                  </div>
+                  
+                  <div class="offer-item">
+                      <strong>5.</strong> Mas, preste atenção, só vou segurar essa proposta até completar os <strong>400 acessos</strong> que tenho disponível no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
+                  </div>
+              </div>
 
-             <div class="price-section">
-                 <h3>Para adquirir agora:</h3>
-                 <div class="price-installments">6x de R$ 8,99</div>
-                 <div class="price-cash">ou à vista por: R$ 47,90</div>
-                 
+              <div class="price-section">
+                  <h3>Para adquirir agora:</h3>
+                  <div class="price-installments">6x de R$ 8,99</div>
+                  <div class="price-cash">ou à vista por: R$ 47,90</div>
+                  
                  <a href="#" class="buy-btn" id="buyBtn">
                      🚀 GARANTIR ACESSO AGORA
                  </a>
@@ -1082,9 +936,9 @@
 </div>
 
 <script>
-   // ✅ SISTEMA DE TRACKING CORRIGIDO E COMPLETO
+   // ✅ SISTEMA DE TRACKING E FUNCIONALIDADES
    
-   // 🔧 1. CAPTURAR UTMs DA URL
+   // Capturar UTMs da URL
    function getURLParams() {
        const urlParams = new URLSearchParams(window.location.search);
        return {
@@ -1098,7 +952,7 @@
        };
    }
    
-   // 🔧 2. CONSTRUIR URL COM UTMs REAIS
+   // Construir URL do checkout com UTMs
    function buildCheckoutURL() {
        const params = getURLParams();
        const baseURL = 'https://pay.kiwify.com.br/R2nzjK7';
@@ -1113,32 +967,47 @@
        return baseURL + (urlParams.toString() ? '?' + urlParams.toString() : '');
    }
 
-   // Audio Player Functionality
-   const audioPlayer = document.getElementById('audioPlayer');
-   const playPauseBtn = document.getElementById('playPauseBtn');
-   const currentTimeDisplay = document.getElementById('currentTime');
-   const totalTimeDisplay = document.getElementById('totalTime');
-   const progressBar = document.getElementById('progressBar');
-   const progressContainer = document.getElementById('progressContainer');
-   const speedButtons = document.querySelectorAll('.speed-btn');
+   // ✅ PLAYER DE ÁUDIO SIMPLES
+   const simplePlayer = document.getElementById('simpleAudioPlayer');
+   const simplePlayBtn = document.getElementById('simplePlayBtn');
+   const simpleSpeedBtns = document.querySelectorAll('.simple-speed-btn');
+   let isSimplePlaying = false;
+
+   simplePlayBtn.addEventListener('click', () => {
+       if (isSimplePlaying) {
+           simplePlayer.pause();
+           simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+           isSimplePlaying = false;
+       } else {
+           simplePlayer.play();
+           simplePlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
+           isSimplePlaying = true;
+       }
+   });
+
+   // Controle de velocidade
+   simpleSpeedBtns.forEach(btn => {
+       btn.addEventListener('click', () => {
+           simpleSpeedBtns.forEach(b => b.classList.remove('active'));
+           btn.classList.add('active');
+           simplePlayer.playbackRate = parseFloat(btn.dataset.speed);
+       });
+   });
+
+   simplePlayer.addEventListener('ended', () => {
+       simplePlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+       isSimplePlaying = false;
+   });
+
+   // ✅ ELEMENTOS DA PÁGINA
    const offerSection = document.getElementById('offerSection');
    const faqSection = document.getElementById('faqSection');
    const accessCounter = document.getElementById('accessCounter');
    const updateStatus = document.getElementById('updateStatus');
    const lastUpdate = document.getElementById('lastUpdate');
-   const revealBoxes = document.getElementById('revealBoxes');
 
-   let isPlaying = false;
+   // ✅ VARIÁVEIS DE CONTROLE
    let currentCounter = 387;
-   let updateTriggered = {
-       first: false,
-       second: false,
-       third: false
-   };
-   let playedTime = 0;
-   let lastUpdateTime = 0;
-   
-   // 🔧 3. VARIÁVEIS DE CONTROLE DE TRACKING
    let pageLoadTime = Date.now();
    let audioStarted = false;
    let offerViewed = false;
@@ -1212,7 +1081,7 @@
 
    // Função para mostrar prova social aleatória
    function showRandomTestimonial() {
-       if (Math.random() < 0.7) { // 70% de chance de mostrar
+       if (Math.random() < 0.7) {
            const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
            const socialProof = document.getElementById('socialProof');
            
@@ -1241,9 +1110,9 @@
    // Inicializar com horário antigo
    lastUpdate.textContent = getInitialTime();
 
-   // ✅ 4. EVENTOS CORRIGIDOS DO META PIXEL
+   // ✅ META PIXEL TRACKING
    
-   // Landing Page View (correto)
+   // Landing Page View
    fbq('track', 'ViewContent', {
        content_name: 'Landing Page - Interruptor Ansiedade',
        content_category: 'Landing Page',
@@ -1255,7 +1124,7 @@
        }
    });
 
-   // ✅ 5. TRACKING DE SCROLL PARA OFERTA
+   // Tracking de scroll para oferta
    function trackOfferView() {
        if (!offerViewed) {
            offerViewed = true;
@@ -1283,12 +1152,11 @@
 
    offerObserver.observe(offerSection);
 
-   // ✅ 6. AUDIO EVENTS (corrigidos)
-   audioPlayer.addEventListener('play', () => {
+   // Audio events
+   simplePlayer.addEventListener('play', () => {
        if (!audioStarted) {
            audioStarted = true;
            
-           // Interesse no conteúdo - não checkout ainda
            fbq('track', 'ViewContent', {
                content_name: 'Audio Started',
                content_category: 'Educational Content',
@@ -1302,143 +1170,7 @@
        }
    });
 
-   // Initialize when metadata is loaded
-   audioPlayer.addEventListener('loadedmetadata', () => {
-       totalTimeDisplay.textContent = formatTime(audioPlayer.duration);
-   });
-
-   // Play/Pause functionality
-   playPauseBtn.addEventListener('click', () => {
-       if (isPlaying) {
-           audioPlayer.pause();
-           playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-       } else {
-           audioPlayer.play();
-           playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
-       }
-       isPlaying = !isPlaying;
-   });
-
-   // Update progress and time
-   audioPlayer.addEventListener('timeupdate', () => {
-       const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-       progressBar.style.width = progress + '%';
-       currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
-       
-       // Calcular tempo efetivamente reproduzido considerando velocidade
-       const currentTime = audioPlayer.currentTime;
-       const deltaTime = currentTime - lastUpdateTime;
-       
-       if (deltaTime > 0 && !audioPlayer.paused) {
-           playedTime += deltaTime * audioPlayer.playbackRate;
-       }
-       lastUpdateTime = currentTime;
-       
-       // Triggers para as atualizações baseadas no tempo reproduzido
-       if (playedTime >= 8 && playedTime <= 12 && !updateTriggered.first) {
-           updateTriggered.first = true;
-           const reduction = Math.floor(Math.random() * 3) + 3;
-           simulateSync(currentCounter - reduction);
-       }
-       
-       if (playedTime >= 118 && playedTime <= 122 && !updateTriggered.second) {
-           updateTriggered.second = true;
-           const reduction = Math.floor(Math.random() * 3) + 3;
-           simulateSync(currentCounter - reduction);
-       }
-       
-       if (playedTime >= 208 && playedTime <= 212 && !updateTriggered.third) {
-           updateTriggered.third = true;
-           const reduction = Math.floor(Math.random() * 3) + 3;
-           simulateSync(currentCounter - reduction);
-       }
-
-       // ✅ Milestone tracking para engajamento
-       if (Math.floor(playedTime) === 60) { // 1 minuto
-           fbq('track', 'CustomizeProduct', {
-               content_name: 'Audio 25% Completed',
-               value: 47.90,
-               currency: 'BRL'
-           });
-       }
-       
-       if (Math.floor(playedTime) === 120) { // 2 minutos  
-           fbq('track', 'CustomizeProduct', {
-               content_name: 'Audio 50% Completed',
-               value: 47.90,
-               currency: 'BRL'
-           });
-       }
-   });
-
-   // ✅ 7. AUDIO COMPLETION (evento correto)
-   audioPlayer.addEventListener('ended', () => {
-       playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-       isPlaying = false;
-       
-       // Engajamento alto - candidato qualificado para conversão
-       fbq('track', 'CompleteRegistration', {
-           content_name: 'Audio Completed',
-           content_category: 'Educational Content',
-           value: 47.90,
-           currency: 'BRL',
-           custom_data: {
-               engagement_level: 'high',
-               total_time: Math.round(playedTime)
-           }
-       });
-   });
-
-   // BLOQUEAR SEEK/PULO MANTENDO FUNCIONALIDADE VISUAL
-   audioPlayer.addEventListener('seeking', (e) => {
-       if (audioPlayer.currentTime > lastUpdateTime && audioPlayer.currentTime < audioPlayer.duration * 0.95) {
-           audioPlayer.currentTime = lastUpdateTime;
-           e.preventDefault();
-       }
-   });
-
-   // Bloquear teclas de navegação do áudio
-   document.addEventListener('keydown', (e) => {
-       if (e.target === audioPlayer || audioPlayer === document.activeElement) {
-           if (['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) {
-               e.preventDefault();
-               return false;
-           }
-       }
-       
-       if ((e.ctrlKey || e.metaKey) && ['ArrowRight', 'ArrowLeft'].includes(e.key)) {
-           e.preventDefault();
-           return false;
-       }
-   });
-
-   // Prevenir context menu no áudio
-   audioPlayer.addEventListener('contextmenu', (e) => {
-       e.preventDefault();
-       return false;
-   });
-
-   // Bloquear drag & drop no player
-   audioPlayer.addEventListener('dragstart', (e) => {
-       e.preventDefault();
-       return false;
-   });
-
-   // Speed control
-   speedButtons.forEach(btn => {
-       btn.addEventListener('click', () => {
-           speedButtons.forEach(b => b.classList.remove('active'));
-           btn.classList.add('active');
-           audioPlayer.playbackRate = parseFloat(btn.dataset.speed);
-       });
-   });
-
-   // Reset estado quando áudio é pausado
-   audioPlayer.addEventListener('pause', () => {
-       lastUpdateTime = audioPlayer.currentTime;
-   });
-
-   // ✅ 8. FAQ ENGAGEMENT TRACKING
+   // FAQ engagement tracking
    document.querySelectorAll('.faq-question').forEach(question => {
        question.addEventListener('click', () => {
            const faqItem = question.parentElement;
@@ -1451,7 +1183,6 @@
            if (!isActive) {
                faqItem.classList.add('active');
                
-               // Track FAQ engagement apenas uma vez
                if (!faqEngaged) {
                    faqEngaged = true;
                    fbq('track', 'Search', {
@@ -1465,19 +1196,11 @@
        });
    });
 
-   // Format time helper function
-   function formatTime(seconds) {
-       const mins = Math.floor(seconds / 60);
-       const secs = Math.floor(seconds % 60);
-       return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-   }
-
-   // ✅ 9. BUY BUTTON TRACKING (corrigido)
+   // Buy button tracking
    document.getElementById('buyBtn').addEventListener('click', (e) => {
        e.preventDefault();
        buttonClickCount++;
        
-       // InitiateCheckout na primeira tentativa
        if (buttonClickCount === 1) {
            fbq('track', 'InitiateCheckout', {
                content_name: 'Purchase Intent - First Click',
@@ -1486,15 +1209,13 @@
                currency: 'BRL',
                custom_data: {
                    time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                   audio_completed: audioPlayer.ended,
-                   audio_time_played: Math.round(playedTime),
+                   audio_started: audioStarted,
                    faq_engaged: faqEngaged,
                    utm_source: getURLParams().utm_source
                }
            });
        }
        
-       // Purchase event (intenção de compra confirmada)
        fbq('track', 'Purchase', {
            content_name: 'Interruptor de Ansiedade',
            content_category: 'Digital Product',
@@ -1503,40 +1224,19 @@
            currency: 'BRL',
            custom_data: {
                click_count: buttonClickCount,
-               engagement_score: calculateEngagementScore(),
                utm_source: getURLParams().utm_source
            }
        });
        
-       // Abrir checkout com UTMs reais
        const checkoutURL = buildCheckoutURL();
        window.open(checkoutURL, '_blank');
    });
 
-   // ✅ 10. FUNÇÃO DE SCORE DE ENGAJAMENTO
-   function calculateEngagementScore() {
-       let score = 0;
-       
-       if (audioStarted) score += 2;
-       if (playedTime > 60) score += 2;
-       if (playedTime > 120) score += 3;
-       if (audioPlayer.ended) score += 5;
-       if (offerViewed) score += 1;
-       if (faqEngaged) score += 2;
-       
-       const timeOnPage = (Date.now() - pageLoadTime) / 1000;
-       if (timeOnPage > 120) score += 1;
-       if (timeOnPage > 300) score += 2;
-       
-       return Math.min(score, 10); // Max 10
-   }
-
-   // ✅ 11. TRACKING DE TEMPO NA PÁGINA
+   // Tracking de tempo na página
    setInterval(() => {
        const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
        
-       // Marcos de tempo importantes
-       if (timeOnPage === 60) { // 1 minuto
+       if (timeOnPage === 60) {
            fbq('track', 'CustomizeProduct', {
                content_name: 'High Interest - 1 min on page',
                value: 47.90,
@@ -1544,7 +1244,7 @@
            });
        }
        
-       if (timeOnPage === 180) { // 3 minutos
+       if (timeOnPage === 180) {
            fbq('track', 'AddToWishlist', {
                content_name: 'Very High Interest - 3 min on page',
                value: 47.90,
@@ -1564,24 +1264,6 @@
        }
    }, 60000);
 
-   // Detectar tentativas de manipulação do playedTime
-   setInterval(() => {
-       if (audioPlayer.currentTime < lastUpdateTime - 1) {
-           if (audioPlayer.currentTime < 8) {
-               updateTriggered.first = false;
-               playedTime = Math.min(playedTime, 8);
-           }
-           if (audioPlayer.currentTime < 118) {
-               updateTriggered.second = false;
-               playedTime = Math.min(playedTime, 118);
-           }
-           if (audioPlayer.currentTime < 208) {
-               updateTriggered.third = false;
-               playedTime = Math.min(playedTime, 208);
-           }
-       }
-   }, 1000);
-
    // Bloquear ferramentas de desenvolvedor
    document.addEventListener('keydown', function(e) {
        if (e.key === 'F12' || 
@@ -1592,31 +1274,21 @@
        }
    });
 
-   // Bloquear click direito em toda a página
+   // Bloquear click direito
    document.addEventListener('contextmenu', (e) => {
        e.preventDefault();
        return false;
    });
 
-   // Detectar se o usuário está tentando acelerar artificialmente
-   let suspiciousActivity = 0;
-   audioPlayer.addEventListener('ratechange', () => {
-       if (audioPlayer.playbackRate > 1.5) {
-           audioPlayer.playbackRate = 1.5;
-           suspiciousActivity++;
-       }
-   });
-
    // Inicializar prova social após carregamento da página
-   setTimeout(showRandomTestimonial, 30000); // Primeira prova social após 30 segundos
+   setTimeout(showRandomTestimonial, 30000);
 
-   // ✅ 12. TRACKING DE SAÍDA DA PÁGINA
+   // Tracking de saída da página
    window.addEventListener('beforeunload', () => {
        fbq('track', 'CustomizeProduct', {
            content_name: 'Page Exit',
            custom_data: {
                time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-               engagement_score: calculateEngagementScore(),
                conversion_potential: buttonClickCount > 0 ? 'high' : 'medium'
            }
        });
