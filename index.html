@@ -287,10 +287,23 @@
       }
 
       .app-sessions-section {
-          background: var(--gray-100);
-          padding: 40px 20px;
-          text-align: center;
-      }
+    background: var(--gray-100);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.app-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.app-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+    
+    
 
       .sessions-main-title {
           font-family: var(--headlinefont);
@@ -763,7 +776,13 @@
           <!-- Seção de Sessões do Aplicativo -->
           <div class="app-sessions-section">
               <h2 class="sessions-main-title">Sessões disponíveis na Trilha</h2>
+            
+            <!-- Imagem do interruptor -->
+    <div class="app-image-container">
+        <img src="https://appestoicismo.github.io/hipnoseansiedade/appinterruptor.png" alt="App Interruptor" class="app-image">
+    </div>
               
+            <!-- Lista de sessões existente -->
               <div class="sessions-list">
                   <div class="session-button">
                       <div class="audio-icon">🎧</div>
