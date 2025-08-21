@@ -714,6 +714,108 @@
               font-size: 1rem;
           }
       }
+    .footer-section {
+    background: var(--primary);
+    color: var(--white);
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.authority-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.authority-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.authority-badge i {
+    font-size: 2rem;
+    color: var(--yellow);
+}
+
+.authority-text {
+    text-align: left;
+    max-width: 400px;
+}
+
+.authority-text strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.authority-text p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.security-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.security-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.security-item i {
+    color: var(--success);
+    font-size: 1.1rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    opacity: 0.8;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+/* Responsividade do Rodapé */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 30px 15px;
+    }
+    
+    .authority-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .authority-text {
+        text-align: center;
+    }
+    
+    .security-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
   </style>
 </head>
 
@@ -732,7 +834,7 @@
               </p>
               
               <div class="urgency-banner">
-                  <p>Você está diante de um protocolo de hipnoterapia, com várias sessões em áudios, que conduz você ao transe, ativa o nervo vago e instala uma âncora — um gesto capaz de interromper os sintomas da ansiedade. Ouça o áudio e entenda.</p>
+                  <p>Você está diante de um protocolo de <strong>HIPNOTERAPIA</strong>, com várias sessões em áudios, que conduz você ao <strong>transe, ativa o nervo vago e instala uma âncora</strong> — um gesto capaz de interromper os sintomas da ansiedade. Ouça o áudio e entenda.</p>
               </div>
           </div>
 
@@ -856,11 +958,11 @@
              
               <div class="offer-list">
                   <div class="offer-item">
-                      <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as 9 sessões
+                      <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as sessões
                   </div>
                   
                   <div class="offer-item">
-                      <strong>2.</strong> Terá acesso ao aplicativo com a trilha <strong>"Interruptor de Ansiedade"</strong> 100% desbloqueado para ter acesso ao protocolo inteiro
+                      <strong>2.</strong> Terá acesso ao aplicativo, que pode ser baixado no seu celular e <strong>usado onde quiser, na hora que desejar, quantas vezes precisar</strong>.
                   </div>
                   
                   <div class="offer-item">
@@ -872,7 +974,7 @@
                   </div>
                   
                   <div class="offer-item">
-                      <strong>5.</strong> Mas, preste atenção, só vou segurar essa proposta até completar os <strong>400 acessos</strong> que tenho disponível no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
+                      <strong>5.</strong> Mas, preste atenção, só conseguimos segurar essa proposta até completar os <strong>400 acessos</strong> que temos disponíveis no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
                   </div>
               </div>
 
@@ -1316,6 +1418,43 @@
   });
 
 </script>
+  <!-- Rodapé -->
+<footer class="footer-section">
+    <div class="footer-container">
+        <!-- Prova de Autoridade -->
+        <div class="authority-section">
+            <div class="authority-badge">
+                <i class="fas fa-user-md"></i>
+                <div class="authority-text">
+                    <strong>Protocolo desenvolvido por Hipnoterapeuta Alex Dantas</strong>
+                    <p>Com base em evidências científicas sobre o nervo vago e hipnoterapia clínica</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segurança e Garantia -->
+        <div class="security-info">
+            <div class="security-item">
+                <i class="fas fa-lock"></i>
+                <span>Compra Segura</span>
+            </div>
+            <div class="security-item">
+                <i class="fas fa-credit-card"></i>
+                <span>Pagamento Criptografado</span>
+            </div>
+            <div class="security-item">
+                <i class="fas fa-undo"></i>
+                <span>Reembolso Garantido em 7 dias</span>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 Aplicativo Autoconhecimento. Todos os direitos reservados.</p>
+            <p>CNPJ: 40.678.175/0001-77</p>
+            <p>Este protocolo não substitui medicamentos.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
-
