@@ -1233,6 +1233,294 @@
              font-size: 1rem;
          }
      }
+   /* SEÇÃO DE DEPOIMENTOS - OTIMIZADA PARA MOBILE */
+.testimonials-section {
+    background: var(--gray-50);
+    padding: 30px 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.testimonials-title {
+    font-family: var(--headlinefont);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--gray-900);
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 20px 15px;
+    box-shadow: 0 8px 25px rgba(26, 77, 102, 0.15);
+    border-left: 4px solid var(--success);
+    position: relative;
+    margin: 0 5px;
+    width: calc(100% - 10px);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.testimonial-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid var(--success);
+    background: var(--gray-200);
+}
+
+.testimonial-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonial-info {
+    flex: 1;
+}
+
+.testimonial-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0 0 3px 0;
+}
+
+.testimonial-location {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.testimonial-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.testimonial-stars i {
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+
+.rating-text {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.testimonial-content {
+    margin-bottom: 15px;
+}
+
+.testimonial-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-900);
+    margin: 0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.testimonial-content strong {
+    color: var(--primary);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    border-top: 1px solid var(--gray-200);
+    padding-top: 10px;
+}
+
+.verified-purchase {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--success);
+    font-weight: 600;
+}
+
+.verified-purchase i {
+    font-size: 0.85rem;
+}
+
+.testimonial-date {
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.more-testimonials {
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    background: var(--cream);
+    border-radius: 10px;
+    border: 1px solid var(--gray-200);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.more-testimonials p {
+    font-size: 0.9rem;
+    color: var(--gray-900);
+    margin: 0;
+    font-weight: 600;
+}
+
+.avg-rating {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* RESPONSIVIDADE OTIMIZADA */
+@media (min-width: 769px) {
+    .testimonials-section {
+        padding: 40px 20px;
+    }
+    
+    .testimonials-container {
+        max-width: 900px;
+    }
+    
+    .testimonial-card {
+        margin: 0;
+        width: 100%;
+        padding: 25px 20px;
+    }
+    
+    .testimonials-title {
+        font-size: 1.6rem;
+    }
+    
+    .testimonial-photo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .testimonial-name {
+        font-size: 1.15rem;
+    }
+    
+    .testimonial-location {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    .more-testimonials {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 25px 5px;
+    }
+    
+    .testimonial-card {
+        padding: 18px 12px;
+        margin: 0 3px;
+        width: calc(100% - 6px);
+    }
+    
+    .testimonials-title {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+    
+    .testimonial-photo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .testimonial-header {
+        gap: 10px;
+    }
+    
+    .testimonial-name {
+        font-size: 1rem;
+    }
+    
+    .testimonial-location {
+        font-size: 0.8rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-footer {
+        font-size: 0.75rem;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    
+    .more-testimonials {
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 12px;
+    }
+    
+    .more-testimonials p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Animação sutil ao carregar */
+.testimonial-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.testimonial-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.testimonial-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
  </style>
 </head>
 
@@ -1460,6 +1748,121 @@
                </a>
            </div>
        </div>
+<!-- SEÇÃO DE DEPOIMENTOS - Inserir logo após o price-section -->
+<div class="testimonials-section">
+    <h2 class="testimonials-title">
+        ⭐ O que dizem quem já vive livre da ansiedade:
+    </h2>
+    
+    <div class="testimonials-container">
+        
+        <!-- Depoimento 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-photo">
+                    <img src="https://appestoicismo.github.io/hipnoseansiedade/anacarolina.jpg" alt="Ana Carolina" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Ana Carolina Cavalari</h4>
+                    <p class="testimonial-location">34 anos - São Paulo/SP</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">5/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>"Sempre achei que hipnose era 'coisa de filme', mas estava desesperada com as crises de ansiedade. O Interruptor funcionou <strong>NA PRIMEIRA SEMANA!</strong> Consegui controlar uma crise no trabalho usando as instruções, ninguém nem percebeu. Hoje durmo a noite toda sem acordar de madrugada. <strong>Vale cada centavo!</strong>"</p>
+            </div>
+            <div class="testimonial-footer">
+                <div class="verified-purchase">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Compra verificada</span>
+                </div>
+                <div class="testimonial-date">
+                    Há 2 semanas
+                </div>
+            </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-photo">
+                    <img src="https://appestoicismo.github.io/hipnoseansiedade/marianagomes.jpg
+" alt="Mariana Santos" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Mariana Gomes Santos</h4>
+                    <p class="testimonial-location">28 anos - Rio de Janeiro/RJ</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">5/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>"Em <strong>3 dias já senti diferença!</strong> Antes ficava com o coração acelerado só de sair de casa. Agora uso a técnica no metrô, no trabalho, em qualquer lugar. O mais incrível é que <strong>funciona em segundos mesmo.</strong> Minha família não acredita na mudança que tive."</p>
+            </div>
+            <div class="testimonial-footer">
+                <div class="verified-purchase">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Compra verificada</span>
+                </div>
+                <div class="testimonial-date">
+                    Há 1 semana
+                </div>
+            </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <div class="testimonial-photo">
+                    <img src="https://appestoicismo.github.io/hipnoseansiedade/julianaribeiro.jpg" alt="Juliana Ribeiro" loading="lazy">
+                </div>
+                <div class="testimonial-info">
+                    <h4 class="testimonial-name">Juliana Ribeiro</h4>
+                    <p class="testimonial-location">41 anos - Indaiatuba/SP</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">5/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <p>"O que mais me impressionou foi a<strong> simplicidade.</strong> Basta ouvir os áudios e relaxar... A ansiedade que me acompanhava há 10 anos simplesmente sumiu. <strong>Recomendo de olhos fechados</strong> para qualquer pessoa que sofre com isso."</p>
+            </div>
+            <div class="testimonial-footer">
+                <div class="verified-purchase">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Compra verificada</span>
+                </div>
+                <div class="testimonial-date">
+                    Há 4 dias
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Indicador de mais depoimentos -->
+    <div class="more-testimonials">
+        <p><strong>+127 depoimentos verificados</strong> • Nota média: <span class="avg-rating">4.9/5 ⭐</span></p>
+    </div>
+</div>
 
        <!-- FAQ Section -->
        <div class="faq-section" id="faqSection">
