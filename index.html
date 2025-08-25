@@ -476,6 +476,92 @@
          100% { left: 100%; }
      }
 
+     /* NOVO BOTÃO APÓS ÁUDIO */
+     .early-cta {
+         text-align: center;
+         padding: 30px 20px;
+         background: var(--white);
+         border-top: 1px solid var(--gray-200);
+         border-bottom: 1px solid var(--gray-200);
+     }
+
+     .early-cta-text {
+         font-size: 1.1rem;
+         color: var(--gray-900);
+         margin-bottom: 20px;
+         font-weight: 500;
+     }
+
+     .early-buy-btn {
+         background: var(--coral);
+         color: var(--white);
+         padding: 18px 30px;
+         border: 3px solid var(--white);
+         border-radius: 12px;
+         font-size: 1.2rem;
+         font-weight: 700;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         box-shadow: 0 8px 20px rgba(197, 90, 17, 0.4);
+         text-transform: none;
+         letter-spacing: 0.5px;
+     }
+
+     .early-buy-btn:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 12px 25px rgba(197, 90, 17, 0.5);
+         background: var(--urgent);
+     }
+
+     /* BOTÃO FIXO MOBILE */
+     .mobile-fixed-cta {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: var(--coral);
+         padding: 15px 20px;
+         z-index: 1000;
+         box-shadow: 0 -5px 20px rgba(197, 90, 17, 0.4);
+         display: none;
+         border-top: 3px solid var(--white);
+     }
+
+     .mobile-fixed-btn {
+         background: transparent;
+         color: var(--white);
+         border: 2px solid var(--white);
+         padding: 12px 20px;
+         border-radius: 8px;
+         font-size: 1rem;
+         font-weight: 800;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: block;
+         text-align: center;
+         width: 100%;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+     }
+
+     .mobile-fixed-btn:hover {
+         background: var(--white);
+         color: var(--coral);
+     }
+
+     @media (max-width: 768px) {
+         .mobile-fixed-cta {
+             display: block;
+         }
+         
+         body {
+             padding-bottom: 70px;
+         }
+     }
+
      /* CONTADOR COM ALTO CONTRASTE */
      .access-counter {
          background: var(--urgent);
@@ -686,6 +772,20 @@
          font-weight: 700;
      }
 
+     /* PREÇO ANCORADO */
+     .price-anchor {
+         font-size: 1.1rem;
+         color: var(--white);
+         margin-bottom: 8px;
+         opacity: 0.9;
+     }
+
+     .price-striked {
+         text-decoration: line-through;
+         color: #ff6b6b;
+         font-weight: 600;
+     }
+
      .price-installments {
          font-size: 2.5rem;
          font-weight: 900;
@@ -697,6 +797,15 @@
          font-size: 1.3rem;
          color: var(--white);
          font-weight: 600;
+         margin-bottom: 15px;
+     }
+
+     .price-daily {
+         font-size: 1rem;
+         color: var(--warmth);
+         font-weight: 600;
+         font-style: italic;
+         margin-bottom: 20px;
      }
 
      .buy-btn {
@@ -725,6 +834,48 @@
          background: var(--urgent);
      }
 
+     /* GARANTIA VISUAL DESTACADA */
+     .guarantee-box {
+         background: var(--cream);
+         border: 3px solid var(--success);
+         border-radius: 15px;
+         padding: 25px 20px;
+         margin: 30px 0;
+         text-align: center;
+         box-shadow: 0 8px 25px rgba(45, 106, 79, 0.2);
+         position: relative;
+     }
+
+     .guarantee-box::before {
+         content: '🛡️';
+         position: absolute;
+         top: -15px;
+         left: 50%;
+         transform: translateX(-50%);
+         background: var(--success);
+         padding: 10px 15px;
+         border-radius: 50%;
+         font-size: 1.5rem;
+         border: 3px solid var(--white);
+         box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
+     }
+
+     .guarantee-box h4 {
+         color: var(--success);
+         font-size: 1.3rem;
+         font-weight: 800;
+         margin-bottom: 15px;
+         margin-top: 10px;
+     }
+
+     .guarantee-box p {
+         color: var(--gray-900);
+         font-size: 1.1rem;
+         font-weight: 600;
+         line-height: 1.6;
+         margin: 0;
+     }
+
      /* FAQ COM MELHOR LEGIBILIDADE */
      .faq-section {
          padding: 40px 15px;
@@ -732,1277 +883,1290 @@
          width: 100%;
      }
 
-     .faq-title {
-         font-family: var(--headlinefont);
-         font-size: 2rem;
-         text-align: center;
-         margin-bottom: 30px;
-         color: var(--gray-900);
-         font-weight: 800;
-     }
+    .faq-title {
+        font-family: var(--headlinefont);
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--gray-900);
+        font-weight: 800;
+    }
 
-     .faq-container {
-         width: 100%;
-     }
+    .faq-container {
+        width: 100%;
+    }
 
-     .faq-item {
-         background: var(--white);
-         margin: 15px 0;
-         border-radius: 10px;
-         box-shadow: 0 4px 12px rgba(26, 77, 102, 0.15);
-         overflow: hidden;
-         border: 2px solid var(--gray-200);
-     }
+    .faq-item {
+        background: var(--white);
+        margin: 15px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(26, 77, 102, 0.15);
+        overflow: hidden;
+        border: 2px solid var(--gray-200);
+    }
 
-     .faq-question {
-         background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-         color: var(--white);
-         padding: 20px 18px;
-         cursor: pointer;
-         font-weight: 700;
-         font-size: 1.1rem;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         transition: background 0.3s ease;
-         line-height: 1.5;
-     }
+    .faq-question {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: var(--white);
+        padding: 20px 18px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s ease;
+        line-height: 1.5;
+    }
 
-     .faq-question:hover {
-         background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-     }
+    .faq-question:hover {
+        background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    }
 
-     .faq-answer {
-         padding: 20px 18px;
-         display: none;
-         line-height: 1.8;
-         font-size: 1.05rem;
-         color: var(--gray-900);
-         font-weight: 500;
-     }
+    .faq-answer {
+        padding: 20px 18px;
+        display: none;
+        line-height: 1.8;
+        font-size: 1.05rem;
+        color: var(--gray-900);
+        font-weight: 500;
+    }
 
-     .faq-item.active .faq-answer {
-         display: block;
-     }
+    .faq-item.active .faq-answer {
+        display: block;
+    }
 
-     .faq-icon {
-         transition: transform 0.3s ease;
-         margin-left: 10px;
-         flex-shrink: 0;
-         color: var(--white);
-     }
+    .faq-icon {
+        transition: transform 0.3s ease;
+        margin-left: 10px;
+        flex-shrink: 0;
+        color: var(--white);
+    }
 
-     .faq-item.active .faq-icon {
-         transform: rotate(180deg);
-     }
+    .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+    }
 
-     /* PROVA SOCIAL COM MELHOR CONTRASTE */
-     .social-proof {
-         position: fixed;
-         bottom: 15px;
-         right: 15px;
-         background: var(--white);
-         padding: 12px;
-         border-radius: 10px;
-         box-shadow: 0 5px 20px rgba(26, 77, 102, 0.3);
-         max-width: 280px;
-         display: none;
-         z-index: 1000;
-         animation: slideInRight 0.5s ease;
-         border-left: 4px solid var(--accent);
-         border: 2px solid var(--gray-200);
-     }
+    /* PROVA SOCIAL COM MELHOR CONTRASTE */
+    .social-proof {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background: var(--white);
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(26, 77, 102, 0.3);
+        max-width: 280px;
+        display: none;
+        z-index: 1000;
+        animation: slideInRight 0.5s ease;
+        border-left: 4px solid var(--accent);
+        border: 2px solid var(--gray-200);
+    }
 
-     @keyframes slideInRight {
-         from {
-             transform: translateX(100%);
-             opacity: 0;
-         }
-         to {
-             transform: translateX(0);
-             opacity: 1;
-         }
-     }
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 
-     .social-proof-content {
-         display: flex;
-         align-items: center;
-         gap: 10px;
-     }
+    .social-proof-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-     .social-proof-avatar {
-         width: 35px;
-         height: 35px;
-         background: var(--accent);
-         border-radius: 50%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         color: var(--white);
-         font-weight: bold;
-         flex-shrink: 0;
-     }
+    .social-proof-avatar {
+        width: 35px;
+        height: 35px;
+        background: var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-weight: bold;
+        flex-shrink: 0;
+    }
 
-     .social-proof-text {
-         flex: 1;
-     }
+    .social-proof-text {
+        flex: 1;
+    }
 
-     .social-proof-name {
-         font-weight: 700;
-         font-size: 0.9rem;
-         color: var(--gray-900);
-     }
+    .social-proof-name {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: var(--gray-900);
+    }
 
-     .social-proof-action {
-         font-size: 0.8rem;
-         color: var(--gray-600);
-         font-weight: 500;
-     }
+    .social-proof-action {
+        font-size: 0.8rem;
+        color: var(--gray-600);
+        font-weight: 500;
+    }
 
-     .social-proof-time {
-         font-size: 0.75rem;
-         color: var(--gray-600);
-     }
+    .social-proof-time {
+        font-size: 0.75rem;
+        color: var(--gray-600);
+    }
 
-     /* RODAPÉ COM MELHOR CONTRASTE */
-     .footer-section {
-    background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary) 100%);
-    color: var(--white);
-    padding: 25px 15px; /* Reduzido de 40px 20px */
-    margin-top: 30px; /* Reduzido de 40px */
+    /* RODAPÉ COM MELHOR CONTRASTE */
+    .footer-section {
+   background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary) 100%);
+   color: var(--white);
+   padding: 25px 15px; /* Reduzido de 40px 20px */
+   margin-top: 30px; /* Reduzido de 40px */
 }
 
 .footer-container {
-    max-width: 800px;
-    margin: 0 auto;
+   max-width: 800px;
+   margin: 0 auto;
 }
 
 .authority-section {
-    text-align: center;
-    margin-bottom: 20px; /* Reduzido de 30px */
-    padding-bottom: 15px; /* Reduzido de 20px */
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+   text-align: center;
+   margin-bottom: 20px; /* Reduzido de 30px */
+   padding-bottom: 20px; /* Aumentado para acomodar nova bio */
+   border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .authority-badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px; /* Reduzido de 15px */
-    flex-wrap: wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px; /* Reduzido de 15px */
+   flex-wrap: wrap;
+   margin-bottom: 15px;
 }
 
 .authority-badge i {
-    font-size: 1.5rem; /* Reduzido de 2rem */
-    color: var(--warmth);
+   font-size: 1.5rem; /* Reduzido de 2rem */
+   color: var(--warmth);
 }
 
 .authority-text {
-    text-align: left;
-    max-width: 400px;
+   text-align: left;
+   max-width: 400px;
 }
 
 .authority-text strong {
-    font-size: 1rem; /* Reduzido de 1.2rem */
-    display: block;
-    margin-bottom: 5px; /* Reduzido de 8px */
-    color: var(--white);
-    font-weight: 800;
+   font-size: 1rem; /* Reduzido de 1.2rem */
+   display: block;
+   margin-bottom: 5px; /* Reduzido de 8px */
+   color: var(--white);
+   font-weight: 800;
 }
 
 .authority-text p {
-    font-size: 0.85rem; /* Reduzido de 1rem */
-    margin: 0;
-    color: var(--white);
-    font-weight: 500;
-    line-height: 1.4; /* Adicionado para compactar */
+   font-size: 0.85rem; /* Reduzido de 1rem */
+   margin: 0;
+   color: var(--white);
+   font-weight: 500;
+   line-height: 1.4; /* Adicionado para compactar */
+}
+
+/* NOVA BIO EXPANDIDA */
+.authority-bio {
+   background: rgba(255,255,255,0.1);
+   padding: 15px 20px;
+   border-radius: 10px;
+   margin-top: 15px;
+   border-left: 4px solid var(--warmth);
+}
+
+.authority-bio p {
+   font-size: 0.9rem;
+   line-height: 1.5;
+   margin: 0;
+   color: var(--white);
+   font-weight: 500;
+   text-align: center;
 }
 
 .security-info {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Reduzido de 30px */
-    margin-bottom: 20px; /* Reduzido de 30px */
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
+   gap: 20px; /* Reduzido de 30px */
+   margin-bottom: 20px; /* Reduzido de 30px */
+   flex-wrap: wrap;
 }
 
 .security-item {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Reduzido de 10px */
-    font-size: 0.9rem; /* Reduzido de 1rem */
-    color: var(--white);
-    font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 8px; /* Reduzido de 10px */
+   font-size: 0.9rem; /* Reduzido de 1rem */
+   color: var(--white);
+   font-weight: 600;
 }
 
 .security-item i {
-    color: var(--warmth);
-    font-size: 1rem; /* Reduzido de 1.2rem */
+   color: var(--warmth);
+   font-size: 1rem; /* Reduzido de 1.2rem */
 }
 
 .copyright {
-    text-align: center;
-    padding-top: 15px; /* Reduzido de 20px */
-    border-top: 1px solid rgba(255,255,255,0.3);
+   text-align: center;
+   padding-top: 15px; /* Reduzido de 20px */
+   border-top: 1px solid rgba(255,255,255,0.3);
 }
 
 .copyright p {
-    font-size: 0.8rem; /* Reduzido de 0.9rem */
-    margin: 3px 0; /* Reduzido de 5px 0 */
-    color: var(--white);
-    font-weight: 500;
-    line-height: 1.3; /* Compactado */
+   font-size: 0.8rem; /* Reduzido de 0.9rem */
+   margin: 3px 0; /* Reduzido de 5px 0 */
+   color: var(--white);
+   font-weight: 500;
+   line-height: 1.3; /* Compactado */
 }
 
-/* RESPONSIVIDADE OTIMIZADA */
-@media (max-width: 768px) {
-    .footer-section {
-        padding: 20px 10px; /* Ainda mais compacto no mobile */
+    /* RESPONSIVIDADE OTIMIZADA */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .content-wrapper {
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 25px 50px rgba(26, 77, 102, 0.2);
+        }
+        
+        .main-container {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
-    
-    .authority-badge {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-    
-    .authority-text {
-        text-align: center;
-    }
-    
-    .authority-text strong {
-        font-size: 0.95rem;
-    }
-    
-    .authority-text p {
-        font-size: 0.8rem;
-    }
-    
-    .security-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .security-item {
-        font-size: 0.85rem;
-    }
-    
-    .copyright p {
-        font-size: 0.75rem;
-        margin: 2px 0;
-    }
-}
 
-@media (max-width: 480px) {
-    .footer-section {
-        padding: 18px 8px;
+    @media (min-width: 1025px) {
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content-wrapper {
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(26, 77, 102, 0.2);
+            max-width: 900px;
+            overflow: hidden;
+        }
+        
+        .header-section {
+            padding: 50px 40px;
+        }
+        
+        .offer-section,
+        .faq-section {
+            padding: 50px 40px;
+        }
+        
+        .benefits-checklist-section {
+            margin: 20px 30px;
+        }
+        
+        .main-title {
+            font-size: 3.2rem;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+        }
+        
+        .price-installments {
+            font-size: 2.8rem;
+        }
+        
+        .buy-btn {
+            padding: 25px 50px;
+            font-size: 1.4rem;
+        }
+        
+        .social-proof {
+            right: 20px;
+            bottom: 20px;
+            max-width: 300px;
+        }
     }
-    
-    .authority-badge i {
-        font-size: 1.3rem;
-    }
-    
-    .authority-text strong {
-        font-size: 0.9rem;
-    }
-    
-    .authority-text p {
-        font-size: 0.75rem;
-    }
-    
-    .security-item {
-        font-size: 0.8rem;
-    }
-    
-    .copyright p {
-        font-size: 0.7rem;
-    }
-}
 
-     /* RESPONSIVIDADE OTIMIZADA */
-     @media (min-width: 769px) and (max-width: 1024px) {
-         .content-wrapper {
-             border-radius: 20px;
-             margin: 20px;
-             box-shadow: 0 25px 50px rgba(26, 77, 102, 0.2);
-         }
-         
-         .main-container {
-             padding: 20px;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-         }
-     }
+    @media (max-width: 768px) {
+        .premium-audio-player {
+            padding: 20px 15px;
+            margin: 15px 5px;
+        }
+        
+        .player-controls {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .player-center {
+            order: 1;
+            width: 100%;
+        }
+        
+        .premium-play-btn {
+            order: 0;
+            width: 55px;
+            height: 55px;
+            font-size: 1.3rem;
+        }
+        
+        .player-right {
+            order: 2;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .speed-control {
+            order: 1;
+        }
+        
+        .volume-btn {
+            order: 2;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .footer-section {
+            padding: 30px 15px;
+        }
+        
+        .authority-badge {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .authority-text {
+            text-align: center;
+        }
+        
+        .security-info {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .benefits-checklist-section {
+            padding: 25px 15px;
+            margin: 15px 5px;
+        }
+        
+        .early-cta {
+            padding: 25px 15px;
+        }
+        
+        .guarantee-box {
+            margin: 25px 5px;
+            padding: 20px 15px;
+        }
+    }
 
-     @media (min-width: 1025px) {
-         .main-container {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             padding: 20px;
-         }
-         
-         .content-wrapper {
-             border-radius: 20px;
-             box-shadow: 0 25px 50px rgba(26, 77, 102, 0.2);
-             max-width: 900px;
-             overflow: hidden;
-         }
-         
-         .header-section {
-             padding: 50px 40px;
-         }
-         
-         .offer-section,
-         .faq-section {
-             padding: 50px 40px;
-         }
-         
-         .benefits-checklist-section {
-             margin: 20px 30px;
-         }
-         
-         .main-title {
-             font-size: 3.2rem;
-         }
-         
-         .subtitle {
-             font-size: 1.4rem;
-         }
-         
-         .price-installments {
-             font-size: 2.8rem;
-         }
-         
-         .buy-btn {
-             padding: 25px 50px;
-             font-size: 1.4rem;
-         }
-         
-         .social-proof {
-             right: 20px;
-             bottom: 20px;
-             max-width: 300px;
-         }
-     }
-
-     @media (max-width: 768px) {
-         .premium-audio-player {
-             padding: 20px 15px;
-             margin: 15px 5px;
-         }
-         
-         .player-controls {
-             flex-direction: column;
-             gap: 15px;
-         }
-         
-         .player-center {
-             order: 1;
-             width: 100%;
-         }
-         
-         .premium-play-btn {
-             order: 0;
-             width: 55px;
-             height: 55px;
-             font-size: 1.3rem;
-         }
-         
-         .player-right {
-             order: 2;
-             justify-content: center;
-             flex-wrap: wrap;
-             gap: 10px;
-         }
-         
-         .speed-control {
-             order: 1;
-         }
-         
-         .volume-btn {
-             order: 2;
-             width: 40px;
-             height: 40px;
-         }
-         
-         .footer-section {
-             padding: 30px 15px;
-         }
-         
-         .authority-badge {
-             flex-direction: column;
-             text-align: center;
-         }
-         
-         .authority-text {
-             text-align: center;
-         }
-         
-         .security-info {
-             flex-direction: column;
-             align-items: center;
-             gap: 15px;
-         }
-         
-         .benefits-checklist-section {
-             padding: 25px 15px;
-             margin: 15px 5px;
-         }
-     }
-
-     @media (max-width: 480px) {
-         .main-title {
-             font-size: 2.4rem;
-         }
-         
-         .title-highlight {
-             padding: 6px 14px;
-             font-size: 0.95em;
-         }
-         
-         .counter-number {
-             font-size: 2.2rem;
-         }
-         
-         .access-counter {
-             margin: 20px 5px;
-         }
-         
-         .offer-title {
-             font-size: 1.9rem;
-         }
-         
-         .social-proof {
-             right: 5px;
-             bottom: 5px;
-             max-width: 250px;
-         }
-         
-         .sessions-main-title {
-             font-size: 1.9rem;
-         }
-         
-         .session-button {
-             padding: 18px 15px;
-         }
-         
-         .session-content {
-             font-size: 1.05rem;
-         }
-         
-         .audio-icon {
-             width: 35px;
-             height: 35px;
-             font-size: 1rem;
-         }
-         
-         .buy-btn {
-             padding: 18px 25px;
-             font-size: 1.1rem;
-         }
-         
-         .checklist-title {
-             font-size: 1.1rem;
-             margin-bottom: 20px;
-         }
-         
-         .benefit-text {
-             font-size: 0.95rem;
-         }
-         
-         .check-icon {
-             width: 18px;
-             height: 18px;
-             font-size: 0.7rem;
-         }
-         
-         .checklist-item {
-             gap: 10px;
-             margin-bottom: 12px;
-         }
-         
-         .guarantee-text {
-             padding: 18px 15px;
-         }
-         
-         .guarantee-text p,
-         .cta-instruction p {
-             font-size: 1rem;
-         }
-     }
-   /* SEÇÃO DE DEPOIMENTOS - OTIMIZADA PARA MOBILE */
+    @media (max-width: 480px) {
+        .main-title {
+            font-size: 2.4rem;
+        }
+        
+        .title-highlight {
+            padding: 6px 14px;
+            font-size: 0.95em;
+        }
+        
+        .counter-number {
+            font-size: 2.2rem;
+        }
+        
+        .access-counter {
+            margin: 20px 5px;
+        }
+        
+        .offer-title {
+            font-size: 1.9rem;
+        }
+        
+        .social-proof {
+            right: 5px;
+            bottom: 5px;
+            max-width: 250px;
+        }
+        
+        .sessions-main-title {
+            font-size: 1.9rem;
+        }
+        
+        .session-button {
+            padding: 18px 15px;
+        }
+        
+        .session-content {
+            font-size: 1.05rem;
+        }
+        
+        .audio-icon {
+            width: 35px;
+            height: 35px;
+            font-size: 1rem;
+        }
+        
+        .buy-btn {
+            padding: 18px 25px;
+            font-size: 1.1rem;
+        }
+        
+        .early-buy-btn {
+            padding: 15px 25px;
+            font-size: 1.1rem;
+        }
+        
+        .checklist-title {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-text {
+            font-size: 0.95rem;
+        }
+        
+        .check-icon {
+            width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+        }
+        
+        .checklist-item {
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .guarantee-text {
+            padding: 18px 15px;
+        }
+        
+        .guarantee-text p,
+        .cta-instruction p {
+            font-size: 1rem;
+        }
+        
+        .guarantee-box {
+            padding: 18px 12px;
+        }
+        
+        .guarantee-box h4 {
+            font-size: 1.1rem;
+        }
+        
+        .guarantee-box p {
+            font-size: 1rem;
+        }
+    }
+  /* SEÇÃO DE DEPOIMENTOS - OTIMIZADA PARA MOBILE */
 .testimonials-section {
-    background: var(--gray-50);
-    padding: 30px 10px;
-    margin: 0;
-    width: 100%;
+   background: var(--gray-50);
+   padding: 30px 10px;
+   margin: 0;
+   width: 100%;
 }
 
 .testimonials-title {
-    font-family: var(--headlinefont);
-    font-size: 1.4rem;
-    font-weight: 800;
-    text-align: center;
-    color: var(--gray-900);
-    margin-bottom: 25px;
-    line-height: 1.3;
+   font-family: var(--headlinefont);
+   font-size: 1.4rem;
+   font-weight: 800;
+   text-align: center;
+   color: var(--gray-900);
+   margin-bottom: 25px;
+   line-height: 1.3;
 }
 
 .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 100%;
-    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   max-width: 100%;
+   margin: 0 auto;
 }
 
 .testimonial-card {
-    background: var(--white);
-    border-radius: 15px;
-    padding: 20px 15px;
-    box-shadow: 0 8px 25px rgba(26, 77, 102, 0.15);
-    border-left: 4px solid var(--success);
-    position: relative;
-    margin: 0 5px;
-    width: calc(100% - 10px);
+   background: var(--white);
+   border-radius: 15px;
+   padding: 20px 15px;
+   box-shadow: 0 8px 25px rgba(26, 77, 102, 0.15);
+   border-left: 4px solid var(--success);
+   position: relative;
+   margin: 0 5px;
+   width: calc(100% - 10px);
 }
 
 .testimonial-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin-bottom: 15px;
 }
 
 .testimonial-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    border: 3px solid var(--success);
-    background: var(--gray-200);
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   overflow: hidden;
+   flex-shrink: 0;
+   border: 3px solid var(--success);
+   background: var(--gray-200);
 }
 
 .testimonial-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
 }
 
 .testimonial-info {
-    flex: 1;
+   flex: 1;
 }
 
 .testimonial-name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin: 0 0 3px 0;
+   font-size: 1.1rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin: 0 0 3px 0;
 }
 
 .testimonial-location {
-    font-size: 0.85rem;
-    color: var(--gray-600);
-    margin: 0 0 5px 0;
-    font-weight: 500;
+   font-size: 0.85rem;
+   color: var(--gray-600);
+   margin: 0 0 5px 0;
+   font-weight: 500;
 }
 
 .testimonial-stars {
-    display: flex;
-    align-items: center;
-    gap: 2px;
+   display: flex;
+   align-items: center;
+   gap: 2px;
 }
 
 .testimonial-stars i {
-    color: #FFD700;
-    font-size: 0.9rem;
+   color: #FFD700;
+   font-size: 0.9rem;
 }
 
 .rating-text {
-    font-size: 0.8rem;
-    color: var(--gray-600);
-    margin-left: 5px;
-    font-weight: 600;
+   font-size: 0.8rem;
+   color: var(--gray-600);
+   margin-left: 5px;
+   font-weight: 600;
 }
 
 .testimonial-content {
-    margin-bottom: 15px;
+   margin-bottom: 15px;
 }
 
 .testimonial-content p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--gray-900);
-    margin: 0;
-    font-weight: 500;
-    font-style: italic;
+   font-size: 0.95rem;
+   line-height: 1.6;
+   color: var(--gray-900);
+   margin: 0;
+   font-weight: 500;
+   font-style: italic;
 }
 
 .testimonial-content strong {
-    color: var(--primary);
-    font-weight: 700;
-    font-style: normal;
+   color: var(--primary);
+   font-weight: 700;
+   font-style: normal;
 }
 
 .testimonial-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    color: var(--gray-600);
-    border-top: 1px solid var(--gray-200);
-    padding-top: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 0.8rem;
+   color: var(--gray-600);
+   border-top: 1px solid var(--gray-200);
+   padding-top: 10px;
 }
 
 .verified-purchase {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--success);
-    font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   color: var(--success);
+   font-weight: 600;
 }
 
 .verified-purchase i {
-    font-size: 0.85rem;
+   font-size: 0.85rem;
 }
 
 .testimonial-date {
-    font-weight: 500;
-    color: var(--gray-600);
+   font-weight: 500;
+   color: var(--gray-600);
 }
 
 .more-testimonials {
-    text-align: center;
-    margin-top: 25px;
-    padding: 15px;
-    background: var(--cream);
-    border-radius: 10px;
-    border: 1px solid var(--gray-200);
-    margin-left: 5px;
-    margin-right: 5px;
+   text-align: center;
+   margin-top: 25px;
+   padding: 15px;
+   background: var(--cream);
+   border-radius: 10px;
+   border: 1px solid var(--gray-200);
+   margin-left: 5px;
+   margin-right: 5px;
 }
 
 .more-testimonials p {
-    font-size: 0.9rem;
-    color: var(--gray-900);
-    margin: 0;
-    font-weight: 600;
+   font-size: 0.9rem;
+   color: var(--gray-900);
+   margin: 0;
+   font-weight: 600;
 }
 
 .avg-rating {
-    color: var(--primary);
-    font-weight: 700;
+   color: var(--primary);
+   font-weight: 700;
 }
 
 /* RESPONSIVIDADE OTIMIZADA */
 @media (min-width: 769px) {
-    .testimonials-section {
-        padding: 40px 20px;
-    }
-    
-    .testimonials-container {
-        max-width: 900px;
-    }
-    
-    .testimonial-card {
-        margin: 0;
-        width: 100%;
-        padding: 25px 20px;
-    }
-    
-    .testimonials-title {
-        font-size: 1.6rem;
-    }
-    
-    .testimonial-photo {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .testimonial-name {
-        font-size: 1.15rem;
-    }
-    
-    .testimonial-location {
-        font-size: 0.9rem;
-    }
-    
-    .testimonial-content p {
-        font-size: 1rem;
-    }
-    
-    .more-testimonials {
-        margin-left: 0;
-        margin-right: 0;
-    }
+   .testimonials-section {
+       padding: 40px 20px;
+   }
+   
+   .testimonials-container {
+       max-width: 900px;
+   }
+   
+   .testimonial-card {
+       margin: 0;
+       width: 100%;
+       padding: 25px 20px;
+   }
+   
+   .testimonials-title {
+       font-size: 1.6rem;
+   }
+   
+   .testimonial-photo {
+       width: 60px;
+       height: 60px;
+   }
+   
+   .testimonial-name {
+       font-size: 1.15rem;
+   }
+   
+   .testimonial-location {
+       font-size: 0.9rem;
+   }
+   
+   .testimonial-content p {
+       font-size: 1rem;
+   }
+   
+   .more-testimonials {
+       margin-left: 0;
+       margin-right: 0;
+   }
 }
 
 @media (max-width: 480px) {
-    .testimonials-section {
-        padding: 25px 5px;
-    }
-    
-    .testimonial-card {
-        padding: 18px 12px;
-        margin: 0 3px;
-        width: calc(100% - 6px);
-    }
-    
-    .testimonials-title {
-        font-size: 1.2rem;
-        padding: 0 10px;
-    }
-    
-    .testimonial-photo {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .testimonial-header {
-        gap: 10px;
-    }
-    
-    .testimonial-name {
-        font-size: 1rem;
-    }
-    
-    .testimonial-location {
-        font-size: 0.8rem;
-    }
-    
-    .testimonial-content p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
-    .testimonial-footer {
-        font-size: 0.75rem;
-        flex-direction: column;
-        gap: 5px;
-        align-items: flex-start;
-    }
-    
-    .more-testimonials {
-        margin-left: 3px;
-        margin-right: 3px;
-        padding: 12px;
-    }
-    
-    .more-testimonials p {
-        font-size: 0.85rem;
-    }
+   .testimonials-section {
+       padding: 25px 5px;
+   }
+   
+   .testimonial-card {
+       padding: 18px 12px;
+       margin: 0 3px;
+       width: calc(100% - 6px);
+   }
+   
+   .testimonials-title {
+       font-size: 1.2rem;
+       padding: 0 10px;
+   }
+   
+   .testimonial-photo {
+       width: 45px;
+       height: 45px;
+   }
+   
+   .testimonial-header {
+       gap: 10px;
+   }
+   
+   .testimonial-name {
+       font-size: 1rem;
+   }
+   
+   .testimonial-location {
+       font-size: 0.8rem;
+   }
+   
+   .testimonial-content p {
+       font-size: 0.9rem;
+       line-height: 1.5;
+   }
+   
+   .testimonial-footer {
+       font-size: 0.75rem;
+       flex-direction: column;
+       gap: 5px;
+       align-items: flex-start;
+   }
+   
+   .more-testimonials {
+       margin-left: 3px;
+       margin-right: 3px;
+       padding: 12px;
+   }
+   
+   .more-testimonials p {
+       font-size: 0.85rem;
+   }
 }
 
 /* Animação sutil ao carregar */
 .testimonial-card {
-    animation: fadeInUp 0.6s ease-out;
+   animation: fadeInUp 0.6s ease-out;
 }
 
 .testimonial-card:nth-child(2) {
-    animation-delay: 0.1s;
+   animation-delay: 0.1s;
 }
 
 .testimonial-card:nth-child(3) {
-    animation-delay: 0.2s;
+   animation-delay: 0.2s;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+   from {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
 }
- </style>
+</style>
 </head>
 
 <body>
- <div class="main-container">
-     <div class="content-wrapper">
-         <!-- Header Section -->
-         <div class="header-section">
-             
-             <h1 class="main-title">
-   Protocolo baseado em ciência<br>
-   mostra como interromper <span class="title-highlight">sintomas da ansiedade</span><br>
-   em segundos
-</h1>
-             <p class="subtitle">
-                 Você já contou <strong>quantas vezes</strong> a ANSIEDADE roubou sua <strong>paz e alegria de viver?</strong>
-             </p>
-
-         </div>
-
-         <!-- Seção de Benefícios Clean -->
-         <div class="benefits-checklist-section">
-             <h3 class="checklist-title">Imagine sua vida sem o peso da ansiedade:</h3>
-             
-             <div class="checklist-container">
-                 <div class="checklist-item">
-                     <div class="check-icon">✓</div>
-                     <span class="benefit-text">Sair de casa sem medo de ter uma crise em público</span>
-                 </div>
-                 
-                 <div class="checklist-item">
-                     <div class="check-icon">✓</div>
-                     <span class="benefit-text">Dormir profundamente a noite inteira, sem acordar de madrugada</span>
-                 </div>
-                 
-                 <div class="checklist-item">
-                     <div class="check-icon">✓</div>
-                     <span class="benefit-text">Controlar a mente acelerada mesmo nos momentos mais estressantes</span>
-                 </div>
-             </div>
-             
-             <div class="guarantee-text" role="note" aria-label="Mensagem importante">
-  <p>
-    Se acredita que controlar a ansiedade precisa ser <strong>demorado e caro</strong>… 
-    ou se hoje sua rotina <strong>não permite parar para cuidar de si</strong>… 
-    <strong>aqui está um caminho diferente.</strong>
-  </p>
-</div>
-             
-             <div class="cta-instruction">
-  <p><em>Ouça a explicação e descubra por que tantas mulheres já vivem sem a ansiedade.</em></p>
-</div>
-
-
-        <!-- Player de Áudio Premium -->
-<div class="premium-audio-player">
-   <div class="player-header">
-       <div class="audio-title">🎧 Ouça a Explicação Completa</div>
-       <div class="audio-subtitle">Protocolo Científico para Controlar Ansiedade</div>
-   </div>
-   
-   <div class="player-controls">
-       <button class="premium-play-btn" id="premiumPlayBtn">
-           <i class="fas fa-play"></i>
-       </button>
-       
-       <div class="player-center">
-           <div class="time-display">
-               <span id="currentTime">0:00</span>
-               <span class="time-separator">/</span>
-               <span id="totalTime">4:12</span>
-           </div>
-           
-           <div class="progress-container">
-               <div class="progress-bar" id="progressBar">
-                   <div class="progress-fill" id="progressFill"></div>
-                   <div class="progress-handle" id="progressHandle"></div>
-               </div>
-           </div>
-       </div>
-       
-       <div class="player-right">
-           <div class="speed-control">
-               <button class="speed-btn active" data-speed="1">1x</button>
-               <button class="speed-btn" data-speed="1.25">1.25x</button>
-               <button class="speed-btn" data-speed="1.5">1.5x</button>
-               <button class="speed-btn" data-speed="2">2x</button>
-           </div>
-           
-           <button class="volume-btn" id="volumeBtn">
-               <i class="fas fa-volume-up"></i>
-           </button>
-       </div>
-   </div>
-   
-   <audio id="premiumAudioPlayer" preload="metadata">
-       <source src="https://appestoicismo.github.io/hipnoseansiedade/narracaopv3.MP3" type="audio/mpeg">
-       Seu navegador não suporta o elemento de áudio.
-   </audio>
-</div>
-
-         <!-- Contador de Vagas -->
-         <div class="access-counter">
-             <div class="counter-text">⚠️ Vagas Disponíveis no Aplicativo:</div>
-             <span class="counter-number" id="accessCounter">387</span>
-             <div style="font-size: 0.9rem; margin-top: 10px; color: var(--white); font-weight: 600;">
-                 Após atingir 400 acessos, o preço aumenta para R$ 97,00
-             </div>
-             <div class="update-status" id="updateStatus">
-                 Atualizado em: <span id="lastUpdate"></span>
-             </div>
-         </div>
-
-         <!-- Seção de Sessões do Aplicativo -->
-         <div class="app-sessions-section">
-             <h2 class="sessions-main-title">Tudo isso já está liberado para você hoje</h2>
-
-           
-           <!-- Imagem do interruptor -->
-   <div class="app-image-container">
-       <img src="https://appestoicismo.github.io/hipnoseansiedade/appinterruptor.png" alt="App Interruptor" class="app-image">
-   </div>
-             
-           <!-- Lista de sessões existente -->
-             <div class="sessions-list">
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Instruções iniciais</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 1: O que é o Interruptor de Ansiedade</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 2: Integrando o Interruptor de Ansiedade</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 2.1: Instalando na prática o Interruptor de Ansiedade</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 3: Instalando seu Lugar Seguro</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 4: Dormir profundamente</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 5: Controle de pensamento acelerado</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 6: Mantendo a paz durante momentos desafiadores</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 7: Alívio imediato da ansiedade</div>
-                 </div>
-                 
-                 <div class="session-button">
-                     <div class="audio-icon">🎧</div>
-                     <div class="session-content">Sessão 8: O que a ansiedade está tentando te dizer (em breve)</div>
-                 </div>
-             </div>
-         </div>
-
-         <!-- Social Proof Popup -->
-         <div class="social-proof" id="socialProof">
-             <div class="social-proof-content">
-                 <div class="social-proof-avatar">M</div>
-                 <div class="social-proof-text">
-                     <div class="social-proof-name">Márcia, 34 anos</div>
-                     <div class="social-proof-action">Acabou de adquirir o método</div>
-                     <div class="social-proof-time">há 2 minutos</div>
-                 </div>
-             </div>
-         </div>
-
-         <!-- Offer Section -->
-         <div class="offer-section" id="offerSection">
-             <h2 class="offer-title">
-                 🎯 Aqui está a proposta onde você não corre nenhum risco de perder seu dinheiro:
-             </h2>
+<div class="main-container">
+    <div class="content-wrapper">
+        <!-- Header Section -->
+        <div class="header-section">
             
-             <div class="offer-list">
-                 <div class="offer-item">
-                     <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as sessões
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>2.</strong> Terá acesso ao aplicativo, que pode ser baixado no seu celular e <strong>usado onde quiser, na hora que desejar, quantas vezes precisar</strong>.
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>3.</strong> Se em até <strong>7 dias</strong> você não conseguir ter resultados com o que vai aprender, basta acessar esse link: <a href="https://reembolso.kiwify.com.br/login" target="_blank">reembolso.kiwify.com.br</a> e devolveremos <strong>100% do seu investimento</strong>
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>4.</strong> <span style="color: var(--accent); font-weight: 700;">Seu risco é ZERO!</span>
-                 </div>
-                 
-                 <div class="offer-item">
-                     <strong>5.</strong> Mas, preste atenção, só conseguimos segurar essa proposta até completar os <strong>400 acessos</strong> que temos disponíveis no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
-                 </div>
-             </div>
+            <h1 class="main-title">
+  Protocolo baseado em ciência<br>
+  mostra como interromper <span class="title-highlight">sintomas da ansiedade</span><br>
+  em segundos
+</h1>
+            <p class="subtitle">
+                Você já contou <strong>quantas vezes</strong> a ANSIEDADE roubou sua <strong>paz e alegria de viver?</strong>
+            </p>
 
-             <div class="price-section">
- <h3>Para adquirir agora:</h3>
- <div class="price-installments">6x de R$ 8,99</div>
- <div class="price-cash">ou apenas R$ 47,90 à vista no cartão ou Pix</div>
-                 
-                <a href="#" class="buy-btn" id="buyBtn">
-                   🚀 GARANTIR ACESSO AGORA
-               </a>
-           </div>
-       </div>
-<!-- SEÇÃO DE DEPOIMENTOS - Inserir logo após o price-section -->
-<div class="testimonials-section">
-    <h2 class="testimonials-title">
-        ⭐ O que dizem quem já vive livre da ansiedade:
-    </h2>
-    
-    <div class="testimonials-container">
-        
-        <!-- Depoimento 1 -->
-        <div class="testimonial-card">
-            <div class="testimonial-header">
-                <div class="testimonial-photo">
-                    <img src="https://appestoicismo.github.io/hipnoseansiedade/anacarolina.jpg" alt="Ana Carolina" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h4 class="testimonial-name">Ana Carolina Cavalari</h4>
-                    <p class="testimonial-location">34 anos - São Paulo/SP</p>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-text">5/5</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-content">
-                <p>"Sempre achei que hipnose era 'coisa de filme', mas estava desesperada com as crises de ansiedade. O Interruptor funcionou <strong>NA PRIMEIRA SEMANA!</strong> Consegui controlar uma crise no trabalho usando as instruções, ninguém nem percebeu. Hoje durmo a noite toda sem acordar de madrugada. <strong>Vale cada centavo!</strong>"</p>
-            </div>
-            <div class="testimonial-footer">
-                <div class="verified-purchase">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Compra verificada</span>
-                </div>
-                <div class="testimonial-date">
-                    Há 2 semanas
-                </div>
-            </div>
         </div>
 
-        <!-- Depoimento 2 -->
-        <div class="testimonial-card">
-            <div class="testimonial-header">
-                <div class="testimonial-photo">
-                    <img src="https://appestoicismo.github.io/hipnoseansiedade/marianagomes.jpg
-" alt="Mariana Santos" loading="lazy">
+        <!-- Seção de Benefícios Clean -->
+        <div class="benefits-checklist-section">
+            <h3 class="checklist-title">Imagine sua vida sem o peso da ansiedade:</h3>
+            
+            <div class="checklist-container">
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <span class="benefit-text">Sair de casa sem medo de ter uma crise em público</span>
                 </div>
-                <div class="testimonial-info">
-                    <h4 class="testimonial-name">Mariana Gomes Santos</h4>
-                    <p class="testimonial-location">28 anos - Rio de Janeiro/RJ</p>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-text">5/5</span>
-                    </div>
+                
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <span class="benefit-text">Dormir profundamente a noite inteira, sem acordar de madrugada</span>
                 </div>
-            </div>
-            <div class="testimonial-content">
-                <p>"Em <strong>3 dias já senti diferença!</strong> Antes ficava com o coração acelerado só de sair de casa. Agora uso a técnica no metrô, no trabalho, em qualquer lugar. O mais incrível é que <strong>funciona em segundos mesmo.</strong> Minha família não acredita na mudança que tive."</p>
-            </div>
-            <div class="testimonial-footer">
-                <div class="verified-purchase">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Compra verificada</span>
-                </div>
-                <div class="testimonial-date">
-                    Há 1 semana
+                
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <span class="benefit-text">Controlar a mente acelerada mesmo nos momentos mais estressantes</span>
                 </div>
             </div>
-        </div>
-
-        <!-- Depoimento 3 -->
-        <div class="testimonial-card">
-            <div class="testimonial-header">
-                <div class="testimonial-photo">
-                    <img src="https://appestoicismo.github.io/hipnoseansiedade/julianaribeiro.jpg" alt="Juliana Ribeiro" loading="lazy">
-                </div>
-                <div class="testimonial-info">
-                    <h4 class="testimonial-name">Juliana Ribeiro</h4>
-                    <p class="testimonial-location">41 anos - Indaiatuba/SP</p>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-text">5/5</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-content">
-                <p>"O que mais me impressionou foi a<strong> simplicidade.</strong> Basta ouvir os áudios e relaxar... A ansiedade que me acompanhava há 10 anos simplesmente sumiu. <strong>Recomendo de olhos fechados</strong> para qualquer pessoa que sofre com isso."</p>
-            </div>
-            <div class="testimonial-footer">
-                <div class="verified-purchase">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Compra verificada</span>
-                </div>
-                <div class="testimonial-date">
-                    Há 4 dias
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Indicador de mais depoimentos -->
-    <div class="more-testimonials">
-        <p><strong>+127 depoimentos verificados</strong> • Nota média: <span class="avg-rating">4.9/5 ⭐</span></p>
-    </div>
+            
+            <div class="guarantee-text" role="note" aria-label="Mensagem importante">
+ <p>
+   Se acredita que controlar a ansiedade precisa ser <strong>demorado e caro</strong>… 
+   ou se hoje sua rotina <strong>não permite parar para cuidar de si</strong>… 
+   <strong>aqui está um caminho diferente.</strong>
+ </p>
+</div>
+            
+            <div class="cta-instruction">
+ <p><em>Ouça a explicação e descubra por que tantas mulheres já vivem sem a ansiedade.</em></p>
 </div>
 
-       <!-- FAQ Section -->
-       <div class="faq-section" id="faqSection">
-           <h2 class="faq-title">❓ Perguntas Frequentes</h2>
+
+       <!-- Player de Áudio Premium -->
+<div class="premium-audio-player">
+  <div class="player-header">
+      <div class="audio-title">🎧 Ouça a Explicação Completa</div>
+      <div class="audio-subtitle">Protocolo Científico para Controlar Ansiedade</div>
+  </div>
+  
+  <div class="player-controls">
+      <button class="premium-play-btn" id="premiumPlayBtn">
+          <i class="fas fa-play"></i>
+      </button>
+      
+      <div class="player-center">
+          <div class="time-display">
+              <span id="currentTime">0:00</span>
+              <span class="time-separator">/</span>
+              <span id="totalTime">4:12</span>
+          </div>
+          
+          <div class="progress-container">
+              <div class="progress-bar" id="progressBar">
+                  <div class="progress-fill" id="progressFill"></div>
+                  <div class="progress-handle" id="progressHandle"></div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="player-right">
+          <div class="speed-control">
+              <button class="speed-btn active" data-speed="1">1x</button>
+              <button class="speed-btn" data-speed="1.25">1.25x</button>
+              <button class="speed-btn" data-speed="1.5">1.5x</button>
+              <button class="speed-btn" data-speed="2">2x</button>
+          </div>
+          
+          <button class="volume-btn" id="volumeBtn">
+              <i class="fas fa-volume-up"></i>
+          </button>
+      </div>
+  </div>
+  
+  <audio id="premiumAudioPlayer" preload="metadata">
+      <source src="https://appestoicismo.github.io/hipnoseansiedade/narracaopv3.MP3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+  </audio>
+</div>
+
+        <!-- NOVO: CTA Precoce após o áudio -->
+        <div class="early-cta">
+            <p class="early-cta-text">Quer começar hoje mesmo a testar na prática?</p>
+            <a href="#" class="early-buy-btn" id="earlyBuyBtn">
+                ✅ Quero testar o Interruptor agora
+            </a>
+        </div>
+
+        <!-- Contador de Vagas -->
+        <div class="access-counter">
+            <div class="counter-text">⚠️ Vagas Disponíveis no Aplicativo:</div>
+            <span class="counter-number" id="accessCounter">387</span>
+            <div style="font-size: 0.9rem; margin-top: 10px; color: var(--white); font-weight: 600;">
+                Após atingir 400 acessos, o preço aumenta para R$ 97,00
+            </div>
+            <div class="update-status" id="updateStatus">
+                Atualizado em: <span id="lastUpdate"></span>
+            </div>
+        </div>
+
+        <!-- Seção de Sessões do Aplicativo -->
+        <div class="app-sessions-section">
+            <h2 class="sessions-main-title">Tudo isso já está liberado para você hoje</h2>
+
+          
+          <!-- Imagem do interruptor -->
+  <div class="app-image-container">
+      <img src="https://appestoicismo.github.io/hipnoseansiedade/appinterruptor.png" alt="App Interruptor" class="app-image">
+  </div>
+            
+          <!-- Lista de sessões existente -->
+            <div class="sessions-list">
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Instruções iniciais</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 1: O que é o Interruptor de Ansiedade</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 2: Integrando o Interruptor de Ansiedade</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 2.1: Instalando na prática o Interruptor de Ansiedade</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 3: Instalando seu Lugar Seguro</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 4: Dormir profundamente</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 5: Controle de pensamento acelerado</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 6: Mantendo a paz durante momentos desafiadores</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 7: Alívio imediato da ansiedade</div>
+                </div>
+                
+                <div class="session-button">
+                    <div class="audio-icon">🎧</div>
+                    <div class="session-content">Sessão 8: O que a ansiedade está tentando te dizer (em breve)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Proof Popup -->
+        <div class="social-proof" id="socialProof">
+            <div class="social-proof-content">
+                <div class="social-proof-avatar">M</div>
+                <div class="social-proof-text">
+                    <div class="social-proof-name">Márcia, 34 anos</div>
+                    <div class="social-proof-action">Acabou de adquirir o método</div>
+                    <div class="social-proof-time">há 2 minutos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer Section -->
+        <div class="offer-section" id="offerSection">
+            <h2 class="offer-title">
+                🎯 Aqui está a proposta onde você não corre nenhum risco de perder seu dinheiro:
+            </h2>
            
-           <div class="faq-container">
-               <div class="faq-item">
-                   <div class="faq-question">
-                       <span>Quanto tempo leva para aprender o método?</span>
-                       <i class="fas fa-chevron-down faq-icon"></i>
-                   </div>
-                   <div class="faq-answer">
-                       Os fundamentos você aprende em 1 dia, mas o segredo não é a velocidade do aprendizado - é o treinamento da sua mente. Quanto mais você praticar os exercícios e ouvir os áudios hipnóticos, mais rápido e eficiente sua mente acessará essas capacidades naturalmente.
+            <div class="offer-list">
+                <div class="offer-item">
+                    <strong>1.</strong> Você adquire o protocolo <strong>"Interruptor de Ansiedade"</strong> completo com todas as sessões
+                </div>
+                
+               <div class="offer-item">
+                    <strong>2.</strong> Terá acesso ao aplicativo, que pode ser baixado no seu celular e <strong>usado onde quiser, na hora que desejar, quantas vezes precisar</strong>.
+                </div>
+                
+                <div class="offer-item">
+                    <strong>3.</strong> Se em até <strong>7 dias</strong> você não conseguir ter resultados com o que vai aprender, basta acessar esse link: <a href="https://reembolso.kiwify.com.br/login" target="_blank">reembolso.kiwify.com.br</a> e devolveremos <strong>100% do seu investimento</strong>
+                </div>
+                
+                <div class="offer-item">
+                    <strong>4.</strong> <span style="color: var(--accent); font-weight: 700;">Seu risco é ZERO!</span>
+                </div>
+                
+                <div class="offer-item">
+                    <strong>5.</strong> Mas, preste atenção, só conseguimos segurar essa proposta até completar os <strong>400 acessos</strong> que temos disponíveis no aplicativo. Após isso, a operação para manter o aplicativo fica mais cara para nós, e então, vamos aumentar o preço do segundo lote para <strong>R$ 97,00</strong>
+                </div>
+            </div>
+
+            <div class="price-section">
+                <h3>Para adquirir agora:</h3>
+                <!-- NOVO: Preço ancorado -->
+                <div class="price-anchor">
+                    <span class="price-striked">De R$ 97,00</span>
+                </div>
+                <div class="price-installments">6x de R$ 8,99</div>
+                <div class="price-cash">ou apenas R$ 47,90 à vista no cartão ou Pix</div>
+                <!-- NOVO: Frase de ancoragem -->
+                <div class="price-daily">
+                    Menos de R$ 0,15 por dia para ter sua paz de volta
+                </div>
+                
+               <a href="#" class="buy-btn" id="buyBtn">
+                  🚀 GARANTIR ACESSO AGORA
+              </a>
+          </div>
+
+          <!-- NOVA: Garantia visual destacada -->
+          <div class="guarantee-box">
+              <h4>Garantia Incondicional de 7 Dias</h4>
+              <p>Se não sentir resultado, devolvemos 100% do valor. Sem perguntas.</p>
+          </div>
+      </div>
+
+      <!-- SEÇÃO DE DEPOIMENTOS - Inserir logo após o guarantee-box -->
+<div class="testimonials-section">
+   <h2 class="testimonials-title">
+       ⭐ O que dizem quem já vive livre da ansiedade:
+   </h2>
+   
+   <div class="testimonials-container">
+       
+       <!-- Depoimento 1 -->
+       <div class="testimonial-card">
+           <div class="testimonial-header">
+               <div class="testimonial-photo">
+                   <img src="https://appestoicismo.github.io/hipnoseansiedade/anacarolina.jpg" alt="Ana Carolina" loading="lazy">
+               </div>
+               <div class="testimonial-info">
+                   <h4 class="testimonial-name">Ana Carolina Cavalari</h4>
+                   <p class="testimonial-location">34 anos - São Paulo/SP</p>
+                   <div class="testimonial-stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <span class="rating-text">5/5</span>
                    </div>
                </div>
+           </div>
+           <div class="testimonial-content">
+               <p>"Sempre achei que hipnose era 'coisa de filme', mas estava desesperada com as crises de ansiedade. O Interruptor funcionou <strong>NA PRIMEIRA SEMANA!</strong> Consegui controlar uma crise no trabalho usando as instruções, ninguém nem percebeu. Hoje durmo a noite toda sem acordar de madrugada. <strong>Vale cada centavo!</strong>"</p>
+           </div>
+           <div class="testimonial-footer">
+               <div class="verified-purchase">
+                   <i class="fas fa-check-circle"></i>
+                   <span>Compra verificada</span>
+               </div>
+               <div class="testimonial-date">
+                   Há 2 semanas
+               </div>
+           </div>
+       </div>
 
-               <div class="faq-item">
+       <!-- Depoimento 2 -->
+       <div class="testimonial-card">
+           <div class="testimonial-header">
+               <div class="testimonial-photo">
+                   <img src="https://appestoicismo.github.io/hipnoseansiedade/marianagomes.jpg" alt="Mariana Santos" loading="lazy">
+               </div>
+               <div class="testimonial-info">
+                   <h4 class="testimonial-name">Mariana Gomes Santos</h4>
+                   <p class="testimonial-location">28 anos - Rio de Janeiro/RJ</p>
+                   <div class="testimonial-stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <span class="rating-text">5/5</span>
+                   </div>
+               </div>
+           </div>
+           <div class="testimonial-content">
+               <p>"Em <strong>3 dias já senti diferença!</strong> Antes ficava com o coração acelerado só de sair de casa. Agora uso a técnica no metrô, no trabalho, em qualquer lugar. O mais incrível é que <strong>funciona em segundos mesmo.</strong> Minha família não acredita na mudança que tive."</p>
+           </div>
+           <div class="testimonial-footer">
+               <div class="verified-purchase">
+                   <i class="fas fa-check-circle"></i>
+                   <span>Compra verificada</span>
+               </div>
+               <div class="testimonial-date">
+                   Há 1 semana
+               </div>
+           </div>
+       </div>
+
+       <!-- Depoimento 3 -->
+       <div class="testimonial-card">
+           <div class="testimonial-header">
+               <div class="testimonial-photo">
+                   <img src="https://appestoicismo.github.io/hipnoseansiedade/julianaribeiro.jpg" alt="Juliana Ribeiro" loading="lazy">
+               </div>
+               <div class="testimonial-info">
+                   <h4 class="testimonial-name">Juliana Ribeiro</h4>
+                   <p class="testimonial-location">41 anos - Indaiatuba/SP</p>
+                   <div class="testimonial-stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <span class="rating-text">5/5</span>
+                   </div>
+               </div>
+           </div>
+           <div class="testimonial-content">
+               <p>"O que mais me impressionou foi a<strong> simplicidade.</strong> Basta ouvir os áudios e relaxar... A ansiedade que me acompanhava há 10 anos simplesmente sumiu. <strong>Recomendo de olhos fechados</strong> para qualquer pessoa que sofre com isso."</p>
+           </div>
+           <div class="testimonial-footer">
+               <div class="verified-purchase">
+                   <i class="fas fa-check-circle"></i>
+                   <span>Compra verificada</span>
+               </div>
+               <div class="testimonial-date">
+                   Há 4 dias
+               </div>
+           </div>
+       </div>
+
+   </div>
+
+   <!-- Indicador de mais depoimentos -->
+   <div class="more-testimonials">
+       <p><strong>+127 depoimentos verificados</strong> • Nota média: <span class="avg-rating">4.9/5 ⭐</span></p>
+   </div>
+</div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section" id="faqSection">
+          <h2 class="faq-title">❓ Perguntas Frequentes</h2>
+          
+          <div class="faq-container">
+              <div class="faq-item">
                   <div class="faq-question">
-                      <span>Funciona para qualquer tipo de ansiedade?</span>
+                      <span>Quanto tempo leva para aprender o método?</span>
                       <i class="fas fa-chevron-down faq-icon"></i>
                   </div>
                   <div class="faq-answer">
-                      Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
-                 </div>
-             </div>
+                      Os fundamentos você aprende em 1 dia, mas o segredo não é a velocidade do aprendizado - é o treinamento da sua mente. Quanto mais você praticar os exercícios e ouvir os áudios hipnóticos, mais rápido e eficiente sua mente acessará essas capacidades naturalmente.
+                  </div>
+              </div>
 
-             <div class="faq-item">
+              <div class="faq-item">
                  <div class="faq-question">
-                     <span>Preciso de algum equipamento especial?</span>
+                     <span>Funciona para qualquer tipo de ansiedade?</span>
                      <i class="fas fa-chevron-down faq-icon"></i>
                  </div>
                  <div class="faq-answer">
-                     Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
-                 </div>
-             </div>
+                     Sim. O método atua no nervo vago, que é a "central de comando" do relaxamento. Funciona para ansiedade generalizada, ataques de pânico, ansiedade social e insônia.
+                </div>
+            </div>
 
-             <div class="faq-item">
-                 <div class="faq-question">
-                     <span>É baseado em ciência real?</span>
-                     <i class="fas fa-chevron-down faq-icon"></i>
-                 </div>
-                 <div class="faq-answer">
-                     Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
-                 </div>
-             </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Preciso de algum equipamento especial?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    Não. Você usa apenas suas mãos e pode fazer em qualquer lugar, sem ninguém perceber.
+                </div>
+            </div>
 
-             <div class="faq-item">
-                 <div class="faq-question">
-                     <span>E se eu não conseguir fazer hipnose?</span>
-                     <i class="fas fa-chevron-down faq-icon"></i>
-                 </div>
-                 <div class="faq-answer">
-                     Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
-                 </div>
-             </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>É baseado em ciência real?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    Sim. O método combina descobertas da Teoria Polivagal de Stephen Porges, pesquisas de neuroplasticidade de Wendy Suzuki e técnicas milenares de acupressura validadas pela medicina moderna.
+                </div>
+            </div>
 
-             <div class="faq-item">
-                 <div class="faq-question">
-                     <span>Como funciona a garantia de 7 dias?</span>
-                     <i class="fas fa-chevron-down faq-icon"></i>
-                 </div>
-                 <div class="faq-answer">
-                     Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
-                 </div>
-             </div>
-         </div>
-     </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>E se eu não conseguir fazer hipnose?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    Pessoas com mentes criativas e ansiosas são as que melhor respondem à hipnose. Além disso, nossos áudios são especialmente desenvolvidos para mentes aceleradas.
+                </div>
+            </div>
 
-     <!-- Rodapé -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Como funciona a garantia de 7 dias?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    Você tem 7 dias para testar completamente o método. Se não funcionar, basta acessar o link de reembolso e devolvemos 100% do seu dinheiro sem perguntas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOVO: Botão fixo mobile -->
+    <div class="mobile-fixed-cta" id="mobileFixedCta">
+        <a href="#" class="mobile-fixed-btn" id="mobileFixedBtn">
+            GARANTIR ACESSO – R$ 47,90
+        </a>
+    </div>
+
+    <!-- Rodapé -->
 <footer class="footer-section">
-   <div class="footer-container">
-       <!-- Prova de Autoridade -->
-       <div class="authority-section">
-           <div class="authority-badge">
-               <i class="fas fa-user-md"></i>
-               <div class="authority-text">
-                   <strong>Protocolo desenvolvido por Hipnoterapeuta Alex Dantas</strong>
-                   <p>Com base em evidências científicas sobre o nervo vago e hipnoterapia clínica</p>
-               </div>
-           </div>
-       </div>
+  <div class="footer-container">
+      <!-- Prova de Autoridade -->
+      <div class="authority-section">
+          <div class="authority-badge">
+              <i class="fas fa-user-md"></i>
+              <div class="authority-text">
+                  <strong>Protocolo desenvolvido por Hipnoterapeuta Alex Dantas</strong>
+                  <p>Com base em evidências científicas sobre o nervo vago e hipnoterapia clínica</p>
+              </div>
+          </div>
+          
+          <!-- NOVA: Bio expandida -->
+          <div class="authority-bio">
+              <p>Alex Dantas é hipnoterapeuta clínico, especialista em regulação emocional, com +10 anos de experiência e centenas de atendimentos bem-sucedidos.</p>
+          </div>
+      </div>
 
-       <!-- Segurança e Garantia -->
-       <div class="security-info">
-           <div class="security-item">
-               <i class="fas fa-lock"></i>
-               <span>Compra Segura</span>
-           </div>
-           <div class="security-item">
-               <i class="fas fa-credit-card"></i>
-               <span>Pagamento Criptografado</span>
-           </div>
-           <div class="security-item">
-               <i class="fas fa-undo"></i>
-               <span>Reembolso Garantido em 7 dias</span>
-           </div>
-       </div>
+      <!-- Segurança e Garantia -->
+      <div class="security-info">
+          <div class="security-item">
+              <i class="fas fa-lock"></i>
+              <span>Compra Segura</span>
+          </div>
+          <div class="security-item">
+              <i class="fas fa-credit-card"></i>
+              <span>Pagamento Criptografado</span>
+          </div>
+          <div class="security-item">
+              <i class="fas fa-undo"></i>
+              <span>Reembolso Garantido em 7 dias</span>
+          </div>
+      </div>
 
-       <!-- Copyright -->
-       <div class="copyright">
-           <p>&copy; 2025 Aplicativo Autoconhecimento. Todos os direitos reservados.</p>
-           <p>CNPJ: 40.678.175/0001-77</p>
-           <p>Este protocolo não substitui medicamentos.</p>
-       </div>
-   </div>
+      <!-- Copyright -->
+      <div class="copyright">
+          <p>&copy; 2025 Aplicativo Autoconhecimento. Todos os direitos reservados.</p>
+          <p>CNPJ: 40.678.175/0001-77</p>
+          <p>Este protocolo não substitui medicamentos.</p>
+      </div>
+  </div>
 </footer>
- </div>
+</div>
 </div>
 
 <script>
- // ✅ SISTEMA DE TRACKING E FUNCIONALIDADES
- 
- // Capturar UTMs da URL
- function getURLParams() {
-     const urlParams = new URLSearchParams(window.location.search);
-     return {
-         utm_source: urlParams.get('utm_source') || 'direct',
-         utm_medium: urlParams.get('utm_medium') || 'none',
-         utm_campaign: urlParams.get('utm_campaign') || 'none',
-         utm_content: urlParams.get('utm_content') || 'none',
-         utm_term: urlParams.get('utm_term') || 'none',
-         fbclid: urlParams.get('fbclid') || null,
-         gclid: urlParams.get('gclid') || null
-     };
- }
- 
- // Construir URL do checkout com UTMs
- function buildCheckoutURL() {
-     const params = getURLParams();
-     const baseURL = 'https://pay.kiwify.com.br/R2nzjK7';
-     
-     const urlParams = new URLSearchParams();
-     Object.keys(params).forEach(key => {
-         if (params[key] && params[key] !== 'none' && params[key] !== 'direct') {
-             urlParams.append(key, params[key]);
-         }
-     });
-     
-     return baseURL + (urlParams.toString() ? '?' + urlParams.toString() : '');
- }
+// ✅ SISTEMA DE TRACKING E FUNCIONALIDADES
+
+// Capturar UTMs da URL
+function getURLParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return {
+        utm_source: urlParams.get('utm_source') || 'direct',
+        utm_medium: urlParams.get('utm_medium') || 'none',
+        utm_campaign: urlParams.get('utm_campaign') || 'none',
+        utm_content: urlParams.get('utm_content') || 'none',
+        utm_term: urlParams.get('utm_term') || 'none',
+        fbclid: urlParams.get('fbclid') || null,
+        gclid: urlParams.get('gclid') || null
+    };
+}
+
+// Construir URL do checkout com UTMs
+function buildCheckoutURL() {
+    const params = getURLParams();
+    const baseURL = 'https://pay.kiwify.com.br/R2nzjK7';
+    
+    const urlParams = new URLSearchParams();
+    Object.keys(params).forEach(key => {
+        if (params[key] && params[key] !== 'none' && params[key] !== 'direct') {
+            urlParams.append(key, params[key]);
+        }
+    });
+    
+    return baseURL + (urlParams.toString() ? '?' + urlParams.toString() : '');
+}
 
 // ✅ PLAYER DE ÁUDIO PREMIUM
 const premiumPlayer = document.getElementById('premiumAudioPlayer');
@@ -2020,410 +2184,429 @@ let isDragging = false;
 
 // Formatar tempo
 function formatTime(seconds) {
-   const mins = Math.floor(seconds / 60);
-   const secs = Math.floor(seconds % 60);
-   return `${mins}:${secs.toString().padStart(2, '0')}`;
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
 // Play/Pause
 premiumPlayBtn.addEventListener('click', () => {
-   if (isPremiumPlaying) {
-       premiumPlayer.pause();
-       premiumPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
-       isPremiumPlaying = false;
-   } else {
-       premiumPlayer.play();
-       premiumPlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
-       isPremiumPlaying = true;
-   }
+  if (isPremiumPlaying) {
+      premiumPlayer.pause();
+      premiumPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+      isPremiumPlaying = false;
+  } else {
+      premiumPlayer.play();
+      premiumPlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      isPremiumPlaying = true;
+  }
 });
 
 // Atualizar progresso
 premiumPlayer.addEventListener('timeupdate', () => {
-   if (!isDragging) {
-       const progress = (premiumPlayer.currentTime / premiumPlayer.duration) * 100;
-       progressFill.style.width = progress + '%';
-       progressHandle.style.left = progress + '%';
-       currentTimeEl.textContent = formatTime(premiumPlayer.currentTime);
-   }
+  if (!isDragging) {
+      const progress = (premiumPlayer.currentTime / premiumPlayer.duration) * 100;
+      progressFill.style.width = progress + '%';
+      progressHandle.style.left = progress + '%';
+      currentTimeEl.textContent = formatTime(premiumPlayer.currentTime);
+  }
 });
 
 // Quando o áudio carrega
 premiumPlayer.addEventListener('loadedmetadata', () => {
-   totalTimeEl.textContent = formatTime(premiumPlayer.duration);
+  totalTimeEl.textContent = formatTime(premiumPlayer.duration);
 });
 
 // Controle de progresso
 progressBar.addEventListener('click', (e) => {
-   const rect = progressBar.getBoundingClientRect();
-   const clickX = e.clientX - rect.left;
-   const percentage = clickX / rect.width;
-   const newTime = percentage * premiumPlayer.duration;
-   premiumPlayer.currentTime = newTime;
+  const rect = progressBar.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const percentage = clickX / rect.width;
+  const newTime = percentage * premiumPlayer.duration;
+  premiumPlayer.currentTime = newTime;
 });
 
 // Drag do handle
 progressHandle.addEventListener('mousedown', (e) => {
-   isDragging = true;
-   e.preventDefault();
+  isDragging = true;
+  e.preventDefault();
 });
 
 document.addEventListener('mousemove', (e) => {
-   if (isDragging) {
-       const rect = progressBar.getBoundingClientRect();
-       const moveX = e.clientX - rect.left;
-       let percentage = moveX / rect.width;
-       percentage = Math.max(0, Math.min(1, percentage));
-       
-       progressFill.style.width = percentage * 100 + '%';
-       progressHandle.style.left = percentage * 100 + '%';
-       currentTimeEl.textContent = formatTime(percentage * premiumPlayer.duration);
-   }
+  if (isDragging) {
+      const rect = progressBar.getBoundingClientRect();
+      const moveX = e.clientX - rect.left;
+      let percentage = moveX / rect.width;
+      percentage = Math.max(0, Math.min(1, percentage));
+      
+      progressFill.style.width = percentage * 100 + '%';
+      progressHandle.style.left = percentage * 100 + '%';
+      currentTimeEl.textContent = formatTime(percentage * premiumPlayer.duration);
+  }
 });
 
 document.addEventListener('mouseup', () => {
-   if (isDragging) {
-       const percentage = parseFloat(progressHandle.style.left) / 100;
-       premiumPlayer.currentTime = percentage * premiumPlayer.duration;
-       isDragging = false;
-   }
+  if (isDragging) {
+      const percentage = parseFloat(progressHandle.style.left) / 100;
+      premiumPlayer.currentTime = percentage * premiumPlayer.duration;
+      isDragging = false;
+  }
 });
 
 // Controle de velocidade
 speedBtns.forEach(btn => {
-   btn.addEventListener('click', () => {
-       speedBtns.forEach(b => b.classList.remove('active'));
-       btn.classList.add('active');
-       premiumPlayer.playbackRate = parseFloat(btn.dataset.speed);
-   });
+  btn.addEventListener('click', () => {
+      speedBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      premiumPlayer.playbackRate = parseFloat(btn.dataset.speed);
+  });
 });
 
 // Controle de volume
 let isMuted = false;
 volumeBtn.addEventListener('click', () => {
-   if (isMuted) {
-       premiumPlayer.muted = false;
-       volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-       isMuted = false;
-   } else {
-       premiumPlayer.muted = true;
-       volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
-       isMuted = true;
-   }
+  if (isMuted) {
+      premiumPlayer.muted = false;
+      volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+      isMuted = false;
+  } else {
+      premiumPlayer.muted = true;
+      volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+      isMuted = true;
+  }
 });
 
 // Quando o áudio termina
 premiumPlayer.addEventListener('ended', () => {
-   premiumPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
-   isPremiumPlaying = false;
-   progressFill.style.width = '0%';
-   progressHandle.style.left = '0%';
-   currentTimeEl.textContent = '0:00';
+  premiumPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+  isPremiumPlaying = false;
+  progressFill.style.width = '0%';
+  progressHandle.style.left = '0%';
+  currentTimeEl.textContent = '0:00';
 });
 
 // Loading state
 premiumPlayer.addEventListener('loadstart', () => {
-   document.querySelector('.premium-audio-player').classList.add('loading');
+  document.querySelector('.premium-audio-player').classList.add('loading');
 });
 
 premiumPlayer.addEventListener('canplay', () => {
-   document.querySelector('.premium-audio-player').classList.remove('loading');
+  document.querySelector('.premium-audio-player').classList.remove('loading');
 });
 
- // ✅ ELEMENTOS DA PÁGINA
- const offerSection = document.getElementById('offerSection');
- const faqSection = document.getElementById('faqSection');
- const accessCounter = document.getElementById('accessCounter');
- const updateStatus = document.getElementById('updateStatus');
- const lastUpdate = document.getElementById('lastUpdate');
+// ✅ ELEMENTOS DA PÁGINA
+const offerSection = document.getElementById('offerSection');
+const faqSection = document.getElementById('faqSection');
+const accessCounter = document.getElementById('accessCounter');
+const updateStatus = document.getElementById('updateStatus');
+const lastUpdate = document.getElementById('lastUpdate');
 
- // ✅ VARIÁVEIS DE CONTROLE
- let currentCounter = 387;
- let pageLoadTime = Date.now();
- let audioStarted = false;
- let offerViewed = false;
- let faqEngaged = false;
- let buttonClickCount = 0;
+// ✅ VARIÁVEIS DE CONTROLE
+let currentCounter = 387;
+let pageLoadTime = Date.now();
+let audioStarted = false;
+let offerViewed = false;
+let faqEngaged = false;
+let buttonClickCount = 0;
 
- // Array de depoimentos para prova social
- const testimonials = [
-     {name: "Ana Fonseca de Magalhães - SP", age: 42, time: "3 minutos", action: "comprou"},
-     {name: "Carla Dias dos Santos - ES", age: 28, time: "1 minuto", action: "comprou"},
-     {name: "Juliana Cristina Martins – SP ", age: 35, time: "5 minutos", action: "comprou"},
-     {name: "Patrícia Fernandes Oliveira – RJ", age: 39, time: "2 minutos", action: "comprou"},
-     {name: "Fernanda Dimas Souza – MG", age: 31, time: "4 minutos", action: "comprou"},
-     {name: "Beatriz Mayara Dantas - SP", age: 33, time: "6 minutos", action: "comprou"},
-     {name: "Mariana Alves Costa – BA", age: 26, time: "1 minuto", action: "comprou"},
-     {name: "Luciana Pereira Rocha – PE", age: 44, time: "8 minutos", action: "comprou"}
- ];
+// Array de depoimentos para prova social
+const testimonials = [
+    {name: "Ana Fonseca de Magalhães - SP", age: 42, time: "3 minutos", action: "comprou"},
+    {name: "Carla Dias dos Santos - ES", age: 28, time: "1 minuto", action: "comprou"},
+    {name: "Juliana Cristina Martins – SP ", age: 35, time: "5 minutos", action: "comprou"},
+    {name: "Patrícia Fernandes Oliveira – RJ", age: 39, time: "2 minutos", action: "comprou"},
+    {name: "Fernanda Dimas Souza – MG", age: 31, time: "4 minutos", action: "comprou"},
+    {name: "Beatriz Mayara Dantas - SP", age: 33, time: "6 minutos", action: "comprou"},
+    {name: "Mariana Alves Costa – BA", age: 26, time: "1 minuto", action: "comprou"},
+    {name: "Luciana Pereira Rocha – PE", age: 44, time: "8 minutos", action: "comprou"}
+];
 
- // Função para gerar horário inicial (1h atrás)
- function getInitialTime() {
-     const now = new Date();
-     now.setHours(now.getHours() - 1);
-     return now.toLocaleTimeString('pt-BR', {
-         hour: '2-digit',
-         minute: '2-digit'
-     });
- }
+// Função para gerar horário inicial (1h atrás)
+function getInitialTime() {
+    const now = new Date();
+    now.setHours(now.getHours() - 1);
+    return now.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
 
- // Função para obter horário atual real
- function getCurrentTime() {
-     const now = new Date();
-     return now.toLocaleTimeString('pt-BR', {
-         hour: '2-digit',
-         minute: '2-digit'
-     });
- }
+// Função para obter horário atual real
+function getCurrentTime() {
+    const now = new Date();
+    return now.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
 
- // Função para atualizar contador com animação
- function updateCounter(newCount) {
-     const counterElement = document.getElementById('accessCounter');
-     counterElement.classList.add('updating');
-     
-     setTimeout(() => {
-         counterElement.textContent = newCount;
-         currentCounter = newCount;
-         counterElement.classList.remove('updating');
-     }, 300);
- }
+// Função para atualizar contador com animação
+function updateCounter(newCount) {
+    const counterElement = document.getElementById('accessCounter');
+    counterElement.classList.add('updating');
+    
+    setTimeout(() => {
+        counterElement.textContent = newCount;
+        currentCounter = newCount;
+        counterElement.classList.remove('updating');
+    }, 300);
+}
 
- // Função para simular sincronização
- function simulateSync(newCount, callback) {
-     const statusElement = document.getElementById('updateStatus');
-     const messages = [
-         'Sincronizando com servidor...',
-         'Verificando vagas em tempo real...',
-         'Atualizando disponibilidade...'
-     ];
-     
-     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-     
-     statusElement.classList.add('syncing');
-     lastUpdate.textContent = randomMessage;
-     
-     setTimeout(() => {
-         statusElement.classList.remove('syncing');
-         lastUpdate.textContent = getCurrentTime();
-         updateCounter(newCount);
-         if (callback) callback();
-     }, 2000);
- }
+// Função para simular sincronização
+function simulateSync(newCount, callback) {
+    const statusElement = document.getElementById('updateStatus');
+    const messages = [
+        'Sincronizando com servidor...',
+        'Verificando vagas em tempo real...',
+        'Atualizando disponibilidade...'
+    ];
+    
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    
+    statusElement.classList.add('syncing');
+    lastUpdate.textContent = randomMessage;
+    
+    setTimeout(() => {
+        statusElement.classList.remove('syncing');
+        lastUpdate.textContent = getCurrentTime();
+        updateCounter(newCount);
+        if (callback) callback();
+    }, 2000);
+}
 
- // Função para mostrar prova social aleatória
- function showRandomTestimonial() {
-     if (Math.random() < 0.7) {
-         const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-         const socialProof = document.getElementById('socialProof');
-         
-         socialProof.innerHTML = `
-             <div class="social-proof-content">
-                 <div class="social-proof-avatar">${testimonial.name[0]}</div>
-                 <div class="social-proof-text">
-                     <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
-                     <div class="social-proof-action">${testimonial.action}</div>
-                     <div class="social-proof-time">há ${testimonial.time}</div>
-                 </div>
-             </div>
-         `;
-         
-         socialProof.style.display = 'block';
-         
-         setTimeout(() => {
-             socialProof.style.display = 'none';
-         }, 8000);
-     }
- }
+// Função para mostrar prova social aleatória
+function showRandomTestimonial() {
+    if (Math.random() < 0.7) {
+        const testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+        const socialProof = document.getElementById('socialProof');
+        
+        socialProof.innerHTML = `
+            <div class="social-proof-content">
+                <div class="social-proof-avatar">${testimonial.name[0]}</div>
+                <div class="social-proof-text">
+                    <div class="social-proof-name">${testimonial.name}, ${testimonial.age} anos</div>
+                    <div class="social-proof-action">${testimonial.action}</div>
+                    <div class="social-proof-time">há ${testimonial.time}</div>
+                </div>
+            </div>
+        `;
+        
+        socialProof.style.display = 'block';
+        
+        setTimeout(() => {
+            socialProof.style.display = 'none';
+        }, 8000);
+    }
+}
 
- // Executar prova social a cada 60-90 segundos
- setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
+// Executar prova social a cada 60-90 segundos
+setInterval(showRandomTestimonial, Math.random() * 30000 + 60000);
 
- // Inicializar com horário antigo
- lastUpdate.textContent = getInitialTime();
+// Inicializar com horário antigo
+lastUpdate.textContent = getInitialTime();
 
- // ✅ META PIXEL TRACKING
- 
- // Landing Page View
- fbq('track', 'ViewContent', {
-     content_name: 'Landing Page - Interruptor Ansiedade',
-     content_category: 'Landing Page',
-     value: 47.90,
-     currency: 'BRL',
-     custom_data: {
-         page_type: 'landing',
-         utm_source: getURLParams().utm_source
-     }
- });
+// ✅ META PIXEL TRACKING
 
- // Tracking de scroll para oferta
- function trackOfferView() {
-     if (!offerViewed) {
-         offerViewed = true;
-         fbq('track', 'ViewContent', {
-             content_name: 'Offer Section Viewed',
-             content_category: 'Offer',
-             value: 47.90,
-             currency: 'BRL',
-             custom_data: {
-                 time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                 audio_played: audioStarted
-             }
-         });
-     }
- }
+// Landing Page View
+fbq('track', 'ViewContent', {
+    content_name: 'Landing Page - Interruptor Ansiedade',
+    content_category: 'Landing Page',
+    value: 47.90,
+    currency: 'BRL',
+    custom_data: {
+        page_type: 'landing',
+        utm_source: getURLParams().utm_source
+    }
+});
 
- // Observer para detectar quando a oferta entra na tela
- const offerObserver = new IntersectionObserver((entries) => {
-     entries.forEach(entry => {
-         if (entry.isIntersecting) {
-             trackOfferView();
-         }
-     });
- }, { threshold: 0.3 });
+// Tracking de scroll para oferta
+function trackOfferView() {
+    if (!offerViewed) {
+        offerViewed = true;
+        fbq('track', 'ViewContent', {
+            content_name: 'Offer Section Viewed',
+            content_category: 'Offer',
+            value: 47.90,
+            currency: 'BRL',
+            custom_data: {
+                time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                audio_played: audioStarted
+            }
+        });
+    }
+}
 
- offerObserver.observe(offerSection);
+// Observer para detectar quando a oferta entra na tela
+const offerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            trackOfferView();
+        }
+    });
+}, { threshold: 0.3 });
 
- // Audio events
- premiumPlayer.addEventListener('play', () => {
-     if (!audioStarted) {
-         audioStarted = true;
-         
-         fbq('track', 'ViewContent', {
-             content_name: 'Audio Started',
-             content_category: 'Educational Content',
-             value: 47.90,
-             currency: 'BRL',
-             custom_data: {
-                 time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                 content_type: 'audio'
-             }
-         });
-     }
- });
+offerObserver.observe(offerSection);
 
- // FAQ engagement tracking
- document.querySelectorAll('.faq-question').forEach(question => {
-     question.addEventListener('click', () => {
-         const faqItem = question.parentElement;
-         const isActive = faqItem.classList.contains('active');
-         
-         document.querySelectorAll('.faq-item').forEach(item => {
-             item.classList.remove('active');
-         });
-         
-         if (!isActive) {
-             faqItem.classList.add('active');
-             
-             if (!faqEngaged) {
-                 faqEngaged = true;
-                 fbq('track', 'Search', {
-                     content_category: 'FAQ',
-                     search_string: question.textContent.trim(),
-                     value: 47.90,
-                     currency: 'BRL'
-                 });
-             }
-         }
-     });
- });
+// Audio events
+premiumPlayer.addEventListener('play', () => {
+    if (!audioStarted) {
+        audioStarted = true;
+        
+        fbq('track', 'ViewContent', {
+            content_name: 'Audio Started',
+            content_category: 'Educational Content',
+            value: 47.90,
+            currency: 'BRL',
+            custom_data: {
+                time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                content_type: 'audio'
+            }
+        });
+    }
+});
 
- // Buy button tracking
- document.getElementById('buyBtn').addEventListener('click', (e) => {
-     e.preventDefault();
-     buttonClickCount++;
-     
-     if (buttonClickCount === 1) {
-         fbq('track', 'InitiateCheckout', {
-             content_name: 'Purchase Intent - First Click',
-             content_category: 'Product',
-             value: 47.90,
-             currency: 'BRL',
-             custom_data: {
-                 time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-                 audio_started: audioStarted,
-                 faq_engaged: faqEngaged,
-                 utm_source: getURLParams().utm_source
-             }
-         });
-     }
-     
-     fbq('track', 'Purchase', {
-         content_name: 'Interruptor de Ansiedade',
-         content_category: 'Digital Product',
-         content_ids: ['interruptor_ansiedade'],
-         value: 47.90,
-         currency: 'BRL',
-         custom_data: {
-             click_count: buttonClickCount,
-             utm_source: getURLParams().utm_source
-         }
-     });
-     
-     const checkoutURL = buildCheckoutURL();
-     window.open(checkoutURL, '_blank');
- });
+// FAQ engagement tracking
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        if (!isActive) {
+            faqItem.classList.add('active');
+            
+            if (!faqEngaged) {
+                faqEngaged = true;
+                fbq('track', 'Search', {
+                    content_category: 'FAQ',
+                    search_string: question.textContent.trim(),
+                    value: 47.90,
+                    currency: 'BRL'
+                });
+            }
+        }
+    });
+});
 
- // Tracking de tempo na página
- setInterval(() => {
-     const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
-     
-     if (timeOnPage === 60) {
-         fbq('track', 'CustomizeProduct', {
-             content_name: 'High Interest - 1 min on page',
-             value: 47.90,
-             currency: 'BRL'
-         });
-     }
-     
-     if (timeOnPage === 180) {
-         fbq('track', 'AddToWishlist', {
-             content_name: 'Very High Interest - 3 min on page',
-             value: 47.90,
-             currency: 'BRL'
-         });
-     }
- }, 1000);
+// ✅ NOVO: Event listeners para todos os botões de compra
+function handlePurchaseClick(buttonType) {
+    buttonClickCount++;
+    
+    if (buttonClickCount === 1) {
+        fbq('track', 'InitiateCheckout', {
+            content_name: `Purchase Intent - ${buttonType}`,
+            content_category: 'Product',
+            value: 47.90,
+            currency: 'BRL',
+            custom_data: {
+                time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+                audio_started: audioStarted,
+                faq_engaged: faqEngaged,
+                utm_source: getURLParams().utm_source,
+                button_type: buttonType
+            }
+        });
+    }
+    
+    fbq('track', 'Purchase', {
+        content_name: 'Interruptor de Ansiedade',
+        content_category: 'Digital Product',
+        content_ids: ['interruptor_ansiedade'],
+        value: 47.90,
+        currency: 'BRL',
+        custom_data: {
+            click_count: buttonClickCount,
+            utm_source: getURLParams().utm_source,
+            button_type: buttonType
+        }
+    });
+    
+    const checkoutURL = buildCheckoutURL();
+    window.open(checkoutURL, '_blank');
+}
 
- // Auto-decrease counter simulation
- setInterval(() => {
-     if (currentCounter > 350 && Math.random() < 0.3) {
-         const reduction = Math.floor(Math.random() * 2) + 1;
-         const newCount = Math.max(350, currentCounter - reduction);
-         if (newCount !== currentCounter) {
-             simulateSync(newCount);
-         }
-     }
- }, 60000);
+// Botão principal
+document.getElementById('buyBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    handlePurchaseClick('main_button');
+});
 
- // Bloquear ferramentas de desenvolvedor
- document.addEventListener('keydown', function(e) {
-     if (e.key === 'F12' || 
-         (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
-         (e.ctrlKey && e.key === 'U')) {
-         e.preventDefault();
-         return false;
-     }
- });
+// Botão precoce após áudio
+document.getElementById('earlyBuyBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    handlePurchaseClick('early_cta');
+});
 
- // Bloquear click direito
- document.addEventListener('contextmenu', (e) => {
-     e.preventDefault();
-     return false;
- });
+// Botão fixo mobile
+document.getElementById('mobileFixedBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    handlePurchaseClick('mobile_fixed');
+});
 
- // Inicializar prova social após carregamento da página
- setTimeout(showRandomTestimonial, 30000);
+// Tracking de tempo na página
+setInterval(() => {
+    const timeOnPage = Math.round((Date.now() - pageLoadTime) / 1000);
+    
+    if (timeOnPage === 60) {
+        fbq('track', 'CustomizeProduct', {
+            content_name: 'High Interest - 1 min on page',
+            value: 47.90,
+            currency: 'BRL'
+        });
+    }
+    
+    if (timeOnPage === 180) {
+        fbq('track', 'AddToWishlist', {
+            content_name: 'Very High Interest - 3 min on page',
+            value: 47.90,
+            currency: 'BRL'
+        });
+    }
+}, 1000);
 
- // Tracking de saída da página
- window.addEventListener('beforeunload', () => {
-     fbq('track', 'CustomizeProduct', {
-         content_name: 'Page Exit',
-         custom_data: {
-             time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-             conversion_potential: buttonClickCount > 0 ? 'high' : 'medium'
-         }
-     });
- });
+// Auto-decrease counter simulation
+setInterval(() => {
+   if (currentCounter > 350 && Math.random() < 0.3) {
+       const reduction = Math.floor(Math.random() * 2) + 1;
+       const newCount = Math.max(350, currentCounter - reduction);
+       if (newCount !== currentCounter) {
+           simulateSync(newCount);
+       }
+   }
+}, 60000);
+
+// Bloquear ferramentas de desenvolvedor
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+        (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+// Bloquear click direito
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    return false;
+});
+
+// Inicializar prova social após carregamento da página
+setTimeout(showRandomTestimonial, 30000);
+
+// Tracking de saída da página
+window.addEventListener('beforeunload', () => {
+    fbq('track', 'CustomizeProduct', {
+        content_name: 'Page Exit',
+        custom_data: {
+            time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+            conversion_potential: buttonClickCount > 0 ? 'high' : 'medium'
+        }
+    });
+});
 
 </script>
 </body>
