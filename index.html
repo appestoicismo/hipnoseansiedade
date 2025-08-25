@@ -837,35 +837,48 @@ src="https://www.facebook.com/tr?id=706101819074980&ev=PageView&noscript=1"
         margin: 0;
     }
 
-    /* ÍCONES DE SEGURANÇA */
-    .security-icons {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 20px;
-        flex-wrap: wrap;
-    }
+   /* ÍCONES DE SEGURANÇA */
+.security-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
 
-    .security-icon-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        color: var(--gray-800);
-    }
+.security-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray-800);
+}
 
-    .security-icon-item i {
-        font-size: 1.5rem;
-        color: var(--primary);
-    }
+.security-icon-item i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
 
-    .security-icon-text {
-        font-size: 0.85rem;
-        font-weight: 600;
-        text-align: center;
-        line-height: 1.2;
-        color: var(--gray-800);
-    }
+.security-icon-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--gray-800);
+}
+
+/* Ícones dentro da seção de preços (fundo azul) - brancos */
+.price-section .security-icons .security-icon-item {
+    color: var(--white);
+}
+
+.price-section .security-icons .security-icon-item i {
+    color: var(--white);
+}
+
+.price-section .security-icons .security-icon-text {
+    color: var(--white);
+}
 
     /* SEÇÃO DE DEPOIMENTOS */
     .testimonials-section {
@@ -1624,11 +1637,13 @@ src="https://www.facebook.com/tr?id=706101819074980&ev=PageView&noscript=1"
             align-items: center;
         }
 
-        .security-icon-item {
-            flex-direction: row;
-            gap: 8px;
-        }
-    }
+       .security-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--white);
+}
 
     /* Animação sutil ao carregar */
     .testimonial-card {
