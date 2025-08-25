@@ -515,54 +515,7 @@
          background: var(--urgent);
      }
 
-     /* BOTÃO FIXO MOBILE */
-     .mobile-fixed-cta {
-         position: fixed;
-         bottom: 0;
-         left: 0;
-         right: 0;
-         background: var(--coral);
-         padding: 15px 20px;
-         z-index: 1000;
-         box-shadow: 0 -5px 20px rgba(197, 90, 17, 0.4);
-         display: none;
-         border-top: 3px solid var(--white);
-     }
-
-     .mobile-fixed-btn {
-         background: transparent;
-         color: var(--white);
-         border: 2px solid var(--white);
-         padding: 12px 20px;
-         border-radius: 8px;
-         font-size: 1rem;
-         font-weight: 800;
-         cursor: pointer;
-         transition: all 0.3s ease;
-         text-decoration: none;
-         display: block;
-         text-align: center;
-         width: 100%;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-     }
-
-     .mobile-fixed-btn:hover {
-         background: var(--white);
-         color: var(--coral);
-     }
-
-     @media (max-width: 768px) {
-         .mobile-fixed-cta {
-             display: block;
-         }
-         
-         body {
-             padding-bottom: 70px;
-         }
-     }
-
-     /* CONTADOR COM ALTO CONTRASTE */
+    /* CONTADOR COM ALTO CONTRASTE */
      .access-counter {
          background: var(--urgent);
          color: var(--white);
@@ -2083,13 +2036,6 @@
         </div>
     </div>
 
-    <!-- NOVO: Botão fixo mobile -->
-    <div class="mobile-fixed-cta" id="mobileFixedCta">
-        <a href="#" class="mobile-fixed-btn" id="mobileFixedBtn">
-            GARANTIR ACESSO – R$ 47,90
-        </a>
-    </div>
-
     <!-- Rodapé -->
 <footer class="footer-section">
   <div class="footer-container">
@@ -2538,12 +2484,6 @@ document.getElementById('buyBtn').addEventListener('click', (e) => {
 document.getElementById('earlyBuyBtn').addEventListener('click', (e) => {
     e.preventDefault();
     handlePurchaseClick('early_cta');
-});
-
-// Botão fixo mobile
-document.getElementById('mobileFixedBtn').addEventListener('click', (e) => {
-    e.preventDefault();
-    handlePurchaseClick('mobile_fixed');
 });
 
 // Tracking de tempo na página
