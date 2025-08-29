@@ -936,30 +936,32 @@ document.querySelectorAll('.faq-question').forEach(question => {
   });
 });
 
-// Buy button click handler - CORRIGIDO
+// Buy button click handler - FINAL com event_id para deduplicação
 document.getElementById('buyBtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  
-  buttonClickCount++;
-  
-  // APENAS InitiateCheckout - Purchase será disparado na thank-you page
-  fbq('track', 'InitiateCheckout', {
-      content_name: 'Acalmar Mente - Intenção de Compra',
-      content_category: 'Digital Product',
-      content_ids: ['acalmar_mente'],
-      value: 27.90,
-      currency: 'BRL',
-      custom_data: {
-          time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
-          faq_engaged: faqEngaged,
-          utm_source: getURLParams().utm_source,
-          click_count: buttonClickCount
-      }
-  });
-  
-  // Redirecionar para checkout com segurança
-  const checkoutURL = buildCheckoutURL();
-  window.open(checkoutURL, '_blank', 'noopener,noreferrer');
+   e.preventDefault();
+   
+   buttonClickCount++;
+   
+   // APENAS InitiateCheckout com event_id para deduplicação CAPI futura
+   fbq('track', 'InitiateCheckout', {
+       content_name: 'Acalmar Mente - Intenção de Compra',
+       content_category: 'Digital Product',
+       content_ids: ['acalmar_mente'],
+       value: 27.90,
+       currency: 'BRL',
+       event_id: 'IC_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+       custom_data: {
+           time_on_page: Math.round((Date.now() - pageLoadTime) / 1000),
+           faq_engaged: faqEngaged,
+           utm_source: getURLParams().utm_source,
+           click_count: buttonClickCount
+       }
+   });
+   
+   // Redirecionar para checkout
+   const checkoutURL = buildCheckoutURL();
+  const win = window.open(checkoutURL, '_blank');
+if (win) { win.opener = null; }
 });
 
 // Scroll tracking para engajamento - USANDO trackCustom
@@ -971,7 +973,8 @@ let scrollEngagement = {
 };
 
 window.addEventListener('scroll', () => {
-  const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+  const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+const scrollPercent = Math.round((window.scrollY / maxScroll) * 100);
   
   Object.keys(scrollEngagement).forEach(threshold => {
       if (scrollPercent >= threshold && !scrollEngagement[threshold]) {
