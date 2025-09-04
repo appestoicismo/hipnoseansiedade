@@ -31,17 +31,17 @@
 
  <!-- Evento de visualização da oferta -->
  <script>
-   try {
-     fbq('track', 'ViewContent', {
-       content_name: 'Interruptor da Ansiedade',
-       content_category: 'Digital Product',
-       value: 19.90,
-       currency: 'BRL'
-     });
-   } catch(e) {
-     console.log('ViewContent error:', e);
-   }
- </script>
+  try {
+    fbq('track', 'ViewContent', {
+      content_name: 'Interruptor da Ansiedade',
+      content_category: 'Digital Product',
+      value: 47.00,  // CORRETO
+      currency: 'BRL'
+    });
+  } catch(e) {
+    console.log('ViewContent error:', e);
+  }
+</script>
 
  <!-- Open Graph -->
  <meta property="og:title" content="Interruptor da Ansiedade" />
@@ -694,13 +694,13 @@
        <h2>Oferta Especial de Lançamento</h2>
      </div>
      <div class="price-container">
-       <div class="price-tag">🔥 LANÇAMENTO</div>
-       <p style="margin:0 0 8px; color:var(--text-light); font-size:1rem;">De R$ 297,00 por apenas:</p>
-       <div>
-         <span class="price">R$ 19,90</span>
-         <span class="price-old">R$ 297,00</span>
-       </div>
-       <p class="price-installments">ou <strong>4x de R$ 5,42</strong> no cartão</p>
+  <div class="price-tag">🔥 LANÇAMENTO</div>
+  <p style="margin:0 0 8px; color:var(--text-light); font-size:1rem;">De R$ 297,00 por apenas:</p>
+  <div>
+    <span class="price">R$ 47,00</span>  <!-- ALTERADO de R$ 19,90 -->
+    <span class="price-old">R$ 297,00</span>
+  </div>
+  <p class="price-installments">ou <strong>6x de R$ 8,82</strong> no cartão</p>  <!-- ALTERADO de 4x de R$ 5,42 -->
        <div style="margin: 24px 0;">
          <a href="#" class="btn btn-primary btn-large pulse-glow checkout-link" data-section="offer">
            🎯 Começar Meu Treinamento Agora
@@ -803,9 +803,9 @@
        🎯 SIM! Quero Treinar Minha Âncora Agora
      </a>
      <div style="margin-top:18px; font-size:.9rem; opacity:.95;">
-       <p>⚡ Acesso imediato • 🔒 Compra segura • ✅ Garantia de 7 dias</p>
-       <p><strong>Investimento: R$ 19,90</strong> (menos que uma sessão de terapia)</p>
-     </div>
+  <p>⚡ Acesso imediato • 🔒 Compra segura • ✅ Garantia de 7 dias</p>
+  <p><strong>Investimento: R$ 47,00</strong> (menos que uma sessão de terapia)</p>  <!-- ALTERADO de R$ 19,90 -->
+</div>
    </div>
  </div>
 </section>
@@ -813,14 +813,14 @@
 <!-- Banner Fixo Otimizado -->
 <div class="sticky-bar" id="stickyBar">
  <div class="sticky-content">
-   <div class="sticky-info">
-     <div class="sticky-price">R$ 19,90</div>
-     <div class="sticky-details">Sistema completo + bônus</div>
-   </div>
-   <a href="#" class="sticky-btn checkout-link" data-section="sticky">
-     Começar Treinamento
-   </a>
- </div>
+  <div class="sticky-info">
+    <div class="sticky-price">R$ 47,00</div>  <!-- ALTERADO de R$ 19,90 -->
+    <div class="sticky-details">Sistema completo + bônus</div>
+  </div>
+  <a href="#" class="sticky-btn checkout-link" data-section="sticky">
+    Começar Treinamento
+  </a>
+</div>
 </div>
 
 <!-- Footer -->
@@ -844,11 +844,11 @@
 <script>
  // Configurações base
  const TRACKING_CONFIG = {
-   checkoutUrl: "https://pay.kiwify.com.br/R2nzjK7",
-   utmParams: "?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}",
-   productValue: 19.90,
-   currency: 'BRL'
- };
+  checkoutUrl: "https://pay.kiwify.com.br/R2nzjK7",
+  utmParams: "?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}",
+  productValue: 47.00,  // ALTERADO de 19.90 para 47.00
+  currency: 'BRL'
+};
 
  // Função auxiliar para rastreamento seguro
  function trackEvent(eventName, parameters = {}) {
@@ -1106,18 +1106,18 @@
    "name": "AppAutoHipnose"
  },
  "offers": {
-   "@type": "Offer",
-   "url": "https://pay.kiwify.com.br/R2nzjK7",
-   "priceCurrency": "BRL",
-   "price": "19.90",
-   "priceValidUntil": "2025-12-31",
-   "availability": "https://schema.org/InStock",
-   "seller": {
-     "@type": "Organization",
-     "name": "AppAutoHipnose",
-     "url": "https://appestoicismo.com.br"
-   }
- },
+  "@type": "Offer",
+  "url": "https://pay.kiwify.com.br/R2nzjK7",
+  "priceCurrency": "BRL",
+  "price": "47.00",  // ALTERADO de "19.90"
+  "priceValidUntil": "2025-12-31",
+  "availability": "https://schema.org/InStock",
+  "seller": {
+    "@type": "Organization",
+    "name": "AppAutoHipnose",
+    "url": "https://appestoicismo.com.br"
+  }
+},
  "aggregateRating": {
    "@type": "AggregateRating",
    "ratingValue": "4.8",
